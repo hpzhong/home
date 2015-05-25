@@ -1,0 +1,7 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =5
+let g:netrw_dirhist_1='/opt/android/.repo/manifests.git/branches'
+let g:netrw_dirhist_2='/home/mtk/code/35m_kk/kernel-3.10/drivers/misc/mediatek/magnetometer/akm09911'
+let g:netrw_dirhist_3='/home/mtk/code/35m_kk/out/target/product/k552/obj/STATIC_LIBRARIES/libcam.paramsmgr.feature.custom_intermediates'
+let g:netrw_dirhist_4='/usr/src/linux-source-3.18.0/linux-source-3.18.0/arch/arm/configs'
+let g:netrw_dirhist_5='/home/mtk/code/35m_kk/bootable/bootloader/preloader/build'
