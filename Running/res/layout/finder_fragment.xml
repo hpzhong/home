@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	android:orientation="vertical"   
+	android:background="#f4f3f3" 
+    tools:context="${relativePackage}.${activityClass}" 
+    >
+
+	<RelativeLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="48dp"
+	    android:background="@color/discover_title_color"
+	    >
+	    <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/finder"
+	        android:textColor="@color/white"
+            android:textSize="21dp"
+	        android:layout_centerInParent="true"
+	        />
+	    
+	</RelativeLayout>
+	
+	 <ScrollView 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+           <!--  <include 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/discover_facility"
+                /> -->
+            <include 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                layout="@layout/discover_list"
+                />
+            <LinearLayout 
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#fcfcff"
+                ></LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

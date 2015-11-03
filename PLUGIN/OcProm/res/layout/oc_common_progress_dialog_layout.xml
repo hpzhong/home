@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="300dip"
+	android:layout_height="wrap_content" android:background="@drawable/oc_bg_dialog">
+	<LinearLayout android:orientation="horizontal"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:padding="10dip">
+		<ImageView android:id="@id/oc_iv_dialog_icon"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:adjustViewBounds="true" />
+		<TextView android:textSize="18sp" android:textColor="@color/oc_white"
+			android:gravity="center_vertical" android:id="@id/oc_tv_title"
+			android:paddingLeft="10.0dip" android:paddingBottom="5.0dip"
+			android:layout_width="fill_parent" android:layout_gravity="center_vertical"
+			android:layout_height="wrap_content" android:text="title" />
+	</LinearLayout>
+
+	<ImageView android:layout_width="fill_parent"
+		android:layout_height="2px" android:background="@color/oc_update_dialog_divider" />
+
+	<TextView android:textAppearance="?android:textAppearanceMedium"
+		android:textColor="@color/oc_small_white" android:id="@id/oc_tv_msg_1"
+		android:padding="10.0dip" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:textSize="14sp"
+		android:text="message1" />
+
+	<RelativeLayout android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:padding="10dip">
+		<ProgressBar android:id="@id/oc_pb_progress"
+			android:layout_width="fill_parent" android:layout_height="18dip"
+			android:max="100" android:progress="0" android:progressDrawable="@drawable/oc_progressbar_green"
+			style="?android:attr/progressBarStyleHorizontal" />
+		<TextView android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:textSize="13sp"
+			android:id="@id/oc_tv_msg_2" android:layout_centerInParent="true"
+			android:textColor="@color/oc_black" />
+	</RelativeLayout>
+	
+	<Button 
+		android:id="@id/oc_btn_dialog_m"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:padding="10dip"
+		android:visibility="gone"
+		android:layout_gravity="center_horizontal"
+	/>
+</LinearLayout>

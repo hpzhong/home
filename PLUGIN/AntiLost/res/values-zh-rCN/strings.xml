@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">防丢</string>
+    <string name="find_phone">查找手机</string>
+	<string name="music">音乐</string>
+	<string name="no_music">没有可以选择的音乐</string>
+	<string name="default_music">默认</string>
+    <string name="progress_dialog_message">请等待&#8230;</string>
+   	<string name="alert_title">手机防丢</string>
+   	<string name="alert_message">手机找着啦！请关闭。</string>
+	<string name="ok">确定</string>
+	<string name="cancel">取消</string>
+	<string name="antilost_status">防丢状态</string>
+	<string name="on">已开启</string>
+	<string name="off">已关闭</string>
+	<string name="antilost_explanation">外部蓝牙设备端手机防丢功能是否开启</string>
+	<string name="get_data_error">获取远端状态失败</string>
+	<string name="setting">设置</string>
+	<string name="password_setting">密码设置</string>
+	<string name="password_cancle">取消密码</string>
+	<string name="input_old_password">请输入原密码</string>
+	<string name="input_password">请输入密码</string>
+	<string name="input_password_again">请再次输入密码</string>
+	<string name="password_empty">密码不能为空</string>
+	<string name="password_length">密码为4位数</string>
+	<string name="password_different">两个密码不同</string>
+	<string name="password_error">原密码不正确</string>
+	<string name="no_antilost_password">你还没有设置密码</string>
+	<string name="cancel_antilost_password">你已取消防丢密码</string>
+	<string name="input_antilost_password">请输入防丢密码</string>
+</resources>

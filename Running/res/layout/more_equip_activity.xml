@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <include
+        android:id="@+id/running_title"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        layout="@layout/running_actionbar" />
+ 
+    <ScrollView 
+            android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+        >
+   <LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <ImageView
+        android:layout_marginTop="20dp"
+                android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/bt_tip"
+        
+        />
+    <TextView 
+        android:textColor="#777777"
+        android:textSize="20sp"
+                android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/bt_tip_string_short"/>
+    <TextView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#777777"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textSize="16sp"
+        android:text="@string/bt_tip_string"/>
+    <Button
+        android:text="@string/iknow"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/bt_find_more"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:focusable="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/find_more_equip"/>
+</LinearLayout>
+</ScrollView>
+</LinearLayout>

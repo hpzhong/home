@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/content_bg" >
+
+    <TextView
+        android:id="@+id/tv_ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/it_is_ok"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dip" 
+        android:layout_marginRight="20dip"
+        android:textColor="#40E0D0"
+        android:textSize="20sp" />
+
+    <View
+        android:id="@+id/cut_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/tv_ok"
+        android:layout_marginBottom="10dip"
+        android:layout_marginTop="10dip"
+        android:background="#CCCCCC" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vpage"
+        android:layout_width="match_parent"
+        android:layout_height="290dip"
+        android:layout_below="@+id/cut_line" >
+    </android.support.v4.view.ViewPager>
+
+</RelativeLayout>

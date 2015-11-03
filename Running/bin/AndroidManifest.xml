@@ -1,0 +1,666 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.zhuoyou.plugin.running"
+    android:versionCode="1000021"
+    android:versionName="1.1.2.33221" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="19" />
+
+    <!-- 访问网络，网络定位需要上网 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 这个权限用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" >
+    </uses-permission>
+    <!-- 这个权限用于访问GPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" >
+    </uses-permission>
+    <!-- 用于访问wifi网络信息,wifi信息会用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" >
+    </uses-permission>
+    <!-- 获取运营商信息，用于支持提供运营商信息相关的接口 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" >
+    </uses-permission>
+    <!-- 这个权限用于获取wifi的获取权限,wifi信息会用来进行网络定位 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" >
+    </uses-permission>
+    <!-- 用于读取手机当前的状态 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" >
+    </uses-permission>
+    <!-- 写入扩展存储，向扩展卡写入数据 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" >
+    </uses-permission>
+    <!-- SD卡读取权限 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" >
+    </uses-permission>
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="com.android.launcher.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+    <!-- login start -->
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <!-- login end -->
+    <!-- BTNotifation -->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.WRITE_SMS" />
+    <uses-permission android:name="android.permission.READ_WAPPUSH" />
+    <uses-permission android:name="android.permission.WRITE_WAPPUSH" />
+    <uses-permission android:name="android.permission.RECEIVE_WAP_PUSH" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_CALL_LOG" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CALL_LOG" />
+    <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER" />
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+    <!-- push start -->
+    <uses-permission android:name="android.permission.WRITE_APN_SETTINGS" />
+    <uses-permission android:name="android.permission.GET_PACKAGE_SIZE" />
+    <uses-permission android:name="android.permission.INSTALL_PACKAGES" />
+    <uses-permission android:name="android.permission.DELETE_PACKAGES" />
+    <uses-permission android:name="android.permission.CLEAR_APP_CACHE" />
+    <uses-permission android:name="android.permission.CLEAR_APP_USER_DATA" />
+    <!-- push end -->
+
+
+    <!-- Add uses-permission for appStatistics. START -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!-- Add uses-permission for UpdateSelf and appStatistics. END -->
+
+
+    <!-- Add declaration for appStatistics. START -->
+    <receiver android:name="com.zhuoyi.updateSelf.UpdateSelfReceiver" >
+        <intent-filter>
+            <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+        </intent-filter>
+    </receiver>
+    <service android:name="com.zhuoyi.appStatistics.service.StatisService" >
+    </service>
+    <!-- Add declaration for UpdateSelf and appStatistics. END -->
+ 
+    <uses-feature
+        android:name="android.hardware.bluetooth_le"
+        android:required="false" />
+
+    <application
+        android:name="com.zhuoyou.plugin.running.RunningApp"
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Light.NoTitleBar" >
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="c20f5eb8b0d844f22be802a1b0d72777" />
+
+        <activity
+            android:name="com.zhuoyou.plugin.gps.GaoDeMapActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.zhuoyou.plugin.gps.GpsSportInfo"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.zhuoyou.plugin.gps.FirstGpsActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.zhuoyou.plugin.gps.ResultGpsActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".FirstActivity"
+            android:configChanges="keyboardHidden|orientation|fontScale"
+            android:excludeFromRecents="true"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:taskAffinity=".first"
+            android:theme="@style/WindowIsTranslucent"
+            android:windowSoftInputMode="adjustPan" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.CREATE_SHORTCUT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Welcome"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.zhuoyou.plugin.running.Main"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.zhuoyou.plugin.running.ShareActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.zhuoyou.plugin.wxapi.WXEntryActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.zhuoyou.plugin.share.AuthorizeActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.zhuoyou.plugin.running.MotionDataActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.zhuoyou.plugin.running.DataStatsActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.zhuoyou.plugin.resideMenu.HelpActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.zhuoyou.plugin.resideMenu.SupportTypeActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.zhuoyou.plugin.resideMenu.ApplicationIntroduingActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.zhuoyou.plugin.resideMenu.BluetoothHeadsetActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.zhuoyou.plugin.resideMenu.BluetoothWatchActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.zhuoyou.plugin.resideMenu.BluetoothHeadset"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.zhuoyou.plugin.resideMenu.FrequentlyQuestionsActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.zhuoyou.plugin.resideMenu.SettingActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.zhuoyou.plugin.ble.BindBleDeviceActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.zhuoyou.plugin.ble.BindHelpActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" >
+        </service>
+        <service android:name="com.zhuoyou.plugin.running.MainService" >
+        </service>
+        <service android:name="com.zhuoyou.plugin.ble.BluetoothLeService" />
+        <service android:name="com.zhuoyou.plugin.ble.BleManagerService" />
+
+        <receiver android:name="com.zhuoyou.plugin.running.BootReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <provider
+            android:name="com.zhuoyou.plugin.database.RunningProvider"
+            android:authorities="com.zhuoyou.plugin.database"
+            android:exported="false" >
+        </provider>
+
+        <receiver
+            android:name="com.zhuoyou.plugin.test.TestSendDataFromRemote"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="com.tyd.plugin.receiver.sendmsg" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.zhuoyou.plugin.receiver.AutoSyncReceiver"
+            android:process=":remote" >
+            <intent-filter>
+                <action android:name="com.zhuoyou.running.autosync.alarm" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.zhuoyou.plugin.receiver.ConnectionChangeReceiver" >
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="com.zhuoyou.plugin.bluetooth.service.BluetoothService" />
+        <service android:name="com.zhuoyou.plugin.gps.GaodeService" />
+        <service android:name="com.mcube.lib.ped.PedBackgroundService" />
+        <service android:name="com.mcube.lib.ped.PedometerService" />
+        <service android:name="com.zhuoyou.plugin.ble.DfuService" />
+        <service
+            android:name="com.zhuoyou.plugin.bluetooth.service.NotificationService"
+            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE" >
+            <intent-filter>
+                <action android:name="android.accessibilityservice.AccessibilityService" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.accessibilityservice"
+                android:resource="@xml/accessibility_service_config" >
+            </meta-data>
+        </service>
+
+        <receiver android:name="com.zhuoyou.plugin.receiver.PlugSendMessage" >
+            <intent-filter>
+                <action android:name="com.tyd.plugin.receiver.sendmsg" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.zhuoyou.plugin.info.ChooseHeadActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.zhuoyou.plugin.info.EditPictureActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.zhuoyou.plugin.album.SportsAlbum"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.zhuoyou.plugin.add.AddWeight"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.zhuoyou.plugin.add.AddPicture"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.zhuoyou.plugin.add.AddSports"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.zhuoyou.plugin.add.ViewPageDemo"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.zhuoyou.plugin.fitness.FitnessMain"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.zhuoyou.plugin.fitness.WalkPrimaryPlan"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.zhuoyou.plugin.rank.ShareRankActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <service android:name="com.zhuoyou.plugin.download.DownloadService" />
+
+        <!-- Login start -->
+        <activity
+            android:name="com.zhuoyi.account.authenticator.AuthenticatorActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="none" />
+        </activity>
+        <activity
+            android:name="com.zhuoyi.account.FindCodeActivity_new"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.zhuoyi.account.RegisterActivity_new"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.zhuoyi.account.EmailRegisterActivity_new"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <!-- QQ login start -->
+        <activity
+            android:name="com.tencent.sample.activitys.MainActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent222222" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name="com.tencent.sample.AppRegister"
+            android:permission="com.tencent.mm.plugin.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.tencent.mm.plugin.openapi.Intent.ACTION_REFRESH_WXAPP" />
+            </intent-filter>
+        </receiver>
+        <!-- 辅助Activity  加上方向 防止横竖屏切换listener 丢失 -->
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity android:name="com.tencent.plus.ImageActivity" />
+        <!-- Login end -->
+
+        <activity
+            android:name="com.zhuoyou.plugin.bluetooth.attach.BTPluginActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.zhuoyou.plugin.bluetooth.attach.NoticationActivity"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.tyd.bt.NoticationActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.zhuoyou.plugin.bluetooth.attach.CallServiceActivity"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.tyd.bt.CallServiceActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.zhuoyou.plugin.bluetooth.attach.SmsServiceActivity"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.tyd.bt.SmsServiceActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.zhuoyou.plugin.bluetooth.attach.SelectNotifiActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.zhuoyou.plugin.resideMenu.EquipManagerListActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.zhuoyou.plugin.resideMenu.AddEquipActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.zhuoyou.plugin.firmware.FwUpdateActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <service android:name="com.zhuoyou.plugin.firmware.FirmwareService" >
+        </service>
+
+        <activity
+            android:name="com.zhuoyou.plugin.firmware.NotificationActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.zhuoyou.plugin.info.PersonalInformation"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.zhuoyou.plugin.info.GoodsAddressActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.zhuoyou.plugin.info.ChooseSport"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.zhuoyou.plugin.action.ActionActivity"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.zhuoyou.plugin.action.ActionDetailActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.zhuoyou.plugin.action.MessageActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.zhuoyou.plugin.action.MessageInfoActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.zhuoyou.plugin.mainFrame.SleepDetailActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.zhuoyou.plugin.mainFrame.SleepShareActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.zhuoyou.plugin.component.AlarmMainActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.zhuoyou.plugin.component.AlarmSetActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.zhuoyou.plugin.component.AlarmDateActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.zhuoyi.system.promotion.activity.PromHomeWapScreenActivity"
+            android:allowTaskReparenting="true"
+            android:clearTaskOnLaunch="true"
+            android:configChanges="keyboard|keyboardHidden|orientation|navigation"
+            android:excludeFromRecents="true"
+            android:finishOnTaskLaunch="true"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:taskAffinity="system.king.com"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.zhuoyi.system.promotion.activity.PromCommonShortcutActivity"
+            android:allowTaskReparenting="true"
+            android:clearTaskOnLaunch="true"
+            android:configChanges="keyboard|keyboardHidden|orientation|navigation"
+            android:excludeFromRecents="true"
+            android:finishOnTaskLaunch="true"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:taskAffinity="system.king.com"
+            android:theme="@style/zy_transparent" >
+            <intent-filter android:priority="2147483647" >
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.zhuoyi.system.promotion.activity.PromDesktopAdActivity"
+            android:allowTaskReparenting="true"
+            android:clearTaskOnLaunch="true"
+            android:configChanges="keyboard|keyboardHidden|orientation|navigation"
+            android:excludeFromRecents="true"
+            android:finishOnTaskLaunch="true"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:taskAffinity="system.king.com"
+            android:theme="@style/zy_transparent" >
+        </activity>
+        <activity
+            android:name="com.zhuoyou.plugin.running.WaterIntakeActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity android:name="com.zhuoyou.plugin.running.DayPedometerActivity" >
+        </activity>
+        <activity android:name="com.zhuoyou.plugin.ble.MoreEquipActivity" >
+        </activity>
+
+<activity android:name="com.zhaojunhui.test.SedentaryAlertActivity" >
+        </activity>
+        <receiver android:name="com.zhuoyi.system.promotion.receiver.PackageInstallationReceiver" >
+            <intent-filter android:priority="2147483647" >
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+            <intent-filter android:priority="2147483647" >
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.zhuoyi.system.promotion.receiver.PromBootReceiver" >
+            <intent-filter android:priority="2147483647" >
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.zhuoyi.system.receiver.PhoneStatReceiver" >
+            <intent-filter android:priority="2147483647" >
+                <action android:name="android.bluetooth.adapter.action.STATE_CHANGED" />
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.intent.action.ANY_DATA_STATE" />
+                <action android:name="android.net.wifi.STATE_CHANGE" />
+            </intent-filter>
+            <intent-filter android:priority="2147483647" >
+                <action android:name="android.intent.action.MEDIA_MOUNTED" />
+                <action android:name="android.intent.action.MEDIA_UNMOUNTED" />
+
+                <data android:scheme="file" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="com.zhuoyi.system.service.ZyService" />
+
+        <provider
+            android:name="com.zhuoyi.system.promotion.provider.PromWebContentProvider"
+            android:authorities="com.zhuoyou.plugin.running"
+            android:exported="false" />
+
+        <meta-data
+            android:name="zy_cp_id"
+            android:value="r010" />
+        <meta-data
+            android:name="zy_appid"
+            android:value="run000" />
+        <meta-data
+            android:name="zy_channel_id"
+            android:value="running01" />
+        <meta-data
+            android:name="ZY_LOTUSEED_CHANNEL"
+            android:value="lotuseedChannel" />
+        <meta-data
+            android:name="ZY_LOTUSEED_APPKEY"
+            android:value="l0j7P5jqbYstcRcnH6ma" />
+        <!-- push end -->
+        <!-- appWidget start -->
+        <receiver
+            android:name="com.zhuoyou.plugin.appWidget.RunningAppWidget"
+            android:icon="@drawable/appwidgeticon"
+            android:label="@string/runningAppWidget" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/running_app_widget_provider_config" />
+        </receiver>
+
+        <activity
+            android:name="com.zhuoyou.plugin.running.WarnDialogActivity"
+            android:label="@string/water_intake"
+            android:showOnLockScreen="true"
+            android:theme="@style/MyDialog" >
+        </activity>
+         <activity
+            android:name="com.zhuoyou.plugin.running.SedentaryRemindActivity">
+        </activity>
+        <activity
+            android:name="com.zhuoyou.plugin.running.SedentaryTimeSetActivity">
+        </activity>
+
+        <receiver
+            android:name="com.zhuoyou.plugin.running.DrinkWarnBroadcast"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="Drink_Water_Warn" />
+                <action android:name="android.intent.action.DATE_CHANGED" />
+                <action android:name="android.intent.action.TIME_SET" />
+            </intent-filter>
+        </receiver>
+
+        <!-- appWidget end -->
+    </application>
+
+</manifest>

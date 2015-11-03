@@ -1,0 +1,154 @@
+<?xml version="1.0" standalone="no"?>
+
+<!-- you must update the modify time when you modify this file -->
+<!-- this xml defined all products and there's supported plugins -->
+<grandpa modify_time="Thu, 14 Aug 2014 11:41:33 GMT" >
+
+    <father
+        name="EAMEY P1"
+        type="earphone" >
+
+        <son package_name="com.tyd.bt.CallServiceActivity" />
+
+        <son package_name="com.tyd.bt.SmsServiceActivity" />
+
+        <son package_name="com.zhuoyou.plugin.antilost" />
+
+        <son package_name="com.zhuoyou.plugin.autocamera" />
+    </father>
+
+    <father
+        name="EAMEY P3"
+        type="earphone" >
+    </father>
+    
+    <father
+        name="Primo 1"
+        type="earphone" >
+
+        <son package_name="com.tyd.bt.CallServiceActivity" />
+
+        <son package_name="com.tyd.bt.SmsServiceActivity" />
+
+        <son package_name="com.zhuoyou.plugin.antilost" />
+
+        <son package_name="com.zhuoyou.plugin.autocamera" />
+    </father>
+    
+    <father
+        name="Primo 3"
+        type="earphone" >
+    </father>
+
+    <father
+        name="TJ01"
+        type="wristwatch" >
+
+        <son package_name="com.tyd.bt.NoticationActivity" />
+
+        <son package_name="com.tyd.bt.CallServiceActivity" />
+
+        <son package_name="com.tyd.bt.SmsServiceActivity" />
+
+        <son package_name="com.zhuoyou.plugin.antilost" />
+
+        <son package_name="com.zhuoyou.plugin.autocamera" />
+    </father>
+
+    <father
+        name="Meegoo A10"
+        type="earphone" >
+
+        <son package_name="com.tyd.bt.CallServiceActivity" />
+
+        <son package_name="com.tyd.bt.SmsServiceActivity" />
+
+        <son package_name="com.zhuoyou.plugin.antilost" />
+
+        <son package_name="com.zhuoyou.plugin.autocamera" />
+    </father>
+
+    <father
+        name="GEMINI1"
+        type="earphone" >
+
+        <son package_name="com.tyd.bt.CallServiceActivity" />
+
+        <son package_name="com.tyd.bt.SmsServiceActivity" />
+
+        <son package_name="com.zhuoyou.plugin.antilost" />
+
+        <son package_name="com.zhuoyou.plugin.autocamera" />
+    </father>
+
+    <father
+        name="Megoo2"
+        type="earphone" >
+    </father>
+
+    <father
+        name="Unik 1"
+        type="earphone" >
+
+        <son package_name="com.tyd.bt.NoticationActivity" />
+
+        <son package_name="com.tyd.bt.CallServiceActivity" />
+
+        <son package_name="com.tyd.bt.SmsServiceActivity" />
+    </father>
+
+    <father
+        name="LEO"
+        type="wristwatch" >
+
+        <son package_name="com.tyd.bt.NoticationActivity" />
+
+        <son package_name="com.tyd.bt.CallServiceActivity" />
+
+        <son package_name="com.tyd.bt.SmsServiceActivity" />
+
+        <son package_name="com.zhuoyou.plugin.antilost" />
+    </father>
+ <father
+        name="Unik 2"
+        type="wristwatch" >
+
+        <son package_name="com.tyd.bt.NoticationActivity" />
+
+        <son package_name="com.tyd.bt.CallServiceActivity" />
+
+        <son package_name="com.tyd.bt.SmsServiceActivity" />
+
+        <son package_name="com.zhuoyou.plugin.antilost" />
+    </father>
+    <father
+        name="LUNA3"
+        type="wristwatch" >
+
+        <son package_name="com.tyd.bt.NoticationActivity" />
+        
+        <son package_name="com.tyd.bt.CallServiceActivity" />
+
+        <son package_name="com.tyd.bt.SmsServiceActivity" />
+
+        <son package_name="com.zhuoyou.plugin.antilost" />
+
+        <son package_name="com.zhuoyou.plugin.autocamera" />
+    </father>
+    
+    <father
+        name="Unik 3"
+        type="wristwatch" >
+
+        <son package_name="com.tyd.bt.NoticationActivity" />
+        
+        <son package_name="com.tyd.bt.CallServiceActivity" />
+
+        <son package_name="com.tyd.bt.SmsServiceActivity" />
+
+        <son package_name="com.zhuoyou.plugin.antilost" />
+
+        <son package_name="com.zhuoyou.plugin.autocamera" />
+    </father>
+
+</grandpa>

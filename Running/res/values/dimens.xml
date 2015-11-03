@@ -1,0 +1,94 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+
+    <!--
+         Per the design guidelines, navigation drawers should be between 240dp and 320dp:
+         https://developer.android.com/design/patterns/navigation-drawer.html
+    -->
+    <dimen name="navigation_drawer_width">200dp</dimen>
+    
+    <!-- define logo height w:h = 5:3 -->
+    <dimen name="navigation_drawer_logo_height">113dp</dimen>
+    <dimen name="articlelist_item_rating_height">23dp</dimen>
+    <!-- txh start -->
+    <dimen name="edit_info_with">120dp</dimen>
+    <dimen name="divider_with">5dp</dimen>
+    <dimen name="divider_height">0.3dp</dimen>
+    <dimen name="magin_5">5dp</dimen>
+    <dimen name="magin_10">10dp</dimen>
+    <dimen name="magin_20">20dp</dimen>
+    <dimen name="magin_40">40dp</dimen>
+    <dimen name="magin_16">16dp</dimen>
+    <dimen name="text_14">14dp</dimen>
+    <dimen name="text_15">15dp</dimen>
+    <dimen name="text_16">16dp</dimen>
+    <dimen name="text_20">20dp</dimen>
+    <dimen name="text_18">18dp</dimen>
+    <dimen name="text_30">30dp</dimen>
+    <dimen name="text_40">40dp</dimen>
+    <dimen name="motionRe">15dp</dimen>
+    <dimen name="menu_magin">5dp</dimen>
+    <dimen name="rulerHeight">67.0dp</dimen>
+    <!-- txh end -->
+    
+    
+    <!-- add by zhouzhongbo@201050106 start-->
+    <dimen name="top_bar_height">45dp</dimen>
+    <dimen name="bottom_bar_height">54dp</dimen>
+    <dimen name="top_goback_width">60dp</dimen>
+    <dimen name="top_gonext_width">60dp</dimen>
+    <!-- add by zhouzhongbo@201050106 end-->
+    <dimen name="Guider_list_text_size">17sp</dimen> 
+    <dimen name="Guider_list_text_leftmargin">10dp</dimen>
+    <dimen name="Guider_list_arrows_rightmargin">10dp</dimen>
+    
+    <dimen name="Guider_arrow_leftmargin">10dp</dimen>
+    <dimen name="Guider_arrow_rightmargin">10dp</dimen>
+    
+    <dimen name="Divider_view_left_margin">10dp</dimen>
+    <dimen name="Divider_view_right_margin">10dp</dimen>
+    <dimen name="personal_list_left">20dp</dimen>
+    
+    <dimen name="alarm_set_paddingLeft">20dp</dimen>
+    
+    <!-- add by zoujian -->
+    <dimen name="listitem_sleep_text">14dp</dimen>
+    <dimen name="listitem_sleep_text_show">13dp</dimen>
+    
+    <dimen name="sleep_detail_duration">13dp</dimen>
+    <dimen name="sleep_detail_duration_time">15dp</dimen>
+    <dimen name="sleep_detail_duration_time_text">12dp</dimen>
+    
+    
+    
+    <!-- water intake -->
+     <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="progress_size">180dp</dimen>
+    <dimen name="heart_progress_size">240dp</dimen>
+    <dimen name="health_index_value_size">80dp</dimen>
+    
+    <dimen name="man_obesity_start">155dp</dimen>
+    <dimen name="man_obesity_top">35dp</dimen>    
+    <dimen name="man_overweight_start">100dp</dimen>
+    <dimen name="man_overweight_top">32dp</dimen>   
+    <dimen name="man_normal_start">108dp</dimen>
+    <dimen name="man_normal_top">30dp</dimen>   
+    <dimen name="man_slim_start">89dp</dimen>
+    <dimen name="man_slim_top">33dp</dimen>    
+    <dimen name="man_thin_start">26dp</dimen>
+    <dimen name="man_thin_top">32dp</dimen>
+    
+    <dimen name="female_obesity_start">90dp</dimen>
+    <dimen name="female_obesity_top">15dp</dimen>    
+    <dimen name="female_overweight_start">83dp</dimen>
+    <dimen name="female_overweight_top">28dp</dimen>    
+    <dimen name="female_normal_start">132dp</dimen>
+    <dimen name="female_normal_top">31dp</dimen>    
+    <dimen name="female_slim_start">84dp</dimen>
+    <dimen name="female_slim_top">30dp</dimen>    
+    <dimen name="female_thin_start">140dp</dimen>
+    <dimen name="female_thin_top">14dp</dimen>
+</resources>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+	<LinearLayout
+	    android:id="@+id/user_layout"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:paddingTop="25dip"
+	    android:paddingBottom="25dip"
+	    android:orientation="horizontal" >
+	
+	    <LinearLayout
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="100dp"
+	        android:background="@drawable/logo_bg"
+	        android:gravity="center" >
+			<ImageView 
+	            android:id="@+id/device_logo"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:background="@drawable/device_add" />
+		</LinearLayout>
+        <LinearLayout
+            android:id="@+id/connected_device"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical"
+            android:visibility="gone" >
+            <TextView
+                android:id="@+id/device_name"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textColor="#ffffff" />
+            <TextView
+                android:id="@+id/device_battery"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="#ffffff"
+                android:layout_marginTop="20dp" />			            			            
+        </LinearLayout>
+        <Button
+            android:id="@+id/connect_device"
+            android:layout_width="70dp"
+            android:layout_height="35dp"
+            android:background="@drawable/botton_selector"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:text="连接设备"
+            android:textSize="14sp"
+            android:textColor="@color/white" />
+	</LinearLayout>
+	<ImageView
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginRight="30dp"
+	    android:layout_below="@+id/user_layout"
+	    android:background="@drawable/residemenu_drive" />
+</RelativeLayout>

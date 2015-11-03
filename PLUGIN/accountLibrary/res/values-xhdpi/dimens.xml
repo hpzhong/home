@@ -1,0 +1,10 @@
+<resources>
+    <dimen name="title_heigh">50dp</dimen>
+    <dimen name="register_button_height">40dp</dimen>
+	<dimen name="login_show_other_msg">55dp</dimen>
+	<dimen name="login_show_other_msg_size">14sp</dimen>
+    <dimen name="login_button_marginLeft">10dp</dimen>
+    <dimen name="login_button_marginRight">10dp</dimen>
+    <dimen name="login_input_username_top">30dp</dimen>
+    <dimen name="qq_sina_login_font_size">16sp</dimen>
+</resources>

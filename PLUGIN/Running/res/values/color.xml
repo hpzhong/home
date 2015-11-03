@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="title_bg">#FF75b2db</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="dark_grey">#ff797979</color>
+    <color name="background_selector">#d7d7d7</color>
+    <color name="background_light">#fcfcfc</color>
+    <color name="background_dark">#f2f2f2</color>
+    <color name="sports_left">#23cdcf</color>
+    <color name="weight_left">#f83e6e</color>
+    <color name="description_left">#b35dc0</color>
+    <color name="graphic_info_left">#40c65b</color>
+    <color name="grey">#919191</color>
+    <color name="middle_grey">#ff808080</color>
+    <color name="orange">#ffdd7a58</color>
+    <color name="light_grey">#ffc0c0c0</color>
+    <color name="grep_ripple">#50f1f1f1</color>
+    <color name="left_fragment">#ff00c5c7</color>
+    <color name="blue">#FF75b2db</color>
+    <color name="home_bg">#FFe0eaef</color>
+    <color name="transparent">#00000000</color>
+    <color name="grey_1">#ff3B3B3B</color>
+    <drawable name="transparent">#00000000</drawable>
+    <drawable name="list_pressed">#ff2a3035</drawable>
+    <color name="divider">#AAC0CB</color>
+    <color name="red">#B22222</color>
+    <color name="activity_bg">#e0eaef</color>
+    <color name="grey_bc">#ffbcbcbc</color>
+    <color name="share_head_bg">#00b5b7</color>
+</resources>

@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:TitlePageIndicator="http://schemas.android.com/apk/res/com.zhuoyou.plugin.running"
+    android:id="@+id/motion_rank"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rank_title"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:background="#f47424" >
+		<ProgressBar 
+		    android:id="@+id/title_progress"
+		    android:layout_width="30dp"
+		    android:layout_height="30dp"
+			android:layout_marginLeft="20dp"
+			android:layout_centerVertical="true"  
+			android:visibility="gone"
+    		style="?android:attr/progressBarStyleSmall"  
+    		android:indeterminateDrawable="@drawable/progress_loading_xlistview"/>
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/my_ranking"
+            android:textColor="@color/white"
+            android:textSize="21dp" />
+
+        <ImageView
+            android:id="@+id/title_share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/title_share_selector"
+            android:clickable="true"
+            android:onClick="onClick" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/sub_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="48dp" >
+
+        <LinearLayout
+            android:id="@+id/nologin"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:visibility="gone" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/login_before_lookup"
+                android:textColor="#4b4d50"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/container"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/rank_theme_bg"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:background="#f47424"
+                android:src="@drawable/rank_theme_bg" />
+
+            <com.zhuoyou.plugin.custom.TitlePageIndicator
+                android:id="@+id/indicator"
+                android:layout_width="fill_parent"
+                android:layout_height="29dp"
+                TitlePageIndicator:footerColor="#ffffff"
+                TitlePageIndicator:footerIndicatorHeight="3dp"
+                TitlePageIndicator:footerIndicatorStyle="underline"
+                TitlePageIndicator:footerLineHeight="0dp"
+                TitlePageIndicator:selectedBold="true"
+                TitlePageIndicator:selectedColor="#ffffff"
+                TitlePageIndicator:topPadding="1dp"
+                android:background="#ff8132"
+                android:padding="10dip"
+                android:textColor="#3cffffff"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:id="@+id/myrank"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:background="#fffcaf"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/noranklayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#fffcaf"
+                    android:gravity="center"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/no_record_to_rank"
+                        android:textColor="#4b4d50"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/mylayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <ImageView
+                        android:id="@+id/my_rank_bg"
+                        android:layout_width="match_parent"
+                        android:layout_height="41dp"
+                        android:background="@drawable/rank_first"
+                        android:visibility="gone" />
+
+                    <RelativeLayout
+                        android:id="@+id/layout"
+                        android:layout_width="108dp"
+                        android:layout_height="56dp" >
+
+                        <RelativeLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_toLeftOf="@+id/my_icon" >
+
+                            <TextView
+                                android:id="@+id/my_rank"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:textColor="#97918f"
+                                android:textSize="20sp" />
+                        </RelativeLayout>
+
+                        <ImageView
+                            android:id="@+id/my_icon"
+                            android:layout_width="47dp"
+                            android:layout_height="47dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="13dp"
+                            android:background="@drawable/mengmeizi" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/my_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/step_layout"
+                        android:layout_toRightOf="@+id/layout"
+                        android:ellipsize="end"
+                        android:textColor="#393939"
+                        android:textSize="18sp" />
+
+                    <RelativeLayout
+                        android:id="@+id/step_layout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp" >
+
+                        <TextView
+                            android:id="@+id/step"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1024"
+                            android:textColor="#9e9a98"
+                            android:textSize="20sp" />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </LinearLayout>
+            <RelativeLayout 
+                android:id="@+id/progress_bar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+			<ProgressBar  
+   				android:layout_width="50dp"  
+    			android:layout_height="50dp"  
+    			android:layout_centerInParent="true"  
+    			style="?android:attr/progressBarStyleSmall"  
+    			android:indeterminateDrawable="@drawable/rank_progress_small"/>  
+			</RelativeLayout>
+			<android.support.v4.view.ViewPager
+                android:id="@+id/vPager"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:overScrollMode="never" >
+            </android.support.v4.view.ViewPager>
+        </LinearLayout>
+    </FrameLayout>
+
+</FrameLayout>

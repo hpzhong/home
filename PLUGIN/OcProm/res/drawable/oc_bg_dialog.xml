@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/oc_black"/>
+    <corners android:radius="10dp" />        
+	<stroke android:width="2sp" 
+	    android:color="@android:color/darker_gray"
+	    />
+    <padding android:top="5dp" android:bottom="5dp" />
+    
+</shape>
+
+<!-- 
+
+	solid ：设置背景颜色 (与gradient混用后，没有效果)
+	
+	gradient  产生颜色渐变  android:angle 从哪个角度开始变 貌似只有90的整数倍可以
+	
+	stroke:轮廓描边     → → width为描边的宽度(粗细)  → →  color为线条的颜色  → →  dashWidth为实线部分的宽度
+		→ →  dashGap为间隔多少不描边(若为0，则为一条实线的描边，默认为0)
+	
+	corners  : 设置圆角的大小	
+	
+	padding ： 四个方向上的间隙
+	
+ -->
+ 

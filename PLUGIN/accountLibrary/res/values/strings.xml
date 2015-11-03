@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, LoginActivity!</string>
+    <string name="app_name">卓悠帐户</string>
+    <string name="login_name">Account:</string>
+    <string name="login_code">Password:</string>
+    <string name="login">Login</string>
+    <string name="zhuoyou_login">Login</string>
+    <string name="remeber_code">Remember password</string>
+    <string name="input_code">Enter password</string>
+    <string name="input_code_again">Re-type Password</string>
+    <string name="register">Register</string>
+    <string name="register_login">Register and login</string>
+    <string name="register_tip">Will send a message to the server when you register this message charged by the operator.</string>
+    <string name="phoneNum">Mobile number</string>
+    <string name="new_code">Please enter your new password</string>
+    <string name="new_code_again">Re-type new password：</string>
+    <string name="find_code">Password</string>
+    <string name="title">Login</string>
+    <string name="second">Second</string>
+    <string name="register_new_account">Create new account</string>
+    <string name="forget_code"><u>Forgot password?</u></string>
+    <string name="reset_code">Reset Password</string>
+    <string name="support_name">Please input mobile number </string>
+    <string name="text_none"><b></b></string>
+    <string name="tip_password_username_username2_none">The username or password can not be empty. </string>
+    <string name="tip_password_none">Password can not be empty </string>
+    <string name="tip_username_none">Username can not be empty</string>
+    <string name="tip_password_username_username2_valid">The username or password is incorrect format, follow the format input</string>
+    <string name="tip_password_valid">Password format is incorrect, please follow the format input</string>
+    <string name="tip_username_not_equal_username2">The two passwords do not match</string>
+    <string name="tip_username_not_phonenum">Account must be native phone number</string>
+    <string name="tip_username_must_phonenum">Account must be a phone number</string>
+    <string name="tip_register_now">Being registered, please wait.</string>
+    <string name="tip_network_wrong">Network link error, please check the network settings.</string>
+    <string name="tip_register_wrong">Error code</string>
+    <string name="tip_register_wrong_out_time">Registration timeout, please re register </string>
+    <string name="tip_register_completed">Congratulations, the registration is successful</string>
+    <string name="tip_register_success">Registration is successful, your initial password is %1$s,Keep in mind that</string>
+    <string name="tip_findcode_success">Reset password successfully, your password is %1$s,Keep in mind that</string>
+    <string name="tip_findcode_success_1">Reset Password Success</string>
+    <string name="tip_login_now">Signing</string>
+    <string name="tip_data_wrong">Data format is wrong</string>
+    <string name="tip_login_success">Login successful</string>
+    <string name="tip_login_fail">Logon failed, please re login</string>
+    <string name="tip_login_fail_no_network">Login failed, please check the network</string>
+    <string name="tip_password_not_right_length">Password length must be 6-20</string>
+    <string name="choose_register_module_my_phonenum">Reset Password</string>
+    <string name="choose_register_module_not_my_phonenum">Reset Password</string>
+    <string name="tip_find_code_now">To find the password, please wait.</string>
+    <string name="tip_reset_password_now">Reset your password, please wait.</string>
+    <string name="tip_reset_password_failed">Reset failed, please try again</string>
+    <string name="input_old_code">Please enter your old password</string>
+    <string name="tip_bind_failed">Bind failed, please try again</string>
+    <string name="licence">
+<![CDATA[
+                  	<U><font color="#b8b8b8">I have read and agree to Terms of Use and Privacy Policy</font></U>
+        ]]>
+    </string>
+    <string name="licence_other">
+<![CDATA[
+                  	<U><font color="blue">I have read and agree to Terms of Use and Privacy Policy</font></U>
+        ]]>
+    </string>
+    <string name="licence_tip">Please read and agree to Terms of Use and Privacy Policy</string>
+    <string name="reg_string1">Please enter the letters or numbers 6-20 for password</string>
+    <string name="reg_string2">Please enter a password</string>
+    <string name="reg_security_code">Code length is 6</string>
+    <string name="reg_get_security_code">Get the code</string>
+    <string name="find_string">Enter the phone number has been registered</string>
+    <string name="account_binding">Account binding</string>
+    <string name="account_binding_titile">Binding</string>
+    <string name="other_login_title">Hi, dear user, you can also choose other ways to login.</string>
+    <string name="account_login">Account Login</string>
+    <string name="account_register">Register an account</string>
+    <string name="account_register_security_code_again">Reacquire the verification code</string>
+	<string name="account_register_security_code">Get the code</string>
+    <string name="tip_share_pic">我在卓易市场的排名，能赚钱哦~</string>
+	
+    <!-- QQ login start -->
+    <string name="qq_account_login">QQ account login</string>
+    <!-- QQ login end -->
+
+
+    <!-- sina login start -->
+    <!-- 登录/注销按钮 -->
+    <string name="title_activity_main_sina">Sina Weibo login</string>
+    <string name="weibosdk_demo_login_hint"><b>一键登录按钮：</b>\n（有以下三种样式，第一种为默认效果）</string>
+    <string name="weibosdk_demo_login_with_text_hint"><b>登录/注销按钮：</b>\n（有以下两种样式，第一种为默认效果，可修改）</string>
+    <string name="weibosdk_demo_logout_hint"><b>注销按钮：</b>\n（注意：该按钮不再进行封装，第三方可直接调用 LogoutAPI，<b>一个 token 不能重复注销多次</b>）</string>
+    <string name="weibosdk_demo_logout">cancellation</string>
+    <string name="weibosdk_demo_logout_success">Cancelled</string>
+    <string name="weibosdk_demo_logout_failed">Logout failed</string>
+    <string name="weibosdk_demo_logout_failed_1">注销失败，请检查 Token 是否正确（一个 token 不能重复注销多次）</string>
+    <string name="weibosdk_demo_token_info">Token Information：</string>
+    <string name="weibosdk_demo_token_to_string_format_1">Token：%1$s \nValidity:%2$s</string>
+    <string name="weibosdk_demo_toast_auth_canceled">Deauthorize</string>
+    <string name="weibosdk_demo_toast_auth_canceled_again">Authorize exceptions, please log in again</string>
+    <string name="weibosdk_demo_toast_auth_failed">gon failed, please re login</string>
+    <string name="weibosdk_demo_toast_auth_canceled_again_bind">Binding abnormal, please rebind</string>
+    <string name="weibosdk_demo_cancel_download_weibo">\t取消下载</string>
+    <!-- 分享成功失败的 Toast -->
+    <string name="weibosdk_demo_toast_share_success">分享成功</string>
+    <string name="weibosdk_demo_toast_share_failed">分享失败</string>
+    <string name="weibosdk_demo_toast_share_canceled">取消分享</string>
+    <string name="weibosdk_demo_toast_share_response_args_success">收到微博发起的请求成功</string>
+    <string name="weibosdk_demo_toast_share_response_args_failed">收到客户端请求消息失败</string>
+    <string name="weibosdk_demo_toast_share_uninstall">你还未安装微博</string>
+    <!-- 分享示例模板 -->
+    <string name="weibosdk_demo_share_text_template">我正在使用微博客户端发博器分享文字</string>
+    <string name="weibosdk_demo_share_webpage_template">【%1$s】（分享自 WeiboSDKDemo %2$s）</string>
+    <string name="weibosdk_demo_share_music_template">我正在听 %1$s（分享自 WeiboSDKDemo %2$s）</string>
+    <string name="weibosdk_demo_share_video_template">我正在看 %1$s（分享自 WeiboSDKDemo %2$s）</string>
+    <string name="weibosdk_demo_share_voice_template">我分享了 %1$s（分享自 WeiboSDKDemo %2$s）</string>
+    <string name="weibosdk_demo_share_webpage_demo">XXX 新闻</string>
+    <string name="weibosdk_demo_share_music_demo">XXX 音乐</string>
+    <string name="weibosdk_demo_share_video_demo">XXX 视频</string>
+    <string name="weibosdk_demo_share_voice_demo">XXX 声音</string>
+    <string name="weibosdk_demo_not_support_api_hint">微博客户端不支持 SDK 分享或微博客户端未安装或微博客户端是非官方版本。</string>
+    <!-- sina login end -->
+    <!-- user center start -->
+    <string name="user_center_shop">商城</string>
+    <string name="user_center_down">下载有礼</string>
+    <string name="user_center_task">任务</string>
+    <string name="user_center_score">积分</string>
+    <string name="user_center">个人中心</string>
+    <string name="user_center_no_login">未登录</string>
+    <string name="user_center_summary">查看个人中心详细信息</string>
+    <string name="user_center_get_userinfo_fail">获取用户信息失败，请检查网络</string>
+    <string name="user_center_name">用户名</string>
+    <string name="user_center_login">签到</string>
+    <string name="user_center_have_logined">已签到</string>
+    <string name="user_center_score_detail">积分明细</string>
+    <string name="user_center_scores">积分 : </string>
+    <string name="user_center_loading">正在加载中</string>
+    <string name="user_center_logout">正在注销...</string>
+    <string name="user_center_network_wrong">网络出错误了，再试一下吧</string>
+    <string name="user_center_network_wrong_try_again">再试一下</string>
+    <string name="user_center_achievement">我的成就</string>
+    <string name="user_center_wheel">幸运转盘</string>
+    <string name="user_center_score_illustrate">积分说明</string>
+    
+    <!-- user center end -->
+    <!-- apk update self start -->
+    <string name="update_self_dialog_confirm_btn">升级</string>
+    <string name="update_self_dialog_cancel_btn">取消</string>
+    <string name="update_self_forceDialog_title">新版本</string>
+    <string name="update_self_forceDialog_content">必须升级新版本，否则无法继续使用!</string>
+    <string name="update_self_dialog_title">新版本</string>
+    <string name="update_self_dialog_content">发现新版本，是否进行升级？</string>
+    <!-- apk update self end -->
+    <!-- authenticate start -->
+    <string name="authenticate_login">Is authorized to authenticate your login</string>
+    <string name="authenticate_login_name">卓易帐户</string>
+    <!-- authenticate end -->
+
+    <string name="com_sina_weibo_sdk_login_with_weibo_account">用微博登录</string>
+
+    <string name="exit_account">退出账户</string>
+    <string name="exit_account_exiting">正在退出账户</string>
+    
+    <string name="share_to">分享到</string>
+    <string name="software_share">分享</string>
+    <string name="weixin">微信</string>
+	<string name="time_line">朋友圈</string>
+	<string name="sina_weibo">新浪微博</string>
+	<string name="qq">QQ好友</string>
+	<string name="share_success">分享成功</string>
+	<string name="share_cancel">取消分享</string>
+	<string name="say_something">说些什么</string>
+	<string name="auth_failed">验证失败</string>
+	<string name="share_fail">分享未成功</string>
+	<string name="share_repeat_content">已分享过重复内容，请稍后再分享...</string>
+	<string name="share_now">正在分享中...</string>
+	<string name="weixin_uninstall">你还未安装微信</string>
+	
+	<!-- web view start-->
+	<string name="no_connect">Network failure</string>
+    <string name="no_connect_hint">Pro! Failure to obtain data, we recommend try again later</string>
+    <string name="menu_refresh">Refresh</string>
+	<!-- web view start-->
+	<!-- progressbar -->
+	<string name="authing">正在绑定...</string>
+	<string name="auth_cancel">取消绑定</string>
+	<string name="cancel">Cancel</string>
+	<string name="sure">确定</string>
+	<string name="share_from_market">来自：卓易市场</string>
+
+		<string name="has_login">已经登录过了</string>
+		<string name="server_exception">连接服务器超时，请稍后再试</string>
+		<string name="tip_code_wrong">验证码不正确</string>
+		<string name="login_server_exception">连接服务器超时，请稍后再登录</string>
+</resources>

@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+   <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f4f3f3"
+    android:orientation="vertical" >
+    <LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:background="#f47424"
+	    android:orientation="vertical" >
+		<RelativeLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="48dp" >
+	        <Button
+	            android:id="@+id/log_in"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_centerVertical="true"
+	            android:padding="5dp"
+	            android:background="@null"
+	            android:text="@string/getIntoLogin"
+	            android:textColor="@color/white"
+	            android:textSize="16sp"
+	            android:layout_marginLeft="10dp" />	
+		    
+	        <ImageView
+	            android:id="@+id/title_setting"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentRight="true"
+	            android:layout_centerVertical="true"
+	            android:layout_marginRight="10dp"
+	            android:layout_marginTop="9dp"
+	            android:background="@drawable/setting_selector" />
+
+		</RelativeLayout>
+		<LinearLayout		    
+		    android:layout_width="match_parent"
+		    android:layout_height="140dp"
+		    android:background="@drawable/mine_head"
+		    android:orientation="vertical" >		
+		    <LinearLayout
+		        android:id="@+id/user_layout"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="3dp"
+		        android:background="@drawable/logo_bg"
+		        android:layout_gravity="center_horizontal"
+		        android:gravity="center" >
+				<ImageView 
+		            android:id="@+id/drawer_top_face"
+		            android:layout_width="62dip"
+		            android:layout_height="62dip"
+		            android:background="@drawable/logo_default" />
+			</LinearLayout>
+	        <LinearLayout
+	            android:id="@+id/logged_on"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:gravity="center"
+	            android:orientation="vertical"
+	            android:layout_gravity="center_horizontal" >
+	            <TextView
+	                android:id="@+id/usrname"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+	                android:text="@string/username"
+	                android:textSize="18sp"
+	                android:textColor="#ffffff"
+	                android:layout_marginTop="8dp"
+	                android:singleLine="true"
+	                android:gravity="center_horizontal" />
+	            <TextView
+                    android:id="@+id/signature"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="@string/no_signature"
+                    android:textColor="#88ffffff"
+                    android:textSize="14sp"
+                    android:gravity="center_horizontal"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp" />		            			            
+	        </LinearLayout>
+		</LinearLayout>
+	</LinearLayout>
+	<ScrollView
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:scrollbars="none"
+	    android:overScrollMode="never" >
+		<LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+		    android:orientation="vertical" >		  
+			<TextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginLeft="13dp"
+		        android:layout_marginTop="11dp"
+			    android:text="@string/my_device"
+			    android:textColor="#c4c4c4"
+			    android:textSize="12sp" />
+			<RelativeLayout
+			    android:id="@+id/device_layout"
+		        android:layout_width="match_parent"
+		        android:layout_height="75dp"
+		        android:layout_marginTop="8dp"
+			    android:layout_marginLeft="12dp"
+			    android:layout_marginRight="12dp"
+			    android:background="@drawable/device_layout_bg" >
+				<ImageView 
+		            android:id="@+id/device_logo"
+		            android:layout_width="75dp"
+		            android:layout_height="75dp"
+		            android:layout_centerVertical="true"
+		            android:visibility="gone" />
+		        <LinearLayout
+		            android:id="@+id/connected_device"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_toRightOf="@+id/device_logo"
+		            android:layout_centerVertical="true"
+		            android:orientation="vertical"
+		            android:layout_marginLeft="5dp"
+		            android:visibility="gone" >
+		            <TextView
+		                android:id="@+id/device_name"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+		                android:textSize="16sp"
+		                android:textColor="#4B4D50" />
+		            <RelativeLayout 
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                >
+		            <TextView
+		                android:id="@+id/device_battery"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+		                android:textSize="14sp"
+		                android:textColor="#99a0a7" />	
+		           <ProgressBar  
+		                android:id="@+id/progress_circle"
+   						android:layout_width="wrap_content"  
+    					android:layout_height="wrap_content"  
+    					android:visibility="gone"
+    					android:layout_marginLeft="5dp"
+    					android:layout_toRightOf="@id/device_battery"
+    					style="?android:attr/progressBarStyleSmall"  
+    					android:indeterminateDrawable="@drawable/battery_refresh"/> 
+		            </RelativeLayout>		            			            
+		        </LinearLayout>
+				<ImageView
+				    android:id="@+id/connect_state"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:background="@drawable/state_connect"
+				    android:layout_toLeftOf="@+id/manager_layout"
+				    android:layout_marginRight="15dp"
+				    android:layout_centerVertical="true"
+				    android:visibility="gone" />	        	        
+		        <LinearLayout
+				    android:id="@+id/manager_layout"
+				    android:layout_width="30dp"
+				    android:layout_height="match_parent"
+				    android:background="#f47424"
+				    android:layout_alignParentRight="true"
+				    android:visibility="gone" >	        	        
+					<ImageView
+					    android:layout_width="wrap_content"
+					    android:layout_height="wrap_content"
+					    android:background="@drawable/manager_point"
+					    android:layout_gravity="center" />	        	        
+		        </LinearLayout>
+		        <LinearLayout
+		            android:id="@+id/connect_device"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:orientation="horizontal"
+		            android:gravity="center"
+		            android:layout_centerInParent="true" >
+					<ImageView 
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:background="@drawable/device_add" />
+			        <TextView
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:text="@string/add_device"
+			            android:textSize="16sp"
+			            android:textColor="#f47424"
+			            android:layout_marginLeft="5dp" />
+		        </LinearLayout>
+			</RelativeLayout>
+			<TextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginLeft="13dp"
+		        android:layout_marginTop="11dp"
+			    android:text="@string/widget"
+			    android:textColor="#c4c4c4"
+			    android:textSize="12sp" />
+		    <ListView
+		        android:id="@+id/widget_list"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:cacheColorHint="#00000000"
+		        android:listSelector="#00000000"
+		        android:scrollbars="none" 
+		        android:divider="#00000000"
+		        android:dividerHeight="13dp"
+			    android:layout_marginLeft="10dp"
+			    android:layout_marginRight="10dp"
+		        android:layout_marginTop="4dp" />						
+			<TextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginLeft="13dp"
+		        android:layout_marginTop="15dp"
+			    android:text="@string/about_you"
+			    android:textColor="#c4c4c4"
+			    android:textSize="12sp" />
+			<LinearLayout
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginLeft="20dp"
+		        android:layout_marginTop="9dp"
+		        android:layout_marginBottom="10dp"
+			    android:orientation="horizontal" >
+				<TextView
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+				    android:text="@string/enjoy_us"
+				    android:textColor="#7a7a7a"
+				    android:textSize="14sp" />
+				<TextView
+				    android:id="@+id/enjoy_day"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+				    android:textColor="#f47424"
+				    android:textSize="14sp" />
+				<TextView
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+				    android:text="@string/day1"
+				    android:textColor="#7a7a7a"
+				    android:textSize="14sp" />
+			</LinearLayout>	
+		</LinearLayout>
+	</ScrollView>
+</LinearLayout>

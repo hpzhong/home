@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:layout_marginTop="23dp" >
+
+    <RelativeLayout
+        android:id="@+id/goods_address"
+        android:onClick="onClick"
+        android:clickable="true"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/personal_list_left"
+            android:gravity="center_vertical"
+            android:text="@string/persional_info_address"
+            android:textColor="@color/Guider_list_text_color"
+            android:textSize="@dimen/Guider_list_text_size" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:gravity="center_vertical"
+            android:src="@drawable/set_right_arrow" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dip"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="#cccccc"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/SNS"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="35dp"
+            android:gravity="center_horizontal"
+            android:text="@string/persional_info_bang"
+            android:textColor="@color/Guider_list_text_color"
+            android:textSize="@dimen/Guider_list_text_size" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/SNS"
+            android:layout_marginLeft="53dp"
+            android:layout_marginTop="15dp" >
+
+            <TextView
+                android:id="@+id/sns1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/qq"
+                android:gravity="center"
+                android:textColor="#B9B9B9"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/sns2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_toRightOf="@id/sns1"
+                android:drawableTop="@drawable/weibo"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/sns3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_toRightOf="@id/sns2"
+                android:drawableTop="@drawable/mobile"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/sns4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_toRightOf="@id/sns3"
+                android:drawableTop="@drawable/email"
+                android:gravity="center" >
+            </TextView>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

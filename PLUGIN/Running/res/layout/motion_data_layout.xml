@@ -1,0 +1,1008 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#e0eaef"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/running_title"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        layout="@layout/running_actionbar" />
+
+    <com.zhuoyou.plugin.view.NewScrollView
+        android:id="@+id/new_scrollview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:fadingEdge="none"
+        android:focusableInTouchMode="false"
+        android:overScrollMode="never"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:id="@+id/view_container"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8.0dip"
+            android:layout_marginRight="8.0dip"
+            android:layout_marginTop="8.0dip"
+            android:orientation="vertical"
+            android:paddingBottom="8.0dip" >
+
+            <LinearLayout
+                android:id="@+id/dc_linearlayout_user_info"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/motion_data_bg"
+                android:orientation="horizontal"
+                android:visibility="visible" >
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0"
+                    android:gravity="center" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/logo_bg"
+                        android:gravity="center" >
+
+                        <ImageView
+                            android:id="@+id/dc_image_avatar"
+                            android:layout_width="70dip"
+                            android:layout_height="70dip"
+                            android:background="@drawable/logo_default" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0" >
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true" >
+
+                        <TextView
+                            android:id="@+id/dc_title_age"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8.0dip"
+                            android:text="@string/age"
+                            android:textColor="@color/white"
+                            android:textSize="14.0sp" />
+
+                        <TextView
+                            android:id="@+id/dc_title_height"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignLeft="@+id/dc_title_age"
+                            android:layout_below="@+id/dc_title_age"
+                            android:layout_marginTop="6.0dip"
+                            android:text="@string/height"
+                            android:textColor="@color/white"
+                            android:textSize="14.0sp" />
+
+                        <TextView
+                            android:id="@+id/dc_title_weight"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignLeft="@+id/dc_title_age"
+                            android:layout_below="@+id/dc_title_height"
+                            android:layout_marginTop="6.0dip"
+                            android:text="@string/weight"
+                            android:textColor="@color/white"
+                            android:textSize="14.0sp" />
+
+                        <TextView
+                            android:id="@+id/dc_text_age"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBaseline="@+id/dc_title_age"
+                            android:layout_marginLeft="8.0dip"
+                            android:layout_toRightOf="@+id/dc_title_age"
+                            android:textColor="@color/white"
+                            android:textSize="14.0sp" />
+
+                        <TextView
+                            android:id="@+id/dc_text_height"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBaseline="@+id/dc_title_height"
+                            android:layout_marginLeft="8.0dip"
+                            android:layout_toRightOf="@+id/dc_title_height"
+                            android:textColor="@color/white"
+                            android:textSize="14.0sp" />
+
+                        <TextView
+                            android:id="@+id/dc_text_weight"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBaseline="@+id/dc_title_weight"
+                            android:layout_marginLeft="8.0dip"
+                            android:layout_toRightOf="@+id/dc_title_weight"
+                            android:textColor="@color/white"
+                            android:textSize="14.0sp" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginBottom="12.0dip"
+                        android:layout_marginRight="12.0dip"
+                        android:text="@string/modify"
+                        android:textColor="@color/light_grey"
+                        android:textSize="14.0sp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/dc_linearlayout_record"
+                android:layout_width="fill_parent"
+                android:layout_height="96.0dip"
+                android:layout_marginTop="4.0dip"
+                android:orientation="horizontal"
+                android:visibility="visible" >
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/bg_datacenter_card_sel" >
+
+                    <RelativeLayout
+                        android:id="@+id/dc_relativelayout_record_step"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:visibility="visible" >
+
+                        <View
+                            android:id="@+id/record_step_split_line"
+                            android:layout_width="fill_parent"
+                            android:layout_height="1.0px"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="16.0dip"
+                            android:layout_marginRight="16.0dip"
+                            android:layout_marginTop="2.0dip"
+                            android:background="#ff919191" />
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_above="@+id/record_step_split_line"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginBottom="2.0dip" >
+
+                            <com.zhuoyou.plugin.view.NewTextView
+                                android:id="@+id/record_text_step"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/left_fragment"
+                                android:textSize="32.0sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignBaseline="@+id/record_text_step"
+                                android:layout_marginLeft="4.0dip"
+                                android:layout_toRightOf="@+id/record_text_step"
+                                android:text="@string/step"
+                                android:textColor="@color/left_fragment"
+                                android:textSize="18.0sp" />
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/describe_record_step"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/record_step_split_line"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="8.0dip"
+                            android:text="@string/one_day_most_step"
+                            android:textColor="@color/middle_grey"
+                            android:textSize="14.0sp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/dc_relativelayout_avg_step"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:visibility="gone" >
+
+                        <View
+                            android:id="@+id/avg_step_split_line"
+                            android:layout_width="fill_parent"
+                            android:layout_height="1.0px"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="16.0dip"
+                            android:layout_marginRight="16.0dip"
+                            android:layout_marginTop="2.0dip"
+                            android:background="#ff919191" />
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_above="@+id/avg_step_split_line"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginBottom="2.0dip" >
+
+                            <com.zhuoyou.plugin.view.NewTextView
+                                android:id="@+id/text_avg_step"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/left_fragment"
+                                android:textSize="32.0sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignBaseline="@+id/text_avg_step"
+                                android:layout_marginLeft="4.0dip"
+                                android:layout_toRightOf="@+id/text_avg_step"
+                                android:text="@string/step"
+                                android:textColor="@color/left_fragment"
+                                android:textSize="18.0sp" />
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/describe_avg_step"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/avg_step_split_line"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="8.0dip"
+                            android:text="@string/one_day_avg_step"
+                            android:textColor="@color/middle_grey"
+                            android:textSize="14.0sp" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="4.0dip"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/bg_datacenter_card_sel" >
+
+                    <RelativeLayout
+                        android:id="@+id/dc_relativelayout_record_calorie"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:visibility="visible" >
+
+                        <View
+                            android:id="@+id/record_cal_split_line"
+                            android:layout_width="fill_parent"
+                            android:layout_height="1.0px"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="16.0dip"
+                            android:layout_marginRight="16.0dip"
+                            android:layout_marginTop="2.0dip"
+                            android:background="#ff919191" />
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_above="@+id/record_cal_split_line"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginBottom="2.0dip" >
+
+                            <com.zhuoyou.plugin.view.NewTextView
+                                android:id="@+id/record_text_calorie"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/left_fragment"
+                                android:textSize="32.0sp" />
+
+                            <TextView
+                                android:id="@+id/title_record_cal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignBaseline="@+id/record_text_calorie"
+                                android:layout_marginLeft="4.0dip"
+                                android:layout_toRightOf="@+id/record_text_calorie"
+                                android:text="@string/kcal"
+                                android:textColor="@color/left_fragment"
+                                android:textSize="18.0sp" />
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/describe_record_cal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/record_cal_split_line"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="8.0dip"
+                            android:text="@string/one_day_most_cal"
+                            android:textColor="@color/middle_grey"
+                            android:textSize="14.0sp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/dc_relativelayout_avg_cal"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:visibility="gone" >
+
+                        <View
+                            android:id="@+id/avg_cal_split_line"
+                            android:layout_width="fill_parent"
+                            android:layout_height="1.0px"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="16.0dip"
+                            android:layout_marginRight="16.0dip"
+                            android:layout_marginTop="2.0dip"
+                            android:background="#ff919191" />
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_above="@+id/avg_cal_split_line"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginBottom="2.0dip" >
+
+                            <com.zhuoyou.plugin.view.NewTextView
+                                android:id="@+id/text_avg_cal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/left_fragment"
+                                android:textSize="32.0sp" />
+
+                            <TextView
+                                android:id="@+id/title_avg_cal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignBaseline="@+id/text_avg_cal"
+                                android:layout_marginLeft="4.0dip"
+                                android:layout_toRightOf="@+id/text_avg_cal"
+                                android:text="@string/kcal"
+                                android:textColor="@color/left_fragment"
+                                android:textSize="18.0sp" />
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/describe_avg_cal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/avg_cal_split_line"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="8.0dip"
+                            android:text="@string/one_day_avg_cal"
+                            android:textColor="@color/middle_grey"
+                            android:textSize="14.0sp" />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/dc_relativelayout_total_step"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4.0dip"
+                android:background="@drawable/bg_datacenter_card_sel"
+                android:visibility="visible" >
+
+                <TextView
+                    android:id="@+id/title_total_step"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16.0dip"
+                    android:layout_marginTop="15.0dip"
+                    android:text="@string/total_walk"
+                    android:textColor="@color/grey_1"
+                    android:textSize="18.0sp" />
+
+                <com.zhuoyou.plugin.view.NewTextView
+                    android:id="@+id/text_total_step"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/title_total_step"
+                    android:layout_marginLeft="4.0dip"
+                    android:layout_toRightOf="@+id/title_total_step"
+                    android:textColor="@color/left_fragment"
+                    android:textSize="32.0sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/title_total_step"
+                    android:layout_marginLeft="4.0dip"
+                    android:layout_toRightOf="@+id/text_total_step"
+                    android:text="@string/kilometre"
+                    android:textColor="@color/grey_1"
+                    android:textSize="18.0sp" />
+
+                <View
+                    android:id="@+id/total_step_split_line"
+                    android:layout_width="fill_parent"
+                    android:layout_height="2.0px"
+                    android:layout_below="@+id/title_total_step"
+                    android:layout_marginLeft="12.0dip"
+                    android:layout_marginRight="12.0dip"
+                    android:layout_marginTop="15.0dip"
+                    android:background="#ff00a0e9" />
+
+                <TextView
+                    android:id="@+id/describe_total_step"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/total_step_split_line"
+                    android:layout_marginLeft="16.0dip"
+                    android:layout_marginTop="12.0dip"
+                    android:textColor="@color/middle_grey"
+                    android:textSize="14.0sp" />
+
+                <RelativeLayout
+                    android:id="@+id/relativelayout_progress_step2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="48.0dip"
+                    android:layout_below="@+id/describe_total_step"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="12.0dip"
+                    android:layout_marginRight="12.0dip"
+                    android:layout_marginTop="28.0dip" >
+
+                    <ImageView
+                        android:id="@+id/bg_progress_step"
+                        android:layout_width="320.0dip"
+                        android:layout_height="fill_parent"
+                        android:scaleType="matrix"
+                        android:src="@drawable/progress_step_grey" />
+                </RelativeLayout>
+
+                <com.zhuoyou.plugin.view.NewRelativeLayout
+                    android:id="@+id/relativelayout_progress_step"
+                    android:layout_width="0.0dip"
+                    android:layout_height="48.0dip"
+                    android:layout_below="@+id/describe_total_step"
+                    android:layout_marginLeft="12.0dip"
+                    android:layout_marginRight="12.0dip"
+                    android:layout_marginTop="28.0dip"
+                    android:background="@color/transparent" >
+
+                    <ImageView
+                        android:id="@+id/progress_step"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:adjustViewBounds="true"
+                        android:scaleType="matrix"
+                        android:src="@drawable/progress_step" />
+                </com.zhuoyou.plugin.view.NewRelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="28.0dip"
+                    android:layout_below="@+id/relativelayout_progress_step" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/dc_relativelayout_total_calorie"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4.0dip"
+                android:background="@drawable/bg_datacenter_card_sel"
+                android:visibility="visible" >
+
+                <TextView
+                    android:id="@+id/title_total_calorie"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16.0dip"
+                    android:layout_marginTop="15.0dip"
+                    android:text="@string/total_cal"
+                    android:textColor="@color/grey_1"
+                    android:textSize="18.0sp" />
+
+                <com.zhuoyou.plugin.view.NewTextView
+                    android:id="@+id/text_total_calorie"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/title_total_calorie"
+                    android:layout_marginLeft="4.0dip"
+                    android:layout_toRightOf="@+id/title_total_calorie"
+                    android:textColor="@color/left_fragment"
+                    android:textSize="32.0sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/title_total_calorie"
+                    android:layout_marginLeft="4.0dip"
+                    android:layout_toRightOf="@+id/text_total_calorie"
+                    android:text="@string/kcal"
+                    android:textColor="@color/grey_1"
+                    android:textSize="18.0sp" />
+
+                <View
+                    android:id="@+id/total_calorie_split_line"
+                    android:layout_width="fill_parent"
+                    android:layout_height="2.0px"
+                    android:layout_below="@+id/title_total_calorie"
+                    android:layout_marginLeft="12.0dip"
+                    android:layout_marginRight="12.0dip"
+                    android:layout_marginTop="15.0dip"
+                    android:background="@color/left_fragment" />
+
+                <TextView
+                    android:id="@+id/describe_total_calorie"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/total_calorie_split_line"
+                    android:layout_marginLeft="16.0dip"
+                    android:layout_marginTop="12.0dip"
+                    android:textColor="@color/middle_grey"
+                    android:textSize="14.0sp" />
+
+                <RelativeLayout
+                    android:id="@+id/relativelayout_progress_cal2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="48.0dip"
+                    android:layout_below="@+id/describe_total_calorie"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="12.0dip"
+                    android:layout_marginRight="12.0dip"
+                    android:layout_marginTop="28.0dip" >
+
+                    <ImageView
+                        android:id="@+id/bg_progress_cal"
+                        android:layout_width="320.0dip"
+                        android:layout_height="fill_parent"
+                        android:scaleType="matrix"
+                        android:src="@drawable/progress_cal_grey" />
+                </RelativeLayout>
+
+                <com.zhuoyou.plugin.view.NewRelativeLayout
+                    android:id="@+id/relativelayout_progress_cal"
+                    android:layout_width="0.0dip"
+                    android:layout_height="48.0dip"
+                    android:layout_below="@+id/describe_total_calorie"
+                    android:layout_marginLeft="12.0dip"
+                    android:layout_marginRight="12.0dip"
+                    android:layout_marginTop="28.0dip" >
+
+                    <ImageView
+                        android:id="@+id/progress_cal"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:adjustViewBounds="true"
+                        android:scaleType="matrix"
+                        android:src="@drawable/progress_cal" />
+                </com.zhuoyou.plugin.view.NewRelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="28.0dip"
+                    android:layout_below="@+id/relativelayout_progress_cal" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/dc_relativelayout_goal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4.0dip"
+                android:background="@drawable/bg_datacenter_card_sel"
+                android:visibility="visible" >
+
+                <TextView
+                    android:id="@+id/dc_goal_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="16.0dip"
+                    android:layout_marginTop="15.0dip"
+                    android:text="@string/motion_goal"
+                    android:textColor="@color/grey_1"
+                    android:textSize="18.0sp" />
+
+                <View
+                    android:id="@+id/goal_split_line"
+                    android:layout_width="fill_parent"
+                    android:layout_height="2.0px"
+                    android:layout_below="@+id/dc_goal_title"
+                    android:layout_marginLeft="12.0dip"
+                    android:layout_marginRight="12.0dip"
+                    android:layout_marginTop="15.0dip"
+                    android:background="#ff5cb52b" />
+
+                <com.zhuoyou.plugin.view.NewTextView
+                    android:id="@+id/text_goal_calorie"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/goal_split_line"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="6.0dip"
+                    android:textColor="#fffd7a11"
+                    android:textSize="52.0sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/text_goal_calorie"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="2.0dip"
+                    android:paddingBottom="12.0dip"
+                    android:text="@string/unit_calories"
+                    android:textColor="@color/light_grey"
+                    android:textSize="14.0sp" />
+
+                <TextView
+                    android:id="@+id/text_goal_day"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/text_goal_calorie"
+                    android:layout_marginRight="16.0dip"
+                    android:layout_marginTop="6.0dip"
+                    android:layout_toLeftOf="@+id/text_goal_calorie"
+                    android:textColor="@color/middle_grey"
+                    android:textSize="14.0sp" />
+
+                <TextView
+                    android:id="@+id/title_goal_day"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/text_goal_calorie"
+                    android:layout_marginRight="4.0dip"
+                    android:layout_marginTop="6.0dip"
+                    android:layout_toLeftOf="@+id/text_goal_day"
+                    android:text="@string/achieve_goal"
+                    android:textColor="@color/middle_grey"
+                    android:textSize="14.0sp" />
+
+                <TextView
+                    android:id="@+id/title_goal_percent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/text_goal_calorie"
+                    android:layout_marginLeft="16.0dip"
+                    android:layout_marginTop="6.0dip"
+                    android:layout_toRightOf="@+id/text_goal_calorie"
+                    android:text="@string/completion_rate"
+                    android:textColor="@color/middle_grey"
+                    android:textSize="14.0sp" />
+
+                <TextView
+                    android:id="@+id/text_goal_percent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/text_goal_calorie"
+                    android:layout_marginLeft="4.0dip"
+                    android:layout_marginTop="6.0dip"
+                    android:layout_toRightOf="@+id/title_goal_percent"
+                    android:textColor="@color/middle_grey"
+                    android:textSize="14.0sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="12.0dip"
+                    android:paddingBottom="12.0dip"
+                    android:text="@string/modify"
+                    android:textColor="@color/light_grey"
+                    android:textSize="14.0sp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/dc_linearlayout_bmi"
+                android:layout_width="fill_parent"
+                android:layout_height="96.0dip"
+                android:layout_marginTop="4.0dip"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/bg_datacenter_card_sel" >
+
+                    <RelativeLayout
+                        android:id="@+id/dc_relativelayout_bmi"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent" >
+
+                        <View
+                            android:id="@+id/bmi_split_line"
+                            android:layout_width="fill_parent"
+                            android:layout_height="1.0px"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="16.0dip"
+                            android:layout_marginRight="16.0dip"
+                            android:layout_marginTop="2.0dip"
+                            android:background="#ff919191" />
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_above="@+id/bmi_split_line"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginBottom="2.0dip" >
+
+                            <TextView
+                                android:id="@+id/title_bmi"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:paddingBottom="4.0dip"
+                                android:text="@string/bmi"
+                                android:textColor="@color/left_fragment"
+                                android:textSize="18.0sp" />
+
+                            <com.zhuoyou.plugin.view.NewTextView
+                                android:id="@+id/text_bmi"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:layout_marginLeft="4.0dip"
+                                android:layout_toRightOf="@+id/title_bmi"
+                                android:textColor="@color/left_fragment"
+                                android:textSize="32.0sp" />
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/describe_bmi"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/bmi_split_line"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="8.0dip"
+                            android:textColor="@color/middle_grey"
+                            android:textSize="14.0sp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/dc_relativelayout_intro_bmi"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/bg_datacenter_card_sel"
+                        android:visibility="gone" >
+
+                        <TextView
+                            android:id="@+id/text_intro_bmi"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_marginLeft="20.0dip"
+                            android:layout_marginRight="20.0dip"
+                            android:text="@string/bmi_intro"
+                            android:textColor="@color/middle_grey"
+                            android:textSize="14.0sp" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="4.0dip"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/bg_datacenter_card_sel" >
+
+                    <RelativeLayout
+                        android:id="@+id/dc_relativelayout_bmr"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent" >
+
+                        <View
+                            android:id="@+id/bmr_split_line"
+                            android:layout_width="fill_parent"
+                            android:layout_height="1.0px"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="16.0dip"
+                            android:layout_marginRight="16.0dip"
+                            android:layout_marginTop="2.0dip"
+                            android:background="#ff919191" />
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_above="@+id/bmr_split_line"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginBottom="2.0dip" >
+
+                            <com.zhuoyou.plugin.view.NewTextView
+                                android:id="@+id/text_bmr"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:textColor="@color/left_fragment"
+                                android:textSize="32.0sp" />
+
+                            <TextView
+                                android:id="@+id/title_bmr"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:layout_marginLeft="4.0dip"
+                                android:layout_toRightOf="@+id/text_bmr"
+                                android:paddingBottom="4.0dip"
+                                android:text="@string/unit_calories"
+                                android:textColor="@color/left_fragment"
+                                android:textSize="18.0sp" />
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/describe_bmr"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/bmr_split_line"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="8.0dip"
+                            android:text="@string/bmr_describe"
+                            android:textColor="@color/middle_grey"
+                            android:textSize="14.0sp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/dc_relativelayout_intro_bmr"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:visibility="gone" >
+
+                        <TextView
+                            android:id="@+id/text_intro_bmr"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_marginLeft="20.0dip"
+                            android:layout_marginRight="20.0dip"
+                            android:text="@string/bmr_intro"
+                            android:textColor="@color/middle_grey"
+                            android:textSize="14.0sp" />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/dc_relativelayout_weight_trend"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4.0dip"
+                android:background="@drawable/bg_datacenter_card_sel"
+                android:visibility="visible" >
+
+                <RelativeLayout
+                    android:id="@+id/dc_weight_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_datacenter_card_sel" >
+
+                    <LinearLayout
+                        android:id="@+id/dc_weight_card"
+                        android:layout_width="wrap_content"
+                        android:layout_height="76.0dip"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="12.0dip"
+                        android:layout_marginRight="12.0dip"
+                        android:layout_marginTop="12.0dip"
+                        android:background="#ff69ced3"
+                        android:orientation="horizontal" >
+
+                        <RelativeLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1.0" >
+
+                            <RelativeLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="73.0dip"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="2.0dip"
+                                android:background="@drawable/bg_datacenter_card" >
+
+                                <RelativeLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true" >
+
+                                    <com.zhuoyou.plugin.view.NewTextView
+                                        android:id="@+id/dc_text_weight_trend"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textColor="#ff69ced3"
+                                        android:textSize="52.0sp" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignBaseline="@+id/dc_text_weight_trend"
+                                        android:layout_marginLeft="4.0dip"
+                                        android:layout_toRightOf="@+id/dc_text_weight_trend"
+                                        android:text="@string/unit_weight"
+                                        android:textColor="#ff69ced3"
+                                        android:textSize="18.0sp" />
+                                </RelativeLayout>
+                            </RelativeLayout>
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1.0" >
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerVertical="true"
+                                android:src="@drawable/weight_trend_arrow" />
+
+                            <View
+                                android:id="@+id/weight_split_line"
+                                android:layout_width="fill_parent"
+                                android:layout_height="2.0px"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="12.0dip"
+                                android:background="@color/white" />
+
+                            <TextView
+                                android:id="@+id/dc_intro_weight"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_above="@+id/weight_split_line"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginBottom="4.0dip"
+                                android:text="@string/help_lose_weight"
+                                android:textColor="@color/white"
+                                android:textSize="18.0sp" />
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/weight_split_line"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="4.0dip" >
+
+                                <TextView
+                                    android:id="@+id/dc_offset_weight"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/white"
+                                    android:textSize="18.0sp" />
+
+                                <TextView
+                                    android:id="@+id/unit_offset_weight"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="4.0dip"
+                                    android:layout_toRightOf="@+id/dc_offset_weight"
+                                    android:text="@string/unit_weight"
+                                    android:textColor="@color/white"
+                                    android:textSize="18.0sp" />
+                            </RelativeLayout>
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="48.0dip"
+                        android:layout_below="@+id/dc_weight_card" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="12.0dip"
+                            android:text="@string/weight_trend"
+                            android:textColor="@color/light_grey"
+                            android:textSize="14.0sp"
+                            android:visibility="visible" />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="8.0dip"
+                android:background="#e0eaef" />
+        </LinearLayout>
+    </com.zhuoyou.plugin.view.NewScrollView>
+
+</LinearLayout>

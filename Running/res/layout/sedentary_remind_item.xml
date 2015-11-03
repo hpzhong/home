@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:background="@color/white"
+    android:orientation="vertical" >
+    <ImageView
+             android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+          android:background="@drawable/rssi_good"
+          android:layout_marginLeft="20dp"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/divice_img"/>
+    <LinearLayout 
+             android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+          android:layout_marginLeft="30dp"
+        android:orientation="vertical"
+        android:layout_toRightOf="@id/divice_img"
+        
+        >
+        <TextView 
+            android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="llllf"
+        android:textSize="18sp"
+            android:id="@+id/sedentary_device_name"
+            />
+         <TextView 
+                android:textSize="16sp"
+             android:text="llllf"
+            android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+            android:id="@+id/device_time_set"
+            />
+        
+    </LinearLayout>
+       <ImageView
+             android:layout_marginRight="20dp"
+           android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/rssi_good"
+        android:id="@+id/divice_enable_img"/>
+    
+
+</RelativeLayout>

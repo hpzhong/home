@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f8f8f8"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:background="#62aa43" >
+
+        <RelativeLayout
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="8dp" >
+
+            <ImageView
+                android:id="@+id/back_m"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/actionbar_back" />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/back_m"
+                android:layout_marginLeft="1dp"
+                android:text="@string/add_sport"
+                android:textColor="@color/white"
+                android:textSize="21dp" />
+        </RelativeLayout>
+        <Button
+            android:id="@+id/save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="#00000000"
+            android:clickable="true"
+            android:onClick="onClick"
+            android:layout_marginRight="17dp"
+            android:text="@string/ok"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_18"
+            android:textStyle="normal" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/relayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="17dp"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/rlayout_choseSport"
+            android:layout_width="match_parent"
+            android:layout_height="45dp" >
+
+            <TextView
+                android:id="@+id/tv_chose_sport"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/chose_sport"
+                android:textSize="18sp"
+                android:textColor="#686868" />
+
+            <TextView
+                android:id="@+id/tv_run"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/sport_run"
+                android:layout_alignParentRight="true"
+        		android:layout_marginRight="22dp"
+                android:textColor="#62aa43"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#dadada" />
+
+        <RelativeLayout
+            android:id="@+id/rlayout_startDate"
+            android:layout_width="match_parent"
+            android:layout_height="45dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/start_date"
+                android:textSize="18sp"
+                android:textColor="#686868" />
+
+            <TextView
+                android:id="@+id/tv_start_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+        		android:layout_marginRight="22dp"
+                android:textColor="#62aa43"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#dadada" />
+        
+        <RelativeLayout
+            android:id="@+id/rlayout_startTime"
+            android:layout_width="match_parent"
+            android:layout_height="45dp" >
+
+            <TextView
+                android:id="@+id/start_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/start_time"
+                android:textSize="18sp"
+                android:textColor="#686868" />
+
+            <TextView
+                android:id="@+id/tv_chose_start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+        		android:layout_marginRight="22dp"
+                android:textColor="#62aa43"
+                android:textSize="18sp"
+                android:text="@string/pls_chose" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#dadada" />
+
+        <RelativeLayout
+            android:id="@+id/rlayout_lastTime"
+            android:layout_width="match_parent"
+            android:layout_height="45dp" >
+
+            <TextView
+                android:id="@+id/last_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/last_time"
+                android:textSize="18sp"
+                android:textColor="#686868" />
+
+            <TextView
+                android:id="@+id/tv_chose_close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+        		android:layout_marginRight="22dp"
+                android:textColor="#62aa43"
+                android:textSize="18sp"
+                android:text="@string/pls_chose" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#dadada" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp" >
+
+            <TextView
+                android:id="@+id/waste_kll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/waste_kll"
+                android:textSize="18sp"
+                android:textColor="#686868" />
+
+            <TextView
+                android:id="@+id/kll_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+        		android:layout_marginRight="22dp"
+                android:textColor="#62aa43"
+                android:textSize="18sp"
+                android:text="0" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#dadada" />
+    </LinearLayout>
+
+</LinearLayout>

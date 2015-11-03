@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_sleep"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/back"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/sleep_mainbg"
+        android:gravity="center_vertical" >
+
+        <ImageView
+            android:id="@+id/back_m"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:onClick="onClick"
+            android:src="@drawable/actionbar_back" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="1dp"
+            android:layout_toRightOf="@+id/back_m"
+            android:text="@string/sleep_detect_title"
+            android:textColor="@color/white"
+            android:textSize="21sp" />
+
+        <ImageView
+            android:id="@+id/title_share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/title_share_selector"
+            android:onClick="onClick" />
+
+        <ImageView
+            android:id="@+id/title_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="70dp"
+            android:background="@drawable/sleep_delete"
+            android:onClick="onClick"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_sleep_barchart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/back"
+        android:background="#EEEEEE" >
+
+        <LinearLayout
+            android:id="@+id/layout_sleep_barchart_draw"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:background="@color/sleep_mainbg"
+            android:orientation="vertical" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_sleep_barchart_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/sleep_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/deep_sleep"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/sleep_line"
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#999999"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_SleepRanger"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00:07-01:30"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout_sleep_barchart_draw"
+            android:padding="10dp" >
+
+            <TextView
+                android:id="@+id/tv_GoSleep"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:drawableLeft="@drawable/sleep_moon"
+                android:drawablePadding="4dp"
+                android:text="23:06"
+                android:textColor="#b8b8b8" />
+
+            <TextView
+                android:id="@+id/tv_WakeUp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:drawablePadding="4dp"
+                android:drawableRight="@drawable/sleep_sun"
+                android:text="23:06"
+                android:textColor="#b8b8b8" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_sleep_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_sleep_barchart"
+        android:layout_marginTop="20dp" >
+
+        <LinearLayout
+            android:id="@+id/layout_sleep_first"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="10dp" >
+
+            <LinearLayout
+                android:id="@+id/sleep_duration"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="@string/sleep_duration"
+                    android:textColor="@color/sleep_font_lightblack"
+                    android:textSize="@dimen/sleep_detail_duration" />
+
+                <TextView
+                    android:id="@+id/tv_SleepTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="7小时32分"
+                    android:textColor="@color/sleep_detail_color"
+                    android:textSize="@dimen/sleep_detail_duration_time" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:background="@color/gps_datainfo_devider" />
+
+            <LinearLayout
+                android:id="@+id/sleep_deepsleep"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.2"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="@string/deep_sleep_time"
+                    android:textColor="@color/sleep_font_lightblack"
+                    android:textSize="@dimen/sleep_detail_duration" />
+
+                <TextView
+                    android:id="@+id/tv_DeepSleepTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4小时16分"
+                    android:textColor="@color/sleep_detail_color"
+                    android:textSize="@dimen/sleep_detail_duration_time" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:background="@color/gps_datainfo_devider" />
+
+            <LinearLayout
+                android:id="@+id/sleep_lightsleep"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="@string/shallow_sleep_time"
+                    android:textColor="@color/sleep_font_lightblack"
+                    android:textSize="@dimen/sleep_detail_duration" />
+
+                <TextView
+                    android:id="@+id/tv_LightSleepTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3小时16分"
+                    android:textColor="@color/sleep_detail_color"
+                    android:textSize="@dimen/sleep_detail_duration_time" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_sleep_second"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout_sleep_first"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="10dp" >
+
+            <LinearLayout
+                android:id="@+id/sleep_gosleep_time"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="4dp"
+                    android:drawableRight="@drawable/sleep_update_time"
+                    android:text="@string/gosleep_time"
+                    android:textColor="@color/sleep_font_lightblack"
+                    android:textSize="@dimen/sleep_detail_duration_time_text" />
+
+                <TextView
+                    android:id="@+id/tv_GoSleepTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="23:03"
+                    android:textColor="@color/sleep_detail_color"
+                    android:textSize="@dimen/sleep_detail_duration_time" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:background="@color/gps_datainfo_devider" />
+
+            <LinearLayout
+                android:id="@+id/sleep_wakeup_time"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.2"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="4dp"
+                    android:drawableRight="@drawable/sleep_update_time"
+                    android:text="@string/wakeup_time"
+                    android:textColor="@color/sleep_font_lightblack"
+                    android:textSize="@dimen/sleep_detail_duration_time_text" />
+
+                <TextView
+                    android:id="@+id/tv_WakeUpTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="06:38"
+                    android:textColor="@color/sleep_detail_color"
+                    android:textSize="@dimen/sleep_detail_duration_time" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:background="@color/gps_datainfo_devider" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="invisible" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mybutton"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/bottom_bar_height"
+    android:background="@drawable/tab_bg"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/home_layout"
+        style="@style/main_bottom_bar_linear" >
+
+        <ImageView
+            android:id="@+id/home_image"
+            style="@style/main_bottom_bar_image" />
+
+        <TextView
+            android:id="@+id/home_text"
+            style="@style/main_bottom_bar_text"
+            android:text="@string/homepage" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/order_layout"
+        style="@style/main_bottom_bar_linear" >
+
+        <ImageView
+            android:id="@+id/order_image"
+            style="@style/main_bottom_bar_image" />
+
+        <TextView
+            android:id="@+id/order_text"
+            style="@style/main_bottom_bar_text"
+            android:text="@string/my_ranking" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="@dimen/bottom_bar_height"
+        android:layout_weight="1"
+        android:onClick="onClick"
+        android:visibility="invisible" >
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/finder_layout"
+        style="@style/main_bottom_bar_linear" >
+
+        <ImageView
+            android:id="@+id/finder_image"
+            style="@style/main_bottom_bar_image" />
+
+        <TextView
+            android:id="@+id/finder_text"
+            style="@style/main_bottom_bar_text"
+            android:text="@string/finder" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/mine_layout"
+        style="@style/main_bottom_bar_linear" >
+
+        <ImageView
+            android:id="@+id/mine_image"
+            style="@style/main_bottom_bar_image" />
+
+        <TextView
+            android:id="@+id/mine_text"
+            style="@style/main_bottom_bar_text"
+            android:text="@string/mine" />
+    </LinearLayout>
+
+</LinearLayout>

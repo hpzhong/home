@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+       android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+<RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/gps_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/gps_support" />
+
+    <LinearLayout
+        android:id="@+id/gps_test_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gps_result"
+                    android:layout_marginTop="20dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/result_test"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+
+            android:gravity="center"
+            android:text="@string/result_ok"
+            android:textColor="#f47424"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/mob_model"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="9dp"
+            android:gravity="center"
+            android:text="@string/mobe_model"
+            android:textColor="#686868"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/andr_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="2dp"
+            android:gravity="center"
+            android:text="@string/android_version"
+            android:textColor="#686868"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/error_reason"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="@string/error_all"
+            android:textColor="#a7a7a7"
+            android:textSize="12sp"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/use_begin"
+        android:layout_width="153dp"
+        android:layout_height="33dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/gps_test_textview"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/gps_running_btn_know"
+        android:gravity="center"
+        android:text="@string/use_begin"
+        android:textColor="#ffffff"
+        android:textSize="15sp" />
+
+</RelativeLayout>
+</ScrollView>

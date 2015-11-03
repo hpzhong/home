@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f2f2"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/running_title"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        layout="@layout/running_actionbar" />
+    
+    <com.zhuoyou.plugin.info.ObservableScrollView
+        android:id="@+id/scroll_view"  
+	    android:layout_width="match_parent"  
+	    android:layout_height="match_parent" >
+        <FrameLayout
+            android:layout_width="match_parent"  
+        	android:layout_height="match_parent" >
+	            <LinearLayout 
+	                android:layout_width="match_parent"  
+		            android:layout_height="wrap_content"  
+		            android:orientation="vertical">  
+	  
+		            <LinearLayout
+		                android:layout_width="match_parent"  
+			            android:layout_height="120dp"  
+			            android:orientation="vertical">
+			            <LinearLayout
+					        android:layout_width="fill_parent"
+					        android:layout_height="107dp"
+					        android:orientation="horizontal"
+					        android:layout_marginLeft="20dp" >
+						    <RelativeLayout
+						        android:id="@+id/default_layout"
+						        android:layout_width="65dp"
+						        android:layout_height="107dp"
+						        android:gravity="center" >
+							    <ImageView
+							        android:id="@+id/default_icon"
+							        android:layout_width="65dp"
+							        android:layout_height="65dp"
+							        android:background="@drawable/logo_default" />
+							
+							    <TextView
+							        android:id="@+id/default_name"
+							        android:layout_width="wrap_content"
+							        android:layout_height="wrap_content"
+							        android:text="@string/edit_head"
+							        android:textColor="#393939"
+							        android:textSize="14sp"
+							        android:layout_below="@+id/default_icon"
+							        android:layout_marginTop="5dp"
+							        android:layout_centerHorizontal="true" />
+							    <ImageView
+							        android:id="@+id/default_select"
+							        android:layout_width="wrap_content"
+							        android:layout_height="wrap_content"
+							        android:background="@drawable/like_sport_selected"
+							        android:layout_alignParentRight="true"
+							        android:visibility="gone" />
+						    </RelativeLayout>
+						    <RelativeLayout
+						        android:id="@+id/qq_layout"
+						        android:layout_width="65dp"
+						        android:layout_height="107dp"
+						        android:gravity="center"
+						        android:layout_marginLeft="19dp" >
+							    <ImageView
+							        android:id="@+id/qq_icon"
+							        android:layout_width="65dp"
+							        android:layout_height="65dp"
+							        android:background="@drawable/logo_default" />
+							
+							    <TextView
+							        android:id="@+id/qq_name"
+							        android:layout_width="wrap_content"
+							        android:layout_height="wrap_content"
+							        android:text="@string/qq"
+							        android:textColor="#393939"
+							        android:textSize="14sp"
+							        android:layout_below="@+id/qq_icon"
+							        android:layout_marginTop="5dp"
+							        android:layout_centerHorizontal="true" />
+							    <ImageView
+							        android:id="@+id/qq_select"
+							        android:layout_width="wrap_content"
+							        android:layout_height="wrap_content"
+							        android:background="@drawable/like_sport_selected"
+							        android:layout_alignParentRight="true"
+							        android:visibility="gone" />
+						    </RelativeLayout>
+						    <RelativeLayout
+						        android:id="@+id/weibo_layout"
+						        android:layout_width="65dp"
+						        android:layout_height="107dp"
+						        android:gravity="center"
+						        android:layout_marginLeft="19dp" >
+							    <ImageView
+							        android:id="@+id/weibo_icon"
+							        android:layout_width="65dp"
+							        android:layout_height="65dp"
+							        android:background="@drawable/logo_default" />
+							
+							    <TextView
+							        android:id="@+id/weibo_name"
+							        android:layout_width="wrap_content"
+							        android:layout_height="wrap_content"
+							        android:text="@string/weibo"
+							        android:textColor="#393939"
+							        android:textSize="14sp"
+							        android:layout_below="@+id/weibo_icon"
+							        android:layout_marginTop="5dp"
+							        android:layout_centerHorizontal="true" />
+							    <ImageView
+							        android:id="@+id/weibo_select"
+							        android:layout_width="wrap_content"
+							        android:layout_height="wrap_content"
+							        android:background="@drawable/like_sport_selected"
+							        android:layout_alignParentRight="true"
+							        android:visibility="gone" />
+						    </RelativeLayout>
+						    <RelativeLayout
+						        android:id="@+id/custom_layout"
+						        android:layout_width="65dp"
+						        android:layout_height="107dp"
+						        android:gravity="center"
+						        android:layout_marginLeft="19dp" >
+							    <ImageView
+							        android:id="@+id/custom_icon"
+							        android:layout_width="65dp"
+							        android:layout_height="65dp"
+							        android:background="@drawable/custom_head" />
+							
+							    <TextView
+							        android:id="@+id/custom_name"
+							        android:layout_width="wrap_content"
+							        android:layout_height="wrap_content"
+							        android:text="@string/custom"
+							        android:textColor="#393939"
+							        android:textSize="14sp"
+							        android:layout_below="@+id/custom_icon"
+							        android:layout_marginTop="5dp"
+							        android:layout_centerHorizontal="true" />
+							    <ImageView
+							        android:id="@+id/custom_select"
+							        android:layout_width="wrap_content"
+							        android:layout_height="wrap_content"
+							        android:background="@drawable/like_sport_selected"
+							        android:layout_alignParentRight="true"
+							        android:visibility="gone" />
+						    </RelativeLayout>
+			            </LinearLayout>  
+					    <View
+					        android:layout_width="fill_parent"
+					        android:layout_height="1dp"
+					        android:layout_marginLeft="13dp"
+					        android:layout_marginRight="13dp"
+					        android:background="#d7d7d7" />
+		                		                
+		            </LinearLayout>
+		  
+		            <View 
+		                android:id="@+id/placeholder"  
+		                android:layout_width="match_parent"  
+		                android:layout_height="25dp" />  
+		  
+				    <GridView
+				        android:id="@+id/head_edit"
+				        android:layout_width="fill_parent"
+				        android:layout_height="wrap_content"
+				        android:gravity="center"
+				        android:horizontalSpacing="20dp"
+				        android:numColumns="4"
+				        android:stretchMode="columnWidth"
+				        android:verticalSpacing="20dp"
+				        android:listSelector="@color/transparent"
+				        android:layout_margin="20dp"
+				        android:scrollbars="none" >
+				    </GridView>
+	  
+	        </LinearLayout>  
+	  
+		    <TextView
+		        android:id="@+id/sticky"
+		        android:layout_width="match_parent"
+		        android:layout_height="25dp"
+		        android:background="#88f2f2f2"
+		        android:text="@string/head_title"
+		        android:textColor="#393939"
+		        android:textSize="14sp"
+		        android:gravity="center_vertical"
+		        android:paddingLeft="13dp" />
+        </FrameLayout>
+    </com.zhuoyou.plugin.info.ObservableScrollView>    
+</LinearLayout>

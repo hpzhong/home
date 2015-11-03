@@ -1,0 +1,146 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <style name="AnimBottom" mce_bogus="1" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/popup_enter</item>
+        <item name="android:windowExitAnimation">@anim/popup_exit</item>
+    </style>
+    
+    <style name="custom_ratingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:maxHeight">@dimen/articlelist_item_rating_height</item>
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:indeterminateDrawable">@drawable/ratingbar_full</item>
+        <item name="android:progressDrawable">@drawable/ratingbar_full</item>
+        <item name="android:minHeight">@dimen/articlelist_item_rating_height</item>
+        <item name="android:thumb">@null</item>
+    </style>
+    
+    <style name="info_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item><!--边框-->
+        <item name="android:windowIsFloating">true</item><!--是否浮现在activity之上-->
+        <item name="android:windowIsTranslucent">false</item><!--半透明-->
+        <item name="android:windowNoTitle">true</item><!--无标题-->
+        <item name="android:windowBackground">@drawable/about_bg</item><!--背景透明-->
+        <item name="android:backgroundDimEnabled">true</item><!--模糊-->
+    </style>
+
+    <style name="CustomAlertDialogBackground" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+    	<item name="android:windowBackground">@color/transparent</item>
+    	<item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:backgroundDimEnabled">false</item>
+	</style>
+	
+	<style name="photo_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@color/transparent</item>  
+        <item name="android:windowBackground">@color/transparent</item>  
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    
+    <style name="DialogText">
+        <item name="android:textColor">#434343</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+  
+    <style name="DialogText.Title">
+        <item name="android:textColor">@color/orange_color</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+    
+    <style name="AboutDialog" parent="@android:Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item> 
+        <item name="android:windowBackground">@drawable/about_bg</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    
+    <style name="xlistview_header_progressBar">
+        <item name="android:indeterminate">true</item>
+        <item name="android:indeterminateDrawable">@drawable/progress_loading_xlistview</item>
+        <item name="android:progressDrawable">@drawable/progress_loading_xlistview</item>
+        <item name="android:indeterminateBehavior">repeat</item>
+    </style>
+    
+     <style name="NotificationText">
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+    </style>
+
+    <style name="NotificationTitle">
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="AnimationFade">
+        <!-- PopupWindow左右弹出的效果 -->
+        <item name="android:windowEnterAnimation">@anim/inputodown</item>
+    </style>
+
+    <!-- add by zhouzhongbo@201050106 start-->
+	<style name="main_bottom_bar_linear">
+	    <item name="android:layout_width">0dp</item>
+	    <item name="android:layout_height">@dimen/bottom_bar_height</item>
+	    <item name="android:layout_weight">1</item>
+	    <item name="android:gravity">center</item>
+	    <item name="android:orientation">vertical</item>
+	</style>
+
+    <style name="main_bottom_bar_image">
+        <item name="android:layout_width">30dp</item>
+        <item name="android:layout_height">30dp</item>
+    </style>
+        
+    <style name="main_bottom_bar_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#999999</item>
+    </style>
+    
+      <style name="WindowIsTranslucent">
+      <item name="android:windowIsTranslucent">true</item>
+    </style>
+    <!-- add by zhouzhongbo@201050106 end-->
+    
+    
+    <!--  water intake -->
+        <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    
+    <style name="dialog_fullscreen" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@color/dialog_background</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+    <!--add by tyd renjing  -->
+    <style name="MyDialog" parent="@android:Theme.Dialog">
+              <item name="android:windowFrame">@null</item>
+              <item name="android:windowTitleStyle">@style/myWindowTitleStyle</item>
+              <item name="android:windowBackground">@color/white</item>
+              <item name="android:windowIsFloating">true</item>
+              <item name="android:windowContentOverlay">@null</item>
+              
+          </style>
+	<style name="myWindowTitleStyle">
+	    <item name="android:textColor">@color/black</item>
+	    <item name="android:textSize">16sp</item>
+	</style>
+</resources>

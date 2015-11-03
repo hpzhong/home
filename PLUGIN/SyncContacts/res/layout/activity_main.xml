@@ -1,0 +1,25 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:tlv="http://schemas.android.com/apk/res/com.zhuoyou.plugin.synccontacts"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.zhuoyou.plugin.synccontacts.DraggableListView
+        android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:cacheColorHint="#00000000"
+        android:dividerHeight="0dip"
+        android:divider="#FFE3E5E7"
+        android:drawSelectorOnTop="false"
+        android:fastScrollEnabled="false"
+        android:listSelector="#00000000"
+        tlv:grabber="@+id/icon"
+        tlv:normal_height="64dip"
+        tlv:remove_mode="slideLeft" >
+    </com.zhuoyou.plugin.synccontacts.DraggableListView>
+
+</LinearLayout>

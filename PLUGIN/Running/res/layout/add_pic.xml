@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rv_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    >
+    
+    <include
+        android:id="@+id/running_title"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        layout="@layout/running_actionbar" />
+
+    <LinearLayout
+        android:id="@+id/llayout2"
+        android:layout_width="match_parent"
+        android:layout_height="350dip"
+        android:layout_below="@+id/running_title"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/btn_add_pic"
+            android:layout_width="150dip"
+            android:layout_height="150dip"
+            android:layout_marginLeft="20dip"
+            android:layout_marginTop="20dip"
+            android:src="@drawable/add_pic"
+            android:background="@drawable/content_bg"
+             />
+
+        <EditText
+            android:id="@+id/ed_some_words"
+            android:layout_width="match_parent"
+            android:layout_height="150dip"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="15dip"
+            android:layout_marginRight="15dip"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/edit_bg"
+            android:hint="说点什么吧...(不要超过30个字哦~)"
+            android:maxLength="30">
+        </EditText>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/im_cancle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/llayout2"
+        android:layout_marginLeft="40dip"
+        android:layout_marginTop="30dip"
+        android:src="@drawable/add_cancle_button_selector" />
+
+    <ImageView
+        android:id="@+id/im_complete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/llayout2"
+        android:layout_marginRight="40dip"
+        android:layout_marginTop="30dip"
+        android:src="@drawable/complete_ok_selector" />
+
+    <ImageView
+        android:id="@+id/im_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/llayout2"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="40dip"
+        android:layout_marginTop="30dip"
+        android:visibility="gone"
+        android:src="@drawable/delete_button_selector" />
+    <ImageView
+        android:id="@+id/im_edit_ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/llayout2"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="30dip"
+        android:layout_marginRight="40dip"
+        android:visibility="gone"
+        android:src="@drawable/complete_ok_selector" />
+
+</RelativeLayout>

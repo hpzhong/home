@@ -1,0 +1,241 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f4f3f3"
+    android:orientation="vertical"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/discover_title_color"
+        android:gravity="center_vertical" >
+
+        <ImageView
+            android:id="@+id/back_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:clickable="true"
+            android:onClick="onClick"
+            android:src="@drawable/actionbar_back" />
+
+        <TextView
+            android:id="@+id/title_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/back_address"
+            android:layout_marginLeft="1dp"
+            android:text="@string/persional_info_address"
+            android:textColor="@color/white"
+            android:textSize="21dp"
+            android:clickable="true"
+            android:onClick="onClick"
+             />
+
+        <TextView
+            android:id="@+id/save_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="17dip"
+            android:text="@string/save"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_18"
+            android:clickable="true"
+            android:onClick="onClick" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="23dp"
+        android:background="@color/white" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/personal_list_left"
+                    android:text="@string/persional_info_address_name"
+                    android:textColor="@color/Guider_list_text_color"
+                    android:textSize="@dimen/Guider_list_text_size" />
+
+                <EditText
+                    android:id="@+id/consignee_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dip"
+                    android:layout_marginRight="10dip"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:hint="@string/persional_info_address_input_name"
+                    android:maxLength="10"
+                    android:singleLine="true"
+                    android:textColor="@color/Guider_list_text_color"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="@dimen/personal_list_left"
+                android:layout_marginRight="@dimen/personal_list_left"
+                android:background="#cccccc"
+                android:visibility="visible" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="@dimen/personal_list_left"
+                    android:gravity="center_vertical"
+                    android:text="@string/phone_number"
+                    android:textColor="@color/Guider_list_text_color"
+                    android:textSize="@dimen/Guider_list_text_size" />
+
+                <EditText
+                    android:id="@+id/phone_number"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="15dip"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:hint="@string/phone_hint"
+                    android:phoneNumber="true"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="@dimen/personal_list_left"
+                android:layout_marginRight="@dimen/personal_list_left"
+                android:background="#cccccc"
+                android:visibility="visible" />
+
+            <LinearLayout
+                android:id="@+id/click_address"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:clickable="true"
+                android:onClick="onClick"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/show_select_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="@dimen/personal_list_left"
+                    android:gravity="center_vertical"
+                    android:text="@string/persional_info_address_select"
+                    android:textColor="@color/Guider_list_text_color"
+                    android:textSize="@dimen/Guider_list_text_size" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="@dimen/personal_list_left"
+                android:layout_marginRight="@dimen/personal_list_left"
+                android:background="#cccccc"
+                android:visibility="visible" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="@dimen/personal_list_left"
+                    android:gravity="center_vertical"
+                    android:text="@string/persional_info_address_address"
+                    android:textColor="@color/Guider_list_text_color"
+                    android:textSize="@dimen/Guider_list_text_size" />
+
+                <EditText
+                    android:id="@+id/detailed_address"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="15dip"
+                    android:layout_marginRight="10dip"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:hint="@string/persional_info_address_input_address"
+                    android:lines="2"
+                    android:maxLength="50"
+                    android:textColor="@color/Guider_list_text_color"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="@dimen/personal_list_left"
+                android:layout_marginRight="@dimen/personal_list_left"
+                android:background="#cccccc"
+                android:visibility="visible" />
+		</LinearLayout>
+		<RelativeLayout
+		    android:id="@+id/show_address_select"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+		    android:background="#00000000"
+		    android:visibility="gone" >
+            <LinearLayout
+		        android:id="@+id/empty_select"
+		        android:layout_width="fill_parent"
+		        android:layout_height="fill_parent"
+                android:layout_above="@+id/address_select"
+                android:clickable="true"
+                android:onClick="onClick"
+                android:orientation="horizontal" >               
+            </LinearLayout>
+		    <LinearLayout
+		        android:id="@+id/address_select"
+		        android:layout_width="fill_parent"
+		        android:layout_height="250dp"
+		        android:layout_alignParentBottom="true"
+		        android:background="#f5f5f5"
+		        android:orientation="horizontal" >
+		        <com.zhuoyou.plugin.view.WheelView
+		            android:id="@+id/id_province"
+		            android:layout_width="0dp"
+		            android:layout_height="match_parent"
+		            android:layout_weight="1" >
+		        </com.zhuoyou.plugin.view.WheelView>
+		
+		        <com.zhuoyou.plugin.view.WheelView
+		            android:id="@+id/id_city"
+		            android:layout_width="0dp"
+		            android:layout_height="match_parent"
+		            android:layout_weight="1" >
+		        </com.zhuoyou.plugin.view.WheelView>
+		
+		        <com.zhuoyou.plugin.view.WheelView
+		            android:id="@+id/id_district"
+		            android:layout_width="0dp"
+		            android:layout_height="match_parent"
+		            android:layout_weight="1" >
+		        </com.zhuoyou.plugin.view.WheelView>
+		    </LinearLayout>
+		</RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

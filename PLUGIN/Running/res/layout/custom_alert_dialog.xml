@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:minWidth="280dip"
+    android:layout_height="wrap_content">
+ 
+    <RelativeLayout 
+        android:orientation="vertical"
+        android:background="@drawable/header"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp">
+ 
+        <TextView
+            style="@style/DialogText.Title"
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="8dip"
+            android:paddingLeft="8dip"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+ 
+    <LinearLayout 
+        android:id="@+id/content"
+        android:orientation="vertical"
+        android:background="@drawable/footer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dip" >
+ 
+        <TextView
+            style="@style/DialogText"
+            android:id="@+id/message"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"/>
+
+	    <LinearLayout 
+	        android:orientation="horizontal"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="20dip" >
+	 
+	        <Button 
+	            android:id="@+id/positiveButton"
+	            android:layout_width="0dip"
+	            android:layout_weight="1"
+	            android:layout_height="40dp"
+	            android:singleLine="true"
+	            android:background="@drawable/botton_selector"
+	            android:textColor="#FFFFFFFF" />
+	 
+	        <Button 
+	            android:id="@+id/negativeButton"
+	            android:layout_width="0dip"
+	            android:layout_weight="1"
+	            android:layout_height="40dp"
+	            android:singleLine="true"
+	            android:background="@drawable/botton_selector"
+	            android:textColor="#FFFFFFFF"
+	            android:layout_marginLeft="10dp" />
+	 
+	    </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

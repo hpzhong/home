@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/edit_usrinfo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_bg"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/running_title"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        layout="@layout/running_actionbar" />
+
+    <LinearLayout
+        android:id="@+id/edit_head"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/magin_10"
+        android:clickable="true"
+        android:gravity="center"
+        android:onClick="onClick"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/face_logo"
+            android:layout_width="@dimen/edit_info_with"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo_default" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:hint="@string/edit_head"
+            android:textColor="@color/grey"
+            android:textSize="@dimen/text_18" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/edit_info_right" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.3dip"
+        android:layout_marginLeft="@dimen/magin_10"
+        android:layout_marginRight="@dimen/magin_10"
+        android:background="@color/divider" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/magin_10"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="@dimen/edit_info_with"
+            android:layout_height="wrap_content"
+            android:text="@string/nickname"
+            android:textSize="@dimen/text_18" />
+
+        <EditText
+            android:id="@+id/nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:background="@null"
+            android:hint="@string/nickname"
+            android:maxLength="15"
+            android:textColor="@color/grey"
+            android:textSize="@dimen/text_18" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.3dip"
+        android:layout_marginLeft="@dimen/magin_10"
+        android:layout_marginRight="@dimen/magin_10"
+        android:background="@color/divider" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/magin_10"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="@dimen/edit_info_with"
+            android:layout_height="wrap_content"
+            android:text="@string/signature"
+            android:textSize="@dimen/text_18" />
+
+        <EditText
+            android:id="@+id/signature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:background="@null"
+            android:hint="@string/signature_hint"
+            android:maxLength="50"
+            android:textColor="@color/grey"
+            android:textSize="@dimen/text_18" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.3dip"
+        android:layout_marginLeft="@dimen/magin_10"
+        android:layout_marginRight="@dimen/magin_10"
+        android:background="@color/divider" />
+
+    <LinearLayout
+        android:id="@+id/choice_sports"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/magin_10"
+        android:clickable="true"
+        android:gravity="center"
+        android:onClick="onClick"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="@dimen/edit_info_with"
+            android:layout_height="wrap_content"
+            android:text="@string/like_sports"
+            android:textSize="@dimen/text_18" />
+
+        <LinearLayout
+            android:id="@+id/like_sports"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="horizontal" >
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/edit_info_right" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.3dip"
+        android:layout_marginLeft="@dimen/magin_10"
+        android:layout_marginRight="@dimen/magin_10"
+        android:background="@color/divider" />
+
+    <RelativeLayout
+        android:id="@+id/btn_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center_vertical" >
+
+        <Button
+            android:id="@+id/tBack"
+            android:layout_width="80.0dip"
+            android:layout_height="36.0dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30.0dip"
+            android:background="@drawable/btn_dark_sel"
+            android:clickable="true"
+            android:onClick="onClick"
+            android:text="@string/cancle"
+            android:textColor="@android:color/white"
+            android:textSize="20.0sp"
+            android:textStyle="normal" />
+
+        <Button
+            android:id="@+id/tDone"
+            android:layout_width="80.0dip"
+            android:layout_height="36.0dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30.0dip"
+            android:background="@drawable/botton_selector"
+            android:clickable="true"
+            android:onClick="onClick"
+            android:text="@string/done"
+            android:textColor="@android:color/white"
+            android:textSize="20.0sp"
+            android:textStyle="normal" />
+    </RelativeLayout>
+
+</LinearLayout>

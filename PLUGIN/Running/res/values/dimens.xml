@@ -1,0 +1,33 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+
+    <!--
+         Per the design guidelines, navigation drawers should be between 240dp and 320dp:
+         https://developer.android.com/design/patterns/navigation-drawer.html
+    -->
+    <dimen name="navigation_drawer_width">200dp</dimen>
+    
+    <!-- define logo height w:h = 5:3 -->
+    <dimen name="navigation_drawer_logo_height">113dp</dimen>
+    <dimen name="articlelist_item_rating_height">23dp</dimen>
+    <!-- txh start -->
+    <dimen name="edit_info_with">120dp</dimen>
+    <dimen name="divider_with">5dp</dimen>
+    <dimen name="divider_height">0.3dp</dimen>
+    <dimen name="magin_5">5dp</dimen>
+    <dimen name="magin_10">10dp</dimen>
+    <dimen name="magin_20">20dp</dimen>
+    <dimen name="magin_40">40dp</dimen>
+    <dimen name="magin_16">16dp</dimen>
+    <dimen name="text_15">15dp</dimen>
+    <dimen name="text_16">16dp</dimen>
+    <dimen name="text_20">20dp</dimen>
+    <dimen name="text_18">18dp</dimen>
+    <dimen name="text_30">30dp</dimen>
+    <dimen name="text_40">40dp</dimen>
+    <dimen name="motionRe">15dp</dimen>
+    <dimen name="menu_magin">5dp</dimen>
+    <dimen name="rulerHeight">67.0dp</dimen>
+    <!-- txh end -->
+</resources>

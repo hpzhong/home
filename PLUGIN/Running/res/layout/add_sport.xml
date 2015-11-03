@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include
+        android:id="@+id/running_title"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        layout="@layout/running_actionbar" />
+
+    <LinearLayout
+        android:id="@+id/relayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/running_title"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/rlayout_choseSport"
+            android:layout_width="match_parent"
+            android:layout_height="55dp" >
+
+            <TextView
+                android:id="@+id/tv_chose_sport"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/chose_sport"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/im_chose_sport"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/bottom_arrow" />
+
+            <TextView
+                android:id="@+id/tv_run"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/im_chose_sport"
+                android:text="@string/sport_run" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#CCCCCC" />
+
+        <RelativeLayout
+            android:id="@+id/rlayout_startTime"
+            android:layout_width="match_parent"
+            android:layout_height="55dp" >
+
+            <TextView
+                android:id="@+id/start_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/start_time"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/start_chose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/bottom_arrow" />
+
+            <TextView
+                android:id="@+id/tv_chose_start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/start_chose"
+                android:text="@string/pls_chose" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#CCCCCC" />
+
+        <RelativeLayout
+            android:id="@+id/rlayout_lastTime"
+            android:layout_width="match_parent"
+            android:layout_height="55dp" >
+
+            <TextView
+                android:id="@+id/last_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/last_time"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/im_close_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/bottom_arrow" />
+
+            <TextView
+                android:id="@+id/tv_chose_close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/im_close_time"
+                android:text="@string/pls_chose" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#CCCCCC" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp" >
+
+            <TextView
+                android:id="@+id/waste_kll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/waste_kll"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/kll_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="@string/zero_kll" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#CCCCCC" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/im_cancle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/relayout"
+        android:layout_marginLeft="40dip"
+        android:layout_marginTop="30dip"
+        android:src="@drawable/add_cancle_button_selector" />
+
+    <ImageView
+        android:id="@+id/im_complete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/relayout"
+        android:layout_marginRight="40dip"
+        android:layout_marginTop="30dip"
+        android:src="@drawable/complete_ok_selector" />
+
+    <ImageView
+        android:id="@+id/im_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/relayout"
+        android:layout_marginLeft="40dip"
+        android:layout_marginTop="30dip"
+        android:src="@drawable/delete_button_selector"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/im_edit_ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/relayout"
+        android:layout_marginRight="40dip"
+        android:layout_marginTop="30dip"
+        android:src="@drawable/complete_ok_selector"
+        android:visibility="gone" />
+
+</RelativeLayout>

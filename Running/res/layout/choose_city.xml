@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/content_bg" >
+
+    <TextView
+        android:id="@+id/tv_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="20dip"
+        android:layout_marginTop="10dip"
+        android:text="@string/it_is_ok"
+        android:textColor="@color/orange_color"
+        android:textSize="20sp" />
+
+    <View
+        android:id="@+id/imageView1"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/tv_back"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dip"
+        android:layout_marginTop="10dip"
+        android:background="#CCCCCC" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView1" >
+
+        <com.zhuoyou.plugin.view.WheelView
+            android:id="@+id/city"
+            android:layout_width="fill_parent"
+            android:layout_height="230dip"
+            android:background="#00000000" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dip"
+            android:layout_centerInParent="true"
+            android:background="@drawable/wheel_select" >
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

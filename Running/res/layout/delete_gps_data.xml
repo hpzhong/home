@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <Button
+        android:id="@+id/delete_gpsdata"
+        android:layout_width="250dip"
+        android:layout_height="50dip"
+        android:layout_gravity="center_horizontal"
+        android:textSize="16sp"
+        android:layout_marginBottom="10dip"
+        android:onClick="onClick"
+        android:background="#FF0000"
+        android:text="@string/gpsdata_save"
+        android:textColor="#ffffff" />
+    
+    <Button
+        android:id="@+id/cancel_delete_gpsdata"
+        android:layout_width="250dip"
+        android:layout_height="50dip"
+        android:layout_gravity="center_horizontal"
+        android:textSize="16sp"
+        android:onClick="onClick"
+        android:layout_marginBottom="10dip"
+        android:background="#999999"
+        android:text="@string/gpsdata_cancel"
+        android:textColor="#ffffff" />
+    
+</LinearLayout>

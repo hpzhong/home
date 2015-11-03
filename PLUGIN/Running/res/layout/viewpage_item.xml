@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingBottom="20.0dip" >
+
+    <ImageView
+        android:id="@+id/circle_image_full"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14.5dip"
+        android:src="@drawable/day_circle_1_full"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/circle_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18.0dip"
+        android:src="@drawable/day_circle_1_top" />
+
+    <RelativeLayout
+        android:id="@+id/pageview_circle_animation_rl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/circle_top"
+        android:layout_alignLeft="@id/circle_top"
+        android:layout_alignRight="@id/circle_top"
+        android:layout_alignTop="@id/circle_top"
+        android:layout_centerHorizontal="true"
+        android:gravity="center" >
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativelayout_pm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18.0dip" >
+
+        <ImageView
+            android:id="@+id/imageview_pm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/circle_pm_1"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/imageview_pm_cloud"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="114.0dip"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/circle_pm_cloud_1"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/pageview_circle_rl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/circle_top"
+        android:layout_alignLeft="@id/circle_top"
+        android:layout_alignRight="@id/circle_top"
+        android:layout_alignTop="@id/circle_top"
+        android:layout_centerHorizontal="true"
+        android:clickable="true"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/pageview_circle_unit_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/left_fragment"
+            android:textSize="20.0sp" />
+
+        <TextView
+            android:id="@+id/pageview_circle_big_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pageview_circle_unit_tv"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/left_fragment"
+            android:textSize="65.0sp" />
+
+        <TextView
+            android:id="@+id/pageview_circle_drv"
+            android:layout_width="106dp"
+            android:layout_height="1dp"
+            android:layout_below="@id/pageview_circle_big_tv"
+            android:layout_centerHorizontal="true"
+            android:background="#EBEBEB" />
+        
+        <TextView
+            android:id="@+id/pageview_circle_goalunit_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pageview_circle_drv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:textColor="#FF959595"
+            android:textSize="18.0sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/data_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relativelayout_pm"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10.0dip"
+        android:drawableLeft="@drawable/day_tip_icon"
+        android:gravity="center_horizontal"
+        android:textColor="#ff959595"
+        android:textSize="16.0sp" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/data_description"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/pageview_container_ll"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:layout_marginTop="20.0dip"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:id="@+id/pageview_setps_container"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:gravity="center_horizontal" >
+
+                <RelativeLayout
+                    android:id="@+id/setps_top_rl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center" >
+
+                    <ImageView
+                        android:id="@+id/setps_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/setps_icon_desc"
+                        android:layout_alignTop="@+id/setps_icon_desc"
+                        android:src="@drawable/day_icon_walking"
+                        android:tag="icon" />
+
+                    <TextView
+                        android:id="@+id/setps_icon_desc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/setps_icon"
+                        android:tag="icon_desc"
+                        android:text="@string/steps"
+                        android:textColor="#ffc0c0c0"
+                        android:textSize="15.0sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/setps_top_rl"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center" >
+
+                    <TextView
+                        android:id="@+id/pageview_steps_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:tag="value"
+                        android:textSize="22.0sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/pageview_steps_value"
+                        android:gravity="center_vertical"
+                        android:tag="value_desc"
+                        android:text=""
+                        android:textSize="15.0sp" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/pageview_calories_container"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:gravity="center_horizontal" >
+
+                <RelativeLayout
+                    android:id="@+id/calories_top_rl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center" >
+
+                    <ImageView
+                        android:id="@+id/calories_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/calories_icon_desc"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignTop="@+id/calories_icon_desc"
+                        android:src="@drawable/day_icon_calories"
+                        android:tag="icon" />
+
+                    <TextView
+                        android:id="@+id/calories_icon_desc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_toRightOf="@id/calories_icon"
+                        android:tag="icon_desc"
+                        android:text="@string/calories"
+                        android:textColor="#FFC0C0C0"
+                        android:textSize="15.0sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/calories_top_rl"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center" >
+
+                    <TextView
+                        android:id="@+id/pageview_calories_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:tag="value"
+                        android:textSize="22.0sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/pageview_calories_value"
+                        android:layout_alignTop="@id/pageview_calories_value"
+                        android:layout_toRightOf="@id/pageview_calories_value"
+                        android:gravity="center_vertical"
+                        android:tag="value_desc"
+                        android:text=""
+                        android:textSize="15.0sp" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/pageview_pm2_5_container"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:gravity="center_horizontal" >
+
+                <RelativeLayout
+                    android:id="@+id/pm2_5_top_rl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center" >
+
+                    <ImageView
+                        android:id="@+id/activity_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/pageview_pm2_5_icon_desc"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignTop="@+id/pageview_pm2_5_icon_desc"
+                        android:src="@drawable/day_icon_active"
+                        android:tag="icon" />
+
+                    <TextView
+                        android:id="@+id/pageview_pm2_5_icon_desc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_toRightOf="@id/activity_icon"
+                        android:tag="icon_desc"
+                        android:text="@string/pm2_5"
+                        android:textColor="#FFC0C0C0"
+                        android:textSize="15.0sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/pm2_5_top_rl"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center" >
+
+                    <TextView
+                        android:id="@+id/pageview_pm2_5_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:tag="value"
+                        android:textSize="22.0sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/pageview_pm2_5_value"
+                        android:layout_alignTop="@id/pageview_pm2_5_value"
+                        android:layout_toRightOf="@id/pageview_pm2_5_value"
+                        android:gravity="center_vertical"
+                        android:tag="value_desc"
+                        android:text=""
+                        android:textSize="15.0sp" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/divider_height"
+            android:layout_marginTop="@dimen/magin_5"
+            android:background="@color/light_grey" >
+        </ImageView>
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/pageview_left_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@id/pageview_circle_animation_rl"
+        android:layout_marginTop="102.0dip"
+        android:background="#00000000"
+        android:src="@drawable/left_arrow_selector" />
+
+    <ImageButton
+        android:id="@+id/pageview_right_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/pageview_left_btn"
+        android:background="#00000000"
+        android:src="@drawable/right_arrow_selector" />
+
+    <ImageButton
+        android:id="@+id/share_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/pageview_right_btn"
+        android:layout_alignBottom="@id/circle_top"
+        android:background="#00000000"
+        android:src="@drawable/ic_menu_share" />
+</RelativeLayout>

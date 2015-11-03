@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:roundProgress="http://schemas.android.com/apk/res/com.example.noifaction"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="360.0dip"
+        android:layout_height="64.0dip"
+        android:layout_centerInParent="true" >
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="5dp" />
+
+        <RelativeLayout
+            android:id="@+id/layoutStep"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:gravity="center"
+            android:layout_toRightOf="@id/icon" >
+
+            <TextView
+                android:id="@+id/showNo"
+                style="@style/NotificationTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:text="@string/notification_no_record"
+                android:textSize="16sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/showStpe"
+                style="@style/NotificationText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:text="@string/steps" />
+
+            <TextView
+                android:id="@+id/currentStep"
+                style="@style/NotificationTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:paddingTop="25dp"
+                android:text="aa" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layoutCalorie"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30dp"
+            android:gravity="center"
+            android:layout_toRightOf="@id/layoutStep" >
+
+            <TextView
+                android:id="@+id/showCalorie"
+                style="@style/NotificationText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:text="@string/calories" />
+
+            <TextView
+                android:id="@+id/currentCalorie"
+                style="@style/NotificationTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:paddingTop="25dp"
+                android:text="24" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/widget_disk_rl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8.0dip"
+            android:layout_marginRight="50dip" >
+
+            <ImageView
+                android:id="@+id/percent_color_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/notification_widget_back_circle" />
+
+            <ImageView
+                android:id="@+id/percent_arc_iv"
+                android:layout_width="47.0dip"
+                android:layout_height="47.0dip"
+                android:layout_centerInParent="true" />
+
+            <TextView
+                android:id="@+id/tv_widget_goal_percent"
+                style="@style/NotificationText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="100%"
+                android:textSize="14.0dip"
+                android:textColor="#f47424" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

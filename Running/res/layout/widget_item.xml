@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:id="@+id/gv_item_root1"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" >
+        <ImageView
+            android:id="@+id/gv_item_icon1"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@string/app_name" />        
+        <ImageView
+            android:id="@+id/gv_item_state1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="2dp"
+            android:contentDescription="@string/app_name" />        
+        <TextView
+            android:id="@+id/gv_item_name1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/gv_item_icon1"
+            android:layout_centerHorizontal="true"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="#7a7a7a"
+            android:textSize="14sp" />        
+    </RelativeLayout>
+
+    <!-- /2 -->
+
+    <RelativeLayout
+        android:id="@+id/gv_item_root2"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" >
+
+        <ImageView
+            android:id="@+id/gv_item_icon2"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@string/app_name" />     
+        <ImageView
+            android:id="@+id/gv_item_state2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="2dp"
+            android:contentDescription="@string/app_name" />        
+        <TextView
+            android:id="@+id/gv_item_name2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/gv_item_icon2"
+            android:layout_centerHorizontal="true"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="#7a7a7a"
+            android:textSize="14sp" />        
+    </RelativeLayout>
+
+    <!-- 3 -->
+
+    <RelativeLayout
+        android:id="@+id/gv_item_root3"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" >
+
+        <ImageView
+            android:id="@+id/gv_item_icon3"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@string/app_name" />
+        <ImageView
+            android:id="@+id/gv_item_state3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="2dp"
+            android:contentDescription="@string/app_name" />        
+        <TextView
+            android:id="@+id/gv_item_name3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/gv_item_icon3"
+            android:layout_centerHorizontal="true"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="#7a7a7a"
+            android:textSize="14sp" />        
+    </RelativeLayout>
+
+    <!-- 4 -->
+
+    <RelativeLayout
+        android:id="@+id/gv_item_root4"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" >
+
+        <ImageView
+            android:id="@+id/gv_item_icon4"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@string/app_name" />    
+        <ImageView
+            android:id="@+id/gv_item_state4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="2dp"
+            android:contentDescription="@string/app_name" />        
+        <TextView
+            android:id="@+id/gv_item_name4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/gv_item_icon4"
+            android:layout_centerHorizontal="true"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="#7a7a7a"
+            android:textSize="14sp" />        
+    </RelativeLayout>
+    
+</LinearLayout>

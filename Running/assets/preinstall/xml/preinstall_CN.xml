@@ -1,0 +1,53 @@
+<?xml version="1.0" standalone="no"?>
+<preinstall>
+    <product name="EAMEY P1" type = "earphone">
+        <plugin package_name="com.zhuoyou.plugin.antilost" name = "防丢"/>
+        <plugin package_name="com.zhuoyou.plugin.autocamera" name = "远程拍照"/>
+    </product>
+    
+    <product name="EAMEY P3" type = "earphone">
+    </product>
+    
+    <product name="Primo 1" type = "earphone">
+        <plugin package_name="com.zhuoyou.plugin.antilost" name = "防丢"/>
+        <plugin package_name="com.zhuoyou.plugin.autocamera" name = "远程拍照"/>
+    </product>
+    
+    <product name="Primo 3" type = "earphone">
+    </product>
+    
+    <product name="TJ01" type = "wristwatch">
+        <plugin package_name="com.zhuoyou.plugin.antilost" name = "防丢"/>
+        <plugin package_name="com.zhuoyou.plugin.autocamera" name = "远程拍照"/>
+    </product>
+
+    <product name="Meegoo A10" type = "earphone">
+        <plugin package_name="com.zhuoyou.plugin.antilost" name = "防丢"/>
+        <plugin package_name="com.zhuoyou.plugin.autocamera" name = "远程拍照"/>
+    </product>
+    
+    <product name="GEMINI1" type = "earphone">
+        <plugin package_name="com.zhuoyou.plugin.antilost" name = "防丢"/>
+        <plugin package_name="com.zhuoyou.plugin.autocamera" name = "远程拍照"/>
+    </product>
+    
+    <product name="Megoo2" type = "earphone">
+    </product>
+    
+    <product name="LEO" type = "wristwatch">
+        <plugin package_name="com.zhuoyou.plugin.antilost" name = "防丢"/>
+    </product>
+    <product name="Unik 2" type = "wristwatch">
+        <plugin package_name="com.zhuoyou.plugin.antilost" name = "防丢"/>
+    </product>
+    <product name="LUNA3" type = "wristwatch">
+        <plugin package_name="com.zhuoyou.plugin.antilost" name = "防丢"/>
+        <plugin package_name="com.zhuoyou.plugin.autocamera" name = "远程拍照"/>
+    </product>
+    
+    <product name="Unik 3" type = "wristwatch">
+        <plugin package_name="com.zhuoyou.plugin.antilost" name = "防丢"/>
+        <plugin package_name="com.zhuoyou.plugin.autocamera" name = "远程拍照"/>
+    </product>
+    
+</preinstall>

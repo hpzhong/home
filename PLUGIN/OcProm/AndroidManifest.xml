@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.oc.system"
+    android:versionCode="1"
+    android:versionName="1" >
+
+    <uses-sdk android:minSdkVersion="8" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true" />
+
+    <application
+        android:icon="@drawable/oc_icon"
+     >
+        <activity
+            android:name="com.oc.system.promotion.activity.PromHomeWapScreenActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|navigation"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"
+            android:allowTaskReparenting="true"
+            android:clearTaskOnLaunch="true"
+            android:finishOnTaskLaunch="true"
+            android:excludeFromRecents="true"
+            android:taskAffinity="system.king.com" 
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.oc.system.promotion.activity.PromCommonShortcutActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|navigation"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"
+            android:allowTaskReparenting="true"
+            android:clearTaskOnLaunch="true"
+            android:finishOnTaskLaunch="true"
+            android:excludeFromRecents="true"
+            android:taskAffinity="system.king.com" 
+            android:theme="@style/oc_transparent" >
+            <intent-filter android:priority="2147483647">
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.oc.system.promotion.activity.PromDesktopAdActivity"
+            android:screenOrientation="portrait"
+             android:configChanges="keyboard|keyboardHidden|orientation|navigation"
+            android:launchMode="singleTask"
+            android:allowTaskReparenting="true"
+            android:clearTaskOnLaunch="true"
+            android:finishOnTaskLaunch="true"
+            android:excludeFromRecents="true"
+            android:taskAffinity="system.king.com" 
+            android:theme="@style/oc_transparent"
+            >
+        </activity>
+
+        <receiver android:name="com.oc.system.promotion.receiver.PackageInstallationReceiver" >
+            <intent-filter android:priority="2147483647" >
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+            <intent-filter android:priority="2147483647" >
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.oc.system.promotion.receiver.PromBootReceiver" >
+            <intent-filter android:priority="2147483647" >
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.oc.system.receiver.PhoneStatReceiver" >
+            <intent-filter android:priority="2147483647" >
+                <action android:name="android.bluetooth.adapter.action.STATE_CHANGED" />
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.intent.action.ANY_DATA_STATE" />
+                <action android:name="android.net.wifi.STATE_CHANGE" />
+            </intent-filter>
+            <intent-filter android:priority="2147483647" >
+                <action android:name="android.intent.action.MEDIA_MOUNTED" />
+                <action android:name="android.intent.action.MEDIA_UNMOUNTED" />
+
+                <data android:scheme="file" />
+            </intent-filter>
+        </receiver>
+        
+        <service android:name="com.oc.system.service.OcService" />
+
+        <provider
+            android:name="com.oc.system.promotion.provider.PromWebContentProvider"
+            android:authorities="com.zhuoyi.market"
+            android:exported="false" />
+
+        <meta-data
+            android:name="oc_cp_id"
+            android:value="test" />
+        <meta-data
+            android:name="oc_appid"
+            android:value="Joy0001HZJR0002" />
+        <meta-data
+            android:name="oc_channel_id"
+            android:value="test" />
+        <meta-data
+            android:name="OC_LOTUSEED_APPKEY"
+            android:value="q0OG7X5gbociIHLdq2p2" />
+        <meta-data
+            android:name="OC_LOTUSEED_CHANNEL"
+            android:value="test" />
+    </application>
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.INSTALL_PACKAGES" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.WRITE_APN_SETTINGS" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="android.permission.GET_PACKAGE_SIZE" />
+    <uses-permission android:name="android.permission.INSTALL_PACKAGES" />
+    <uses-permission android:name="android.permission.DELETE_PACKAGES" />
+    <uses-permission android:name="android.permission.CLEAR_APP_CACHE" />
+    <uses-permission android:name="android.permission.CLEAR_APP_USER_DATA" />
+
+</manifest>
