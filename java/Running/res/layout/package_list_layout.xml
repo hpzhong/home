@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/package_list"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <ImageView
+        android:id="@+id/package_icon"
+        android:layout_width="50dip"
+        android:layout_height="50dip"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dip"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/package_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/package_icon"
+        android:layout_toLeftOf="@+id/package_switch"
+        android:layout_gravity="center_vertical"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="6dp"
+        android:textSize="16sp"
+        android:textColor="#212121"
+        android:singleLine="true"
+        android:ellipsize="end"
+        tools:ignore="SelectableText,InefficientWeight" />
+
+
+    <CheckBox
+        android:id="@+id/package_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15dip"
+        android:clickable="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:button="@drawable/selector_checkbox" />
+
+    <!-- android:focusableInTouchMode="false" -->
+
+</RelativeLayout>

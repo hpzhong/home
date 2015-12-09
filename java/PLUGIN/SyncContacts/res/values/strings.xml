@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">QuickContact</string>
+    <string name="btn_backup">BackUp</string>
+    <string name="btn_restore">Load</string>
+    <string name="btn_send">Send to Remote</string>
+    <string name="title_selete_contacts">Seleted Contacts</string>
+    <string name="unknown">unknown</string>
+    <string name="loading_contacts">Loading now, please wait!</string>
+    <string name="not_find_contacts_in_remote_device">did not find any quick contacts in remote device!</string>
+    <string name="item_1_add_contact_from_system">add contact from system</string>
+    <string name="item_2_create_new_contact">create new contact</string>
+    <string name="max_contact_number">max contacts is 10!</string>
+    <string name="selete_number_title">please selete one number</string>
+    <string name="not_contain_number">this contact did not contain any number</string>
+    <string name="delete_this_contact">delete contact</string>
+    <string name="yes">yes</string>
+    <string name="no">no</string>
+    <string name="save">save</string>
+    <string name="giveup">give up</string>
+    <string name="backup_wait">backup now ,please wait</string>
+    <string name="backup_successed">backup successed</string>
+    <string name="restore_wait">restore now ,please wait</string>
+    <string name="restore_successed">restore successed</string>
+    <string name="quick_contact_empty">quick contacts empty</string>
+    <string name="title_create_new">create quick contact</string>
+    <string name="title_create_edit">edit quick contact</string>
+    <string name="error_input_name">please input name</string>
+    <string name="error_input_number">please input number</string>
+    <string name="msg_save_contacts">save contact</string>
+
+</resources>

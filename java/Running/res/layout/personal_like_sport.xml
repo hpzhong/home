@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:orientation="vertical"
+    android:background="@color/white" >
+
+    <LinearLayout
+        android:id="@+id/choice_sportss"
+        android:layout_width="fill_parent"
+        android:layout_height="59dp"
+        android:onClick="onClick"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="@string/like_sports"
+            android:textColor="@color/Guider_list_text_color"
+            android:textSize="@dimen/Guider_list_text_size" />
+
+        <LinearLayout
+            android:id="@+id/like_sportss"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/personal_list_left"
+            android:orientation="horizontal"
+            android:gravity="right" >
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dip"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="#cccccc" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/personal_list_left"
+            android:layout_marginTop="15dp"
+            android:text="@string/persional_info_sport_tagert"
+            android:textColor="@color/Guider_list_text_color"
+            android:textSize="@dimen/Guider_list_text_size"/>
+        
+        <EditText
+            android:id="@+id/target"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/personal_list_left"
+            android:layout_marginTop="15dp"
+            android:background="@null"
+            android:inputType="number"
+            android:maxLength="6"
+            android:textColor="#FF6803" />
+
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/target"
+            android:layout_marginTop="15dp"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal"
+            android:layout_marginLeft="@dimen/personal_list_left" >
+            <TextView
+                android:id="@+id/information_goals1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawablePadding="5dp"
+                android:drawableTop="@drawable/goals_primary"
+                android:gravity="center"
+                android:text="@string/persional_info_goals1"
+                android:textColor="#B9B9B9"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/information_goals2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawablePadding="5dp"
+                android:drawableTop="@drawable/goals_middle_select"
+                android:gravity="center"
+                android:text="@string/persional_info_goals2"
+                android:textColor="#B9B9B9"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/information_goals3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawablePadding="5dp"
+                android:drawableTop="@drawable/goals_high"
+                android:gravity="center"
+                android:text="@string/persional_info_goals3"
+                android:textColor="#B9B9B9"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/information_goals4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawablePadding="5dp"
+                android:drawableTop="@drawable/goals_custom"
+                android:gravity="center"
+                android:text="@string/persional_info_goals4"
+                android:textColor="#B9B9B9"
+                android:textSize="12sp" >
+            </TextView>
+		</LinearLayout>
+        
+    </RelativeLayout>
+
+</LinearLayout>

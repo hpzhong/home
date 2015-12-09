@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f2f2"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/running_title"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        layout="@layout/running_actionbar" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dip"
+        android:layout_marginTop="20dip"
+        android:background="#CCCCCC" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="64dip"
+        android:background="#fcfcfc" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:text="点击与设备同步无反应"
+            android:textColor="#212121"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_newbie_guide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dip"
+            android:clickable="true"
+            android:drawableRight="@drawable/fq_down_arrow"
+            android:onClick="onClick" />
+
+        <TextView
+            android:id="@+id/tv_dropdown_triangle1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignRight="@+id/tv_newbie_guide"
+            android:layout_marginLeft="10dip"
+            android:background="@drawable/dropdown_triangle"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_solvep1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dropdown_rectangle"
+        android:lineSpacingExtra="5dip"
+        android:padding="10dip"
+        android:text="此问题是有关手机端的安全设置和手机权限的问题。请查看手机端的应用程序中，蓝牙秘书的相关设置，有关状态栏，通知栏，悬浮窗等需要打开，权限管理中需要信任该程序。如果都打开后还是不能同步，请断开重新连接。例如：小米3手机，安装蓝牙秘书后，要在手机端进入设置-应用-蓝牙秘书，点击进入后，将自定义通知中显示通知栏通知和显示状态栏通知打开，下方的权限管理中将我信任该程序打开。OPPO的手机中自带的安全中心，要进入安全中心-纯净后台，将蓝牙秘书添加进去。"
+        android:textColor="@color/white"
+        android:visibility="gone" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dip"
+        android:background="#CCCCCC" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="64dip"
+        android:background="#fcfcfc"
+        android:visibility="gone" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:text="待机时间多久"
+            android:textColor="#212121"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_standby_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dip"
+            android:clickable="true"
+            android:drawableRight="@drawable/fq_down_arrow"
+            android:onClick="onClick" />
+
+        <TextView
+            android:id="@+id/tv_dropdown_triangle2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignRight="@+id/tv_standby_time"
+            android:layout_marginLeft="10dip"
+            android:background="@drawable/dropdown_triangle"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_solvep2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dropdown_rectangle"
+        android:lineSpacingExtra="5dip"
+        android:padding="10dip"
+        android:text="不需要，设备会自动记录您每天的运动，睡眠数据，建议您每天更新 1~2次"
+        android:textColor="@color/white"
+        android:visibility="gone" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dip"
+        android:background="#CCCCCC" />
+
+</LinearLayout>

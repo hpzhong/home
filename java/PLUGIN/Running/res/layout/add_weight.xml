@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:myWheelView="http://schemas.android.com/apk/res/com.zhuoyou.plugin.running"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <include
+        android:id="@+id/running_title"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        layout="@layout/running_actionbar" />
+	<FrameLayout 
+	    android:id="@+id/frame_weight_select"
+	    android:layout_width="fill_parent"
+        android:layout_height="250dip"
+        android:layout_below="@+id/running_title"
+        android:background="@drawable/wheel_weight_bg"
+	    >
+	    <RelativeLayout
+        android:id="@+id/weight_select"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <com.zhuoyou.plugin.view.WheelView
+            android:id="@+id/weight_kg"
+            myWheelView:selectorDrawable="false"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="90dip"
+            android:background="#00000000" >
+        </com.zhuoyou.plugin.view.WheelView>
+
+        <com.zhuoyou.plugin.view.WheelView
+            android:id="@+id/weight_other"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="90dip"
+            myWheelView:selectorDrawable="false"
+            android:background="#00000000"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/wheel_select"
+         >
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="128dip"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="1dip"
+            android:text="."
+            android:textColor="#4B4B4B"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            />
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="85dip"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="3dip"
+            android:text="kg"
+            android:textColor="#AFAFAF"
+            android:textSize="20sp"
+            />
+    </RelativeLayout>
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/im_cancle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/frame_weight_select"
+        android:layout_marginLeft="40dip"
+        android:layout_marginTop="30dip"
+        android:src="@drawable/add_cancle_button_selector" />
+
+    <ImageView
+        android:id="@+id/im_ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/frame_weight_select"
+        android:layout_marginRight="40dip"
+        android:layout_marginTop="30dip"
+        android:src="@drawable/complete_ok_selector" />
+
+    <ImageView
+        android:id="@+id/im_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/frame_weight_select"
+        android:layout_marginLeft="40dip"
+        android:layout_marginTop="30dip"
+        android:src="@drawable/delete_button_selector"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/im_edit_ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/frame_weight_select"
+        android:layout_marginRight="40dip"
+        android:layout_marginTop="30dip"
+        android:src="@drawable/complete_ok_selector"
+        android:visibility="gone" />
+
+</RelativeLayout>

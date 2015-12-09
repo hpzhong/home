@@ -1,0 +1,184 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/equip_manage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f2f2"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:background="#F47424" >
+
+        <RelativeLayout
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:onClick="onClick"
+            android:layout_marginLeft="8dp" >
+
+            <ImageView
+                android:id="@+id/back_m"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/actionbar_back" />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/back_m"
+                android:layout_marginLeft="1dp"
+                android:text="@string/equip_manager"
+                android:textColor="@color/white"
+                android:textSize="21dp" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="#00000000"
+            android:clickable="true"
+            android:onClick="onClick"
+            android:layout_marginRight="17dp"
+            android:text="@string/bt_edit"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_18"
+            android:textStyle="normal" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/searching"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/botton_selector"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginRight="13dp" >
+
+        <LinearLayout
+            android:id="@+id/searching_bluetooth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" >
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/searching_bluetooth" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/add_device_activity"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+                android:layout_marginLeft="10dp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/connted"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="16dp"
+        android:text="@string/currently_connected_device"
+        android:textColor="#c1c0c0"
+        android:textSize="14sp" />
+
+	<RelativeLayout
+	    android:id="@+id/device_layout"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+	    android:layout_marginLeft="13dp"
+	    android:layout_marginRight="13dp"
+	    android:background="@drawable/device_layout_bg" >
+		<ImageView 
+            android:id="@+id/device_logo"
+            android:layout_width="75dp"
+            android:layout_height="match_parent" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/device_logo"
+            android:layout_centerVertical="true"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp" >
+            <TextView
+                android:id="@+id/device_name"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="#1d0101" />
+            <TextView
+                android:id="@+id/device_battery"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="#99a0a7" />			            			            
+        </LinearLayout>
+        <RelativeLayout
+            android:id="@+id/details_layout"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="#f47424" >
+
+            <ImageView
+                android:id="@+id/details"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/manager_point" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/remove_layout"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="#f47424"
+            android:visibility="gone" >
+
+            <ImageView
+                android:id="@+id/remove"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/delete" />
+        </RelativeLayout>
+	</RelativeLayout>
+
+    <TextView
+        android:id="@+id/bonded"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="16dp"
+        android:text="@string/connect_device_records"
+        android:textColor="#c1c0c0"
+        android:textSize="14sp" />
+
+    <ListView
+        android:id="@+id/device_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+	    android:layout_marginLeft="13dp"
+	    android:layout_marginRight="13dp"
+        android:divider="#00000000"
+        android:dividerHeight="15dp"
+        android:scrollbars="none"
+        android:listSelector="#00000000"
+        android:cacheColorHint="#00000000" >
+    </ListView>
+
+</LinearLayout>

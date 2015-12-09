@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/activity_bg"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/running_title"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        layout="@layout/running_actionbar" />
+
+    <RelativeLayout
+        android:id="@+id/relativelayout_stats"
+        android:layout_width="fill_parent"
+        android:layout_height="160.0dip"
+        android:layout_below="@+id/running_title"
+        android:background="@color/activity_bg"
+        android:orientation="horizontal" >
+
+        <View
+            android:id="@+id/stats_step_split_line"
+            android:layout_width="2.0px"
+            android:layout_height="76.0dip"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="36.0dip"
+            android:background="#ff919191"
+            android:paddingBottom="36.0dip" />
+
+        <RelativeLayout
+            android:id="@+id/relativelayout_stats_group1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_toLeftOf="@+id/stats_step_split_line" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true" >
+
+                <TextView
+                    android:id="@+id/text_stats_group1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="26527"
+                    android:textColor="@color/left_fragment"
+                    android:textSize="48.0sp" />
+
+                <TextView
+                    android:id="@+id/unit_stats_group1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/text_stats_group1"
+                    android:layout_marginLeft="4.0dip"
+                    android:layout_toRightOf="@+id/text_stats_group1"
+                    android:text="步"
+                    android:textColor="@color/left_fragment"
+                    android:textSize="28.0sp" />
+
+                <TextView
+                    android:id="@+id/title_stats_group1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/text_stats_group1"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="8.0dip"
+                    android:text="日总步数"
+                    android:textColor="@color/light_grey"
+                    android:textSize="16.0sp" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativelayout_stats_group2"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_toRightOf="@+id/stats_step_split_line"
+            android:visibility="visible" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true" >
+
+                <TextView
+                    android:id="@+id/text_stats_group2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="23.5"
+                    android:textColor="@color/left_fragment"
+                    android:textSize="48.0sp" />
+
+                <TextView
+                    android:id="@+id/unit_stats_group2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/text_stats_group2"
+                    android:layout_toRightOf="@+id/text_stats_group2"
+                    android:text="km"
+                    android:textColor="@color/left_fragment"
+                    android:textSize="28.0sp" />
+
+                <TextView
+                    android:id="@+id/title_stats_group2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/text_stats_group2"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="12.0dip"
+                    android:text="日总距离"
+                    android:textColor="@color/light_grey"
+                    android:textSize="16.0sp" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativelayout_stats_group3"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_toRightOf="@+id/stats_step_split_line"
+            android:visibility="gone" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true" >
+
+                <TextView
+                    android:id="@+id/stats_title_walking"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="步行"
+                    android:textColor="@color/middle_grey"
+                    android:textSize="16.0sp" />
+
+                <TextView
+                    android:id="@+id/text_stats_empty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/stats_title_walking"
+                    android:layout_marginLeft="4.0dip"
+                    android:layout_toRightOf="@+id/stats_title_walking"
+                    android:text="12345"
+                    android:textColor="#ffffffff"
+                    android:textSize="16.0sp"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:id="@+id/stats_text_walking"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/stats_title_walking"
+                    android:layout_alignRight="@+id/text_stats_empty"
+                    android:text="143"
+                    android:textColor="@color/middle_grey"
+                    android:textSize="16.0sp" />
+
+                <TextView
+                    android:id="@+id/stats_unit_walking"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/stats_title_walking"
+                    android:layout_marginLeft="4.0dip"
+                    android:layout_toRightOf="@+id/text_stats_empty"
+                    android:text="千卡"
+                    android:textColor="@color/middle_grey"
+                    android:textSize="16.0sp" />
+
+                <TextView
+                    android:id="@+id/stats_title_running"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/stats_title_walking"
+                    android:layout_below="@+id/stats_title_walking"
+                    android:layout_marginTop="12.0dip"
+                    android:text="跑步"
+                    android:textColor="@color/middle_grey"
+                    android:textSize="16.0sp" />
+
+                <TextView
+                    android:id="@+id/stats_text_running"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/stats_title_running"
+                    android:layout_alignRight="@+id/text_stats_empty"
+                    android:text="1433"
+                    android:textColor="@color/middle_grey"
+                    android:textSize="16.0sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/stats_title_running"
+                    android:layout_alignLeft="@+id/stats_unit_walking"
+                    android:text="千卡"
+                    android:textColor="@color/middle_grey"
+                    android:textSize="16.0sp" />
+
+                <TextView
+                    android:id="@+id/stats_title_others"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/stats_title_running"
+                    android:layout_below="@+id/stats_title_running"
+                    android:layout_marginTop="12.0dip"
+                    android:text="其他"
+                    android:textColor="@color/middle_grey"
+                    android:textSize="16.0sp" />
+
+                <TextView
+                    android:id="@+id/stats_text_others"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/stats_title_others"
+                    android:layout_alignRight="@+id/text_stats_empty"
+                    android:text="60"
+                    android:textColor="@color/middle_grey"
+                    android:textSize="16.0sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/stats_title_others"
+                    android:layout_alignLeft="@+id/stats_unit_walking"
+                    android:text="千卡"
+                    android:textColor="@color/middle_grey"
+                    android:textSize="16.0sp" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/chart_view"
+        android:layout_width="fill_parent"
+        android:layout_height="198.0dip"
+        android:layout_below="@+id/relativelayout_stats"
+        android:layout_marginLeft="12.0dip"
+        android:layout_marginRight="12.0dip"
+        android:layout_marginTop="48.0dip" >
+
+        <com.zhuoyou.plugin.view.HorScrollView
+            android:id="@+id/linechat_scrollview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/light_grey"
+            android:fadingEdge="none"
+            android:focusableInTouchMode="false"
+            android:overScrollMode="never"
+            android:scrollbars="none" >
+
+            <RelativeLayout
+                android:id="@+id/relativelayout_scroll_content"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:background="@color/light_grey"
+                android:orientation="horizontal" />
+        </com.zhuoyou.plugin.view.HorScrollView>
+
+        <RelativeLayout
+            android:id="@+id/bg_scrollview_circle"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/transparent"
+            android:visibility="gone" >
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:layout_alignParentTop="true"
+                android:background="@color/white" />
+
+            <View
+                android:id="@+id/bg_bottom_line"
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:layout_alignParentBottom="true"
+                android:background="#ff56c6f1" />
+
+            <ImageView
+                android:id="@+id/circle_stats"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/circle_stats_blue" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/bg_scrollview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerInParent="true"
+            android:background="@color/transparent"
+            android:visibility="visible" >
+
+            <View
+                android:id="@+id/center_bar"
+                android:layout_width="22.0dip"
+                android:layout_height="fill_parent"
+                android:layout_centerHorizontal="true"
+                android:background="#667ae3ff" />
+
+            <Button
+                android:id="@+id/btn_test"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="test"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativelayout_point_window"
+        android:layout_width="112.0dip"
+        android:layout_height="46.0dip"
+        android:layout_below="@+id/relativelayout_stats"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="13.0dip"
+        android:background="@drawable/bg_blue_window" >
+
+        <TextView
+            android:id="@+id/text_current_date"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerHorizontal="true"
+            android:paddingTop="4.0dip"
+            android:text="5/12 - 5/19"
+            android:textColor="@color/white"
+            android:textSize="16.0sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/stats_radiolayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/chart_view"
+        android:background="@color/activity_bg" >
+
+        <RadioGroup
+            android:id="@+id/rg_group_stats"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/gb_stats_bg"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/rb_stats_daily"
+                android:layout_width="108.0dip"
+                android:layout_height="48.0dip"
+                android:background="@drawable/gb_stats_sel"
+                android:button="@null"
+                android:gravity="center"
+                android:text="天"
+                android:textColor="@drawable/gb_stats_text_sel" />
+
+            <RadioButton
+                android:id="@+id/rb_stats_weekly"
+                android:layout_width="108.0dip"
+                android:layout_height="48.0dip"
+                android:background="@drawable/gb_stats_sel"
+                android:button="@null"
+                android:gravity="center"
+                android:text="周"
+                android:textColor="@drawable/gb_stats_text_sel" />
+
+            <RadioButton
+                android:id="@+id/rb_stats_monthly"
+                android:layout_width="108.0dip"
+                android:layout_height="48.0dip"
+                android:background="@drawable/gb_stats_sel"
+                android:button="@null"
+                android:gravity="center"
+                android:text="月"
+                android:textColor="@drawable/gb_stats_text_sel" />
+        </RadioGroup>
+    </RelativeLayout>
+
+</RelativeLayout>

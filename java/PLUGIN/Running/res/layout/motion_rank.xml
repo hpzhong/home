@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/motion_rank"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f4f4f4"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/running_title"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        layout="@layout/running_actionbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ededf1"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/dayLay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:onClick="onClick"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/dayRank"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingBottom="12dp"
+                android:paddingTop="12dp"
+                android:text="@string/dayRank"
+                android:textSize="18sp" />
+
+            <View
+                android:id="@+id/dayV"
+                android:layout_width="fill_parent"
+                android:layout_height="3dp"
+                android:background="#0dbec0"
+                android:visibility="visible" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="22dp"
+            android:layout_gravity="center"
+            android:background="#c9c9c9" />
+
+        <LinearLayout
+            android:id="@+id/weekLay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:onClick="onClick"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/weekRank"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingBottom="12dp"
+                android:paddingTop="12dp"
+                android:text="@string/weekRank"
+                android:textSize="18sp" />
+
+            <View
+                android:id="@+id/weekV"
+                android:layout_width="fill_parent"
+                android:layout_height="3dp"
+                android:background="#0dbec0"
+                android:visibility="invisible" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#c9c9c9" >
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ListView
+            android:id="@+id/moRankList"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@+id/myrank"
+            android:cacheColorHint="#00000000"
+            android:divider="#cccccc"
+            android:dividerHeight="0.5dp"
+            android:fadingEdge="none"
+            android:listSelector="#00000000"
+            android:scrollbars="none"
+            android:overScrollMode="never" >
+        </ListView>
+
+        <LinearLayout
+            android:id="@+id/myrank"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/rulerHeight"
+            android:layout_alignParentBottom="true"
+            android:background="#ededf1"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#0dbec0" >
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/mylayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+			    <RelativeLayout
+			        android:id="@+id/layout"
+			        android:layout_width="108dp"
+			        android:layout_height="65dp" >
+			        <ImageView
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:background="@drawable/my_rank" />
+			        <TextView
+			            android:id="@+id/my_rank"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:textColor="#ffffff"
+			            android:text="123"
+			            android:textSize="20sp"
+			            android:layout_centerVertical="true"
+			            android:layout_marginLeft="10dp" />
+			        <ImageView
+			            android:id="@+id/my_icon"
+			            android:layout_width="47dp"
+			            android:layout_height="47dp"
+			            android:background="@drawable/mengmeizi"
+			            android:layout_centerVertical="true"
+			            android:layout_alignParentRight="true"
+			            android:layout_marginRight="13dp" />       
+			    </RelativeLayout>
+			    <TextView
+			        android:id="@+id/my_name"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_toRightOf="@+id/layout"
+			        android:layout_centerVertical="true"
+			        android:textSize="20sp"
+			        android:textColor="#393939"
+			        android:text="我自己" />
+			    <RelativeLayout
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_alignParentRight="true"
+			        android:layout_centerVertical="true"
+			        android:layout_marginRight="20dp" >
+			        <TextView
+			            android:id="@+id/step"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:textColor="#00c5c7"
+			            android:text="1024"
+			            android:textSize="26sp" />
+			        <TextView
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:layout_toRightOf="@+id/step"
+			            android:layout_alignBottom="@+id/step"
+			            android:textColor="#898989"
+			            android:text="步"
+			            android:textSize="18sp" />
+			    </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

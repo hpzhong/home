@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="#fffcaf" >
+
+         <TextView 
+             android:id="@+id/noRecordRank"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:visibility="gone"
+             android:gravity="center"
+             android:text="您还没有运动记录不能参加排名记录"
+             />
+		 <ImageView
+        android:id="@+id/rank_bg"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+        <TextView
+            android:id="@+id/my_rank"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:textSize="20sp"
+            android:text="100" />
+
+        <ImageView
+            android:id="@+id/my_icon"
+            android:layout_width="47dp"
+            android:layout_height="47dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_toRightOf="@+id/my_rank"
+            android:src="@drawable/head3_1" />
+
+         <TextView
+             android:id="@+id/my_name"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_centerInParent="true"
+             android:layout_centerVertical="true"
+             android:layout_toRightOf="@+id/my_icon"
+             android:ellipsize="end"
+             android:text="jane"
+             android:textSize="20sp" />
+
+         <TextView
+             android:id="@+id/my_step"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentRight="true"
+             android:layout_centerVertical="true"
+             android:layout_marginRight="10dp"
+             android:text="2000"
+             android:textSize="20sp" />
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/action_rank_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="#00000000"
+        android:divider="#cccccc"
+        android:dividerHeight="0.5dp"
+        android:fadingEdge="none"
+        android:listSelector="#00000000"
+        android:overScrollMode="never"
+        android:scrollbars="none" >
+
+    </ListView>
+
+</LinearLayout>

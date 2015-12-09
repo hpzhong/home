@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Anti-lost</string>
+    <string name="find_phone">Find Phone</string>
+	<string name="music">Music</string>
+	<string name="no_music">No music can be selected</string>
+	<string name="default_music">Default</string>
+    <string name="progress_dialog_message">Please wait&#8230;</string>
+	<string name="alert_title">Phone Anti-lost</string>
+	<string name="alert_message">Phone is found!Please close. </string>
+	<string name="ok">OK</string>
+	<string name="cancel">Cancel</string>
+	<string name="antilost_status">Antilost status</string>
+	<string name="on">On</string>
+	<string name="off">Off</string>
+	<string name="antilost_explanation">The phone anti-lost function is turned on or not in the external Bluetooth device</string>
+	<string name="get_data_error">get status failed</string>
+	<string name="setting">Setting</string>
+	<string name="password_setting">Password setting</string>
+	<string name="password_cancle">Cancel password</string>
+	<string name="input_old_password">input old password</string>
+	<string name="input_password">input password</string>
+	<string name="input_password_again">input password again</string>
+	<string name="password_empty">the password can not be empty</string>
+	<string name="password_length">the password is 4 digits</string>
+	<string name="password_different">the two passwords are different</string>
+	<string name="password_error">original password is incorrect</string>
+	<string name="no_antilost_password">You have not set the password.</string>
+	<string name="cancel_antilost_password">You have already cancelled the antilost password.</string>		
+	<string name="input_antilost_password">Input Antilost Password</string>
+</resources>

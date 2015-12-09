@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">快捷聯繫人</string>
+    <string name="btn_backup">備份</string>
+    <string name="btn_restore">載入</string>
+    <string name="btn_send">同步至遠端設備</string>
+    <string name="title_selete_contacts">選擇聯繫人</string>
+    <string name="unknown">未命名</string>
+    <string name="loading_contacts">載入中，請稍後</string>
+    <string name="not_find_contacts_in_remote_device">未從遠端設備中獲取聯繫人</string>
+    <string name="item_1_add_contact_from_system">從系統選擇聯繫人人</string>
+    <string name="item_2_create_new_contact">新建快捷聯繫人</string>
+    <string name="max_contact_number">最大快捷聯繫人個數為10！</string>
+    <string name="selete_number_title">請選擇一個號碼</string>
+    <string name="not_contain_number">該聯繫人沒有包含號碼，無法添加</string>
+    <string name="delete_this_contact">刪除此項快捷聯繫人</string>
+    <string name="yes">確定</string>
+    <string name="no">取消</string>
+    <string name="save">保存</string>
+    <string name="giveup">放棄</string>
+    <string name="backup_wait">正在備份，請稍候</string>
+    <string name="backup_successed">備份成功</string>
+    <string name="restore_wait">正在還原，請稍候</string>
+    <string name="restore_successed">還原成功</string>
+    <string name="quick_contact_empty">快捷聯繫人列表為空</string>
+    <string name="title_create_new">新建快捷聯繫人</string>
+    <string name="title_create_edit">編輯快捷聯繫人</string>
+    <string name="error_input_name">請輸入名字</string>
+    <string name="error_input_number">請輸入號碼</string>
+    <string name="msg_save_contacts">保存聯繫人</string>
+
+</resources>

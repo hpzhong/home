@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dip"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/board_all" >
+
+        <ImageView
+            android:id="@+id/name_r_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/clear_selector" />
+
+        <ImageView
+            android:id="@+id/name_r_line"
+            android:layout_width="2dip"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/name_r_icon"
+            android:layout_alignTop="@id/name_r_icon"
+            android:layout_toLeftOf="@id/name_r_icon"
+            android:background="@drawable/line"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/name_l_text"
+            android:layout_width="60dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="名字"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/name_l_line"
+            android:layout_width="2dip"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/name_r_icon"
+            android:layout_alignTop="@id/name_r_icon"
+            android:layout_toRightOf="@id/name_l_text"
+            android:background="@drawable/line"
+            android:scaleType="fitXY" />
+
+        <EditText
+            android:id="@+id/name_c_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:layout_toLeftOf="@id/name_r_line"
+            android:layout_toRightOf="@id/name_l_line"
+            android:background="@null"
+            android:hint="填写联系人姓名"
+            android:maxLength="10"
+            android:singleLine="true"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dip"
+        android:background="@drawable/board_all" >
+
+        <ImageView
+            android:id="@+id/number_r_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/clear_selector" />
+
+        <ImageView
+            android:id="@+id/number_r_line"
+            android:layout_width="2dip"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/number_r_icon"
+            android:layout_alignTop="@id/number_r_icon"
+            android:layout_toLeftOf="@id/number_r_icon"
+            android:background="@drawable/line"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/number_l_text"
+            android:layout_width="60dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="号码"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/number_l_line"
+            android:layout_width="2dip"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/number_r_icon"
+            android:layout_alignTop="@id/number_r_icon"
+            android:layout_toRightOf="@id/number_l_text"
+            android:background="@drawable/line"
+            android:scaleType="fitXY" />
+
+        <EditText
+            android:id="@+id/number_c_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:layout_toLeftOf="@id/number_r_line"
+            android:layout_toRightOf="@id/number_l_line"
+            android:background="@null"
+            android:inputType="number"
+            android:hint="填写联系人电话号码"
+            android:maxLength="41"
+            android:singleLine="true"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+</LinearLayout>

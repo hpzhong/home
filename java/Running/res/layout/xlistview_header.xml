@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/sleep_header"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#f47424"
+    android:gravity="bottom" >
+
+    <RelativeLayout
+        android:id="@+id/xlistview_header_content"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+	        android:layout_centerHorizontal="true"
+	        android:gravity="center_vertical"
+            android:orientation="horizontal" >
+            
+	        <ImageView
+	            android:id="@+id/xlistview_header_arrow"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:src="@drawable/xlistview_arrow" />
+	
+	        <ProgressBar
+	            android:id="@+id/xlistview_header_progressbar"
+	            android:layout_width="30dp"
+	            android:layout_height="30dp"
+	            style="@style/xlistview_header_progressBar"
+	            android:visibility="gone" />
+            
+	        <LinearLayout
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:gravity="center"
+	            android:orientation="vertical" 
+	            android:id="@+id/xlistview_header_text"
+	            android:layout_marginLeft="10dp" >
+	
+	            <TextView
+	                android:id="@+id/xlistview_header_hint_textview"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="@string/xlistview_header_hint_normal"
+	                android:textColor="#88ffffff" />
+	
+	            <LinearLayout
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_marginTop="3dp" >
+	
+	                <TextView
+	                    android:id="@+id/xlistview_header_time_text"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:text="@string/xlistview_header_last_time"
+	                    android:textSize="12sp"
+	                    android:textColor="#88ffffff" />
+	
+	                <TextView
+	                    android:id="@+id/xlistview_header_time"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:textSize="12sp"
+	                    android:textColor="#88ffffff" />
+	            </LinearLayout>
+	        </LinearLayout>	
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f4f4f4" >
+    
+    <include
+        android:id="@+id/running_title"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        layout="@layout/running_actionbar" />
+
+    <ScrollView
+        android:id="@+id/scv1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/running_title"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip" 
+        android:overScrollMode="never"
+        android:scrollbars="none"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/tv_advice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="#0d9192"
+                android:text="@string/fitness_advice"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_first_week"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_advice"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/week_bg"
+                android:gravity="center"
+                android:text="@string/first_week"
+                android:textColor="#0d9192"
+                android:textSize="20sp" />
+
+            <ListView
+                android:id="@+id/lv_first_week"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/plan_contener"
+                android:layout_below="@+id/tv_first_week"
+                android:scrollbars="none" >
+            </ListView>
+
+            <TextView
+                android:id="@+id/tv_second_week"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lv_first_week"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/week_bg"
+                android:gravity="center"
+                android:text="@string/second_week"
+                android:textColor="#0d9192"
+                android:textSize="20sp" />
+
+            <ListView
+                android:id="@+id/lv_second_week"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/plan_contener"
+                android:layout_below="@+id/tv_second_week"
+                android:scrollbars="none" >
+            </ListView>
+
+            <TextView
+                android:id="@+id/tv_third_week"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lv_second_week"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/week_bg"
+                android:gravity="center"
+                android:text="@string/third_week"
+                android:textColor="#0d9192"
+                android:textSize="20sp" />
+
+            <ListView
+                android:id="@+id/lv_third_week"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/plan_contener"
+                android:layout_below="@+id/tv_third_week"
+                android:scrollbars="none" >
+            </ListView>
+
+            <TextView
+                android:id="@+id/tv_fourth_week"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lv_third_week"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/week_bg"
+                android:gravity="center"
+                android:text="@string/fourth_week"
+                android:textColor="#0d9192"
+                android:textSize="20sp" />
+
+            <ListView
+                android:id="@+id/lv_fourth_week"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/plan_contener"
+                android:layout_below="@+id/tv_fourth_week"
+                android:scrollbars="none" >
+            </ListView>
+
+            <TextView
+                android:id="@+id/tv_fifth_week"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lv_fourth_week"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/week_bg"
+                android:gravity="center"
+                android:text="@string/fifth_week"
+                android:textColor="#0d9192"
+                android:textSize="20sp"
+                android:visibility="gone" />
+
+            <ListView
+                android:id="@+id/lv_fifth_week"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/plan_contener"
+                android:layout_below="@+id/tv_fifth_week"
+                android:visibility="gone"
+                android:scrollbars="none" >
+            </ListView>
+
+            <TextView
+                android:id="@+id/tv_sixth_week"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lv_fifth_week"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/week_bg"
+                android:gravity="center"
+                android:text="@string/sixth_week"
+                android:textColor="#0d9192"
+                android:textSize="20sp"
+                android:visibility="gone" />
+
+            <ListView
+                android:id="@+id/lv_sixth_week"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/plan_contener"
+                android:layout_below="@+id/tv_sixth_week"
+                android:visibility="gone"
+                android:scrollbars="none" >
+            </ListView>
+
+            <TextView
+                android:id="@+id/tv_seventh_week"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lv_sixth_week"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/week_bg"
+                android:gravity="center"
+                android:text="@string/seventh_week"
+                android:textColor="#0d9192"
+                android:textSize="20sp"
+                android:visibility="gone" />
+
+            <ListView
+                android:id="@+id/lv_seventh_week"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/plan_contener"
+                android:layout_below="@+id/tv_seventh_week"
+                android:visibility="gone"
+                android:scrollbars="none" >
+            </ListView>
+
+            <TextView
+                android:id="@+id/tv_eighth_week"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lv_seventh_week"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/week_bg"
+                android:gravity="center"
+                android:text="@string/eighth_week"
+                android:textColor="#0d9192"
+                android:textSize="20sp"
+                android:visibility="gone" />
+
+            <ListView
+                android:id="@+id/lv_eighth_week"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/plan_contener"
+                android:layout_below="@+id/tv_eighth_week"
+                android:visibility="gone"
+                android:scrollbars="none" >
+            </ListView>
+
+            <TextView
+                android:id="@+id/tv_plan_over"
+                android:layout_width="match_parent"
+                android:layout_height="100dip"
+                android:layout_below="@+id/lv_eighth_week"
+                android:layout_marginTop="20dip"
+                android:textColor="#0d9192"
+                android:text="@string/walk_plan_over" />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

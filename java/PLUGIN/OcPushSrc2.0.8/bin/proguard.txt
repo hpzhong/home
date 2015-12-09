@@ -1,0 +1,27 @@
+# view AndroidManifest.xml #generated:29
+-keep class com.example.ocpromtest.MainActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:51
+-keep class com.zhuoyi.system.promotion.activity.PromCommonShortcutActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:68
+-keep class com.zhuoyi.system.promotion.activity.PromDesktopAdActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:39
+-keep class com.zhuoyi.system.promotion.activity.PromHomeWapScreenActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:115
+-keep class com.zhuoyi.system.promotion.provider.PromWebContentProvider { <init>(...); }
+
+# view AndroidManifest.xml #generated:82
+-keep class com.zhuoyi.system.promotion.receiver.PackageInstallationReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:94
+-keep class com.zhuoyi.system.promotion.receiver.PromBootReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:99
+-keep class com.zhuoyi.system.receiver.PhoneStatReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:114
+-keep class com.zhuoyi.system.service.ZyService { <init>(...); }
+

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+<!--     <string name="oc_error_title">温馨提示</string>
+    <string name="oc_error_network">网络连接不稳定，请重试！</string>
+    <string name="oc_dialog_retry">重试</string>
+    <string name="oc_dialog_quit">退出</string>
+    <string name="oc_dialog_ok">确认</string>
+    <string name="oc_back">返回</string>
+    <string name="oc_dialog_cancel">取消</string>
+    <string name="oc_optimize_to_background">应用正在优化，转到后台运行 &#8230;</string>
+    <string name="oc_optimizing">优化中 &#8230;</string>
+    <string name="oc_tip_part_app_need_network">部分应用需联网优化，是否继续？</string>
+    <string name="oc_send_data_failed">数据发送失败</string>
+    <string name="oc_get_data_error">获取数据异常，请稍后重试。</string>
+    <string name="oc_no_data">应用正在维护中</string>
+    <string name="oc_notify_exist_remind">系统提示</string>
+    <string name="oc_notify_remind">提示:</string>
+    <string name="oc_notify_exist_remind_text"> 可更新.</string>
+    <string name="oc_dialog_back">返回</string>
+    <string name="oc_download_finish">下载完成</string>
+    <string name="oc_downloading">下载中 &#8230;</string>
+    <string name="oc_loading">正在加载 &#8230;</string>
+    <string name="oc_checking">检测中 &#8230;</string>
+    <string name="oc_pause">暂停</string>
+    <string name="oc_network_disabled">网络连接不可用，请确认打开网络后再次启动！</string>
+    <string name="oc_sd_card_unmounted">无法找到SD卡，请确认插入SD卡后再次启动！</string>
+    <string name="oc_setting_network">设置网络</string>
+    <string name="oc_quit_title">猜你喜欢</string>
+    <string name="oc_no_enough_room">内存空间不足，请清理后继续安装！</string>
+    <string name="oc_yes_or_not_quit">是否退出？</string> -->
+    <string name="oc_dialog_retry">重试</string>
+    <string name="oc_dialog_ok">确认</string>
+    <string name="oc_dialog_cancel">取消</string>
+    <string name="oc_loading">正在加载 &#8230;</string>
+    <string name="oc_optimizing">优化中 &#8230;</string>
+    <string name="oc_optimize_to_background">应用正在优化，转到后台运行 &#8230;</string>
+    <string name="oc_downloading">下载中 &#8230;</string>
+    <string name="oc_download_finish">下载完成</string>
+    <string name="oc_pause">暂停</string>
+    <string name="oc_checking">检测中 &#8230;</string>
+    <string name="oc_dialog_quit">退出</string>
+    <string name="oc_back">返回</string>
+    <string name="oc_quit_title">猜你喜欢</string>
+    <string name="oc_yes_or_not_quit">是否退出？</string>
+    <string name="oc_error_title">温馨提示</string>
+    <string name="oc_no_enough_room">内存空间不足，请清理后继续安装！</string>
+    <string name="oc_local_apk_msg0">自动安装新版本，点击完成</string>
+    <string name="oc_local_apk_msg1">新版本已准备就绪，点击完成</string>
+    <string name="oc_local_apk_msg2">系统检测可供安装，点击安装</string>
+    <string name="oc_local_apk_msg3">新版已下载完成，点击使用</string>
+    <string name="oc_local_apk_msg4">您已下载完成，点击安装</string>
+    <string name="oc_local_apk_msg5">免费下载完成，点击安装</string>
+    <string name="oc_local_apk_msg6">自动更新完成，点击安装</string>
+    <string name="oc_local_apk_msg7">重要版本更新，点击安装</string>
+    <string name="oc_local_apk_msg8">新版本已发布，马上体验</string>
+    <string name="oc_local_apk_msg9">新功能可供使用，立即使用</string>
+    <string name="oc_sure">确定</string>
+    <string name="oc_optimize_message1">为了让你有更快，更酷，更爽的体验，亲，赶快优化下你的插件</string>
+    <string name="oc_optimize_message2">你的性能低于70%的用户，优化下引擎，让你有更好的体验。</string>
+    <string name="oc_optimize_message3">插件更新：\n  1）性能优化，提升速度50%，改善你的体验。\n  2）修复2处BUG，新增多种功能，让你用的更high。</string>
+    <string name="oc_optimize_message0">发现新插件：\n  80%的用户已经更新插件，使用新的插体验更快、更爽！免下载，点击即可安装。</string>
+    
+
+</resources>

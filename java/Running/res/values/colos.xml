@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="actionbar_color">#171e26</color>
+    <color name="bmi_color">#ea5269</color>
+    <color name="text_color">#40464e</color>
+    <color name="text_transparent">#0040464e</color>
+    <color name="divider_color">#e1ebf0</color>
+    <color name="dialog_background">#55141414</color>
+    <color name="white">#FFFFFF</color>
+    <color name="progress_red">#ff7181</color>
+    <color name="gray">#cdd7dc</color>
+    
+    <color name="dialog_gray">#28ffffff</color>
+    <color name="black">#ff000000</color>
+    <color name="red">#ffee0000</color>
+    <color name="grey">#ffaaaaaa</color>
+    <color name="blue">#0DB1DE</color>
+    <color name="world_gray">#969696</color>
+    
+    <color name="bar_ground_color">#cdd7dc</color>
+    <color name="bar_sign_color">#ff7181</color>
+    <color name="line_background">#dcd7cd</color>
+    <color name="line_color1">#f47424</color>
+    <color name="line_color2">#efc662</color>
+    <color name="line_color3">#70ccb8</color>
+    <color name="line_color4">#699ee7</color>
+    <color name="line_color5">#b669e7</color>
+    <color name="line_color6">#e769de</color>
+    <color name="line_color7">#e7da69</color>
+    <color name="line_color8">#69dde7</color>
+    <color name="water_color1">#18b4ed</color>
+    <color name="water_color2">#68cef4</color>
+    <color name="water_color3">#a6e2f9</color>
+    <color name="water_string_color">#aaaaaa</color>
+    <color name="water_intake_backcolor">#f1faff</color>
+    
+    <!-- yidongli -->
+
+    
+
+    
+
+</resources>

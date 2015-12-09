@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/magin_10" >
+
+    <ImageView
+        android:id="@+id/head_icon"
+        android:layout_width="65dp"
+        android:layout_height="65dp" />
+    <ImageView
+        android:id="@+id/select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/like_sport_selected"
+        android:layout_alignParentRight="true"
+        android:visibility="gone" />
+    
+</RelativeLayout>

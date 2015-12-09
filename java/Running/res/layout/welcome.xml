@@ -1,0 +1,11 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/welcome_page"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentTop="true" >
+
+    <include layout="@layout/welcome_local_layout" />
+
+    <include layout="@layout/welcome_ad_layout" />
+
+</FrameLayout>

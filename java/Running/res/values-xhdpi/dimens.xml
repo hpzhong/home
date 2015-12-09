@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+     <dimen name="listitem_sleep_text">12dp</dimen>
+    <dimen name="listitem_sleep_text_show">11dp</dimen>
+    
+    <dimen name="sleep_detail_duration">11dp</dimen>
+    <dimen name="sleep_detail_duration_time">13dp</dimen>
+    <dimen name="sleep_detail_duration_time_text">10dp</dimen>
+    <!-- water intake -->
+    
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="progress_size">180dp</dimen>
+    <dimen name="heart_progress_size">240dp</dimen>
+    <dimen name="health_index_value_size">90dp</dimen>
+    
+    <dimen name="vital_capacity_progress_margin_left">110px</dimen>
+    <dimen name="vital_capacity_progress_margin_top">208px</dimen>
+    <dimen name="vital_capacity_progress_space">498px</dimen>
+    <dimen name="vital_capacity_progress_width">20px</dimen>
+    
+    <dimen name="waves_anim_view_height">1280px</dimen>
+    <dimen name="wave_perimeter">840px</dimen>
+	<dimen name="waves_anim_view_mStartPoint_y8">443.32px</dimen>
+    <dimen name="waves_anim_view_mControlF_x8">267.49px</dimen>
+    <dimen name="waves_anim_view_mControlF_y8">377.02px</dimen>
+    <dimen name="waves_anim_view_mControlE_x8">466.38px</dimen>
+    <dimen name="waves_anim_view_mControlE_y8">507.3px</dimen>
+	<dimen name="waves_anim_view_mStartPoint_y0">1034px</dimen>
+    <dimen name="waves_anim_view_mControlF_x0">279.30px</dimen>
+    <dimen name="waves_anim_view_mControlF_y0">981.35px</dimen>
+    <dimen name="waves_anim_view_mControlE_x0">440.27px</dimen>
+    <dimen name="waves_anim_view_mControlE_y0">1085.79px</dimen>
+	<dimen name="waves_anim_view_mStartPoint_y1">982px</dimen>
+    <dimen name="waves_anim_view_mControlF_x1">225px</dimen>
+    <dimen name="waves_anim_view_mControlF_y1">941px</dimen>
+    <dimen name="waves_anim_view_mControlE_x1">485px</dimen>
+    <dimen name="waves_anim_view_mControlE_y1">1024px</dimen>
+	<dimen name="waves_anim_view_mStartPoint_y2">901px</dimen>
+    <dimen name="waves_anim_view_mControlF_x2">275.97px</dimen>
+    <dimen name="waves_anim_view_mControlF_y2">855.75px</dimen>
+    <dimen name="waves_anim_view_mControlE_x2">460.99px</dimen>
+    <dimen name="waves_anim_view_mControlE_y2">945.18px</dimen>
+	<dimen name="waves_anim_view_mStartPoint_y3">820.46px</dimen>
+    <dimen name="waves_anim_view_mControlF_x3">283.25px</dimen>
+    <dimen name="waves_anim_view_mControlF_y3">773.81px</dimen>
+    <dimen name="waves_anim_view_mControlE_x3">442.54px</dimen>
+    <dimen name="waves_anim_view_mControlE_y3">867.95px</dimen>
+	<dimen name="waves_anim_view_mStartPoint_y4">738.32px</dimen>
+    <dimen name="waves_anim_view_mControlF_x4">302.63px</dimen>
+    <dimen name="waves_anim_view_mControlF_y4">695.15px</dimen>
+    <dimen name="waves_anim_view_mControlE_x4">414.74px</dimen>
+    <dimen name="waves_anim_view_mControlE_y4">780.96px</dimen>
+	<dimen name="waves_anim_view_mStartPoint_y5">658.29px</dimen>
+    <dimen name="waves_anim_view_mControlF_x5">307.75px</dimen>
+    <dimen name="waves_anim_view_mControlF_y5">610.51px</dimen>
+    <dimen name="waves_anim_view_mControlE_x5">432px</dimen>
+    <dimen name="waves_anim_view_mControlE_y5">704.8px</dimen>
+	<dimen name="waves_anim_view_mStartPoint_y6">576.75px</dimen>
+    <dimen name="waves_anim_view_mControlF_x6">296.28px</dimen>
+    <dimen name="waves_anim_view_mControlF_y6">532.15px</dimen>
+    <dimen name="waves_anim_view_mControlE_x6">431.36px</dimen>
+    <dimen name="waves_anim_view_mControlE_y6">620.07px</dimen>
+	<dimen name="waves_anim_view_mStartPoint_y7">496.47px</dimen>
+    <dimen name="waves_anim_view_mControlF_x7">292.46px</dimen>
+    <dimen name="waves_anim_view_mControlF_y7">446.78px</dimen>
+    <dimen name="waves_anim_view_mControlE_x7">437.10px</dimen>
+    <dimen name="waves_anim_view_mControlE_y7">544.89px</dimen>
+    
+    <dimen name="color_line_view_startx">30px</dimen>
+    <dimen name="color_line_view_starty">20px</dimen>
+    <dimen name="color_line_view_stopx">668px</dimen>
+    <dimen name="color_line_view_space">79.75px</dimen>
+    <dimen name="water_warn_time_margin_top">4dip</dimen>
+    <dimen name="water_warn_time_margin_left">30dip</dimen>
+    <dimen name="water_warn_enable_margin_left">250dip</dimen>
+    <dimen name="water_warn_enable_margin_top">16dip</dimen>
+    
+    <dimen name="man_obesity_start">169dp</dimen>
+    <dimen name="man_obesity_top">15dp</dimen>    
+    <dimen name="man_overweight_start">113dp</dimen>
+    <dimen name="man_overweight_top">14dp</dimen>   
+    <dimen name="man_normal_start">122dp</dimen>
+    <dimen name="man_normal_top">14dp</dimen>   
+    <dimen name="man_slim_start">103dp</dimen>
+    <dimen name="man_slim_top">14dp</dimen>    
+    <dimen name="man_thin_start">40dp</dimen>
+    <dimen name="man_thin_top">15dp</dimen>
+    
+    <dimen name="female_obesity_start">90dp</dimen>
+    <dimen name="female_obesity_top">15dp</dimen>    
+    <dimen name="female_overweight_start">97dp</dimen>
+    <dimen name="female_overweight_top">15dp</dimen>    
+    <dimen name="female_normal_start">146dp</dimen>
+    <dimen name="female_normal_top">15dp</dimen>    
+    <dimen name="female_slim_start">98dp</dimen>
+    <dimen name="female_slim_top">14dp</dimen>    
+    <dimen name="female_thin_start">140dp</dimen>
+    <dimen name="female_thin_top">14dp</dimen>
+    <dimen name="vital_capacity_text_margin_top">120dip</dimen>
+    <dimen name="water_intake_desc_margin_top">10dip</dimen>
+    <dimen name="water_intake_warn_margin_top">195dip</dimen>
+    <dimen name="water_intake_minus_margin_right">2dip</dimen>
+</resources>

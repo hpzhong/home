@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F3F3"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/back"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/discover_title_color"
+        android:gravity="center_vertical" >
+
+        <ImageView
+            android:id="@+id/bt_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:src="@drawable/actionbar_back" />
+
+        <TextView
+            android:id="@+id/bt_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="1dp"
+            android:layout_toRightOf="@+id/bt_back"
+            android:text="@string/app_name"
+            android:textColor="@color/white"
+            android:textSize="21dp" />
+
+        <ImageView
+            android:id="@+id/ani_device"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:visibility="gone"
+            android:layout_marginRight="25dp"
+            android:onClick="onClick" />
+    </RelativeLayout>
+
+  
+   
+
+        <TextView
+            android:id="@+id/num_devices"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="22dp"
+            android:background="@null"
+            android:layout_marginTop="3dp"
+            android:clickable="true"
+            android:onClick="onClick"
+            android:visibility="gone"
+            android:textColor="#7a7a7a" />
+
+        <ListView
+            android:id="@+id/devices_listview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F4F3F3"
+            android:divider="#f4f3f3"
+            android:dividerHeight="10dp"
+            android:fadingEdge="none"
+            android:listSelector="#00000000"
+            android:overScrollMode="never" />
+<!--  
+        <TextView
+            android:id="@+id/bind_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_marginBottom="15dip"
+            android:text=""
+            android:textColor="#7a7a7a" />-->
+
+
+</LinearLayout>

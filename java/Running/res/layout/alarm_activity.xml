@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/back"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/discover_title_color"
+        android:gravity="center_vertical"
+        android:onClick="onClick" >
+
+        <ImageView
+            android:id="@+id/back_m"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:src="@drawable/actionbar_back" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="1dp"
+            android:layout_toRightOf="@+id/back_m"
+            android:text="@string/alarm_brain"
+            android:textColor="@color/white"
+            android:textSize="21dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_alarm_acitvity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/layout_alarm_0"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:onClick="onClick"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/text_alarm0_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:textColor="#1d0101"
+                android:textSize="30sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:paddingLeft="30dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/text_alarm0_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="2dp"
+                    android:textColor="#686868" />
+
+                <TextView
+                    android:id="@+id/text_alarm0_notify"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:text="@string/alarm_brain"
+                    android:textColor="#686868" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/button_alarm0_off"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/alarm_button_openon"
+                android:onClick="onClick" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#d7d7d7" />
+
+        <RelativeLayout
+            android:id="@+id/layout_alarm_1"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:gravity="center_vertical"
+            android:onClick="onClick"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/text_alarm1_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:textColor="#1d0101"
+                android:textSize="30sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:paddingLeft="30dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/text_alarm1_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="2dp"
+                    android:textColor="#686868" />
+
+                <TextView
+                    android:id="@+id/text_alarm1_notify"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:text="@string/alarm_brain"
+                    android:textColor="#686868" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/button_alarm1_off"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/alarm_button_openon"
+                android:onClick="onClick" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#d7d7d7" />
+
+        <RelativeLayout
+            android:id="@+id/layout_alarm_2"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:gravity="center_vertical"
+            android:onClick="onClick"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/text_alarm2_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:textColor="#1d0101"
+                android:textSize="30sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:paddingLeft="30dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/text_alarm2_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="2dp"
+                    android:textColor="#686868" />
+
+                <TextView
+                    android:id="@+id/text_alarm2_notify"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:text="@string/alarm_brain"
+                    android:textColor="#686868" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/button_alarm2_off"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/alarm_button_openon"
+                android:onClick="onClick" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#d7d7d7" />
+    </LinearLayout>
+
+</LinearLayout>

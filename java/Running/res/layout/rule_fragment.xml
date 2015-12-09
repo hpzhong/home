@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rule_perfect_personal_data"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:background="#8A8989"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/onclik_personal_data"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:gravity="center_vertical"
+            android:layout_toLeftOf="@+id/hide_lay"
+            android:text="@string/running_action_onclick_personal_data" />
+
+        <ImageView
+            android:id="@+id/hide_lay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/magin_10"
+            android:src="@drawable/connect_tips_close" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/myscroll"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:scrollbars="none" >
+
+        <com.zhuoyou.plugin.action.ActionImageView
+            android:id="@+id/my_net_img"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY" />
+    </ScrollView>
+
+</LinearLayout>

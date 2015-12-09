@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2acacc"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="42dip"
+        android:background="#2acacc" >
+
+        <ImageView
+            android:id="@+id/bind_help_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10dip"
+            android:clickable="true"
+            android:onClick="onClick"
+            android:src="@drawable/button_selector" />
+
+        <TextView
+            android:id="@+id/bind_help_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:clickable="true"
+            android:onClick="onClick"
+            android:paddingLeft="40dip"
+            android:text="@string/help_title"
+            android:textColor="#f1ffff"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/help_subtitle1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dip"
+        android:paddingLeft="40dip"
+        android:text="@string/help_subtitle1"
+        android:textColor="#f1ffff"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/help_subtext1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dip"
+        android:paddingLeft="40dip"
+        android:paddingRight="40dip"
+        android:text="@string/help_subtext1"
+        android:textColor="#f1ffff"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/help_subtitle2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dip"
+        android:paddingLeft="40dip"
+        android:text="@string/help_subtitle2"
+        android:textColor="#f1ffff"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/help_subtext2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dip"
+        android:paddingLeft="40dip"
+        android:paddingRight="40dip"
+        android:text="@string/help_subtext2"
+        android:textColor="#f1ffff"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/help_subtitle3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dip"
+        android:paddingLeft="40dip"
+        android:text="@string/help_subtitle3"
+        android:textColor="#f1ffff"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/help_subtext3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dip"
+        android:paddingLeft="40dip"
+        android:paddingRight="40dip"
+        android:text="@string/help_subtext3"
+        android:textColor="#f1ffff"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/help_subtitle4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dip"
+        android:paddingLeft="40dip"
+        android:text="@string/help_subtitle4"
+        android:textColor="#f1ffff"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/help_subtext4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dip"
+        android:paddingLeft="40dip"
+        android:paddingRight="40dip"
+        android:text="@string/help_subtext4"
+        android:textColor="#f1ffff"
+        android:textSize="14sp" />
+
+</LinearLayout>

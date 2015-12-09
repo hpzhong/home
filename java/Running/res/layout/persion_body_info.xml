@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/age_lay"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:onClick="onClick" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="60dip"
+            android:layout_marginLeft="@dimen/personal_list_left"
+            android:gravity="center_vertical"
+            android:text="@string/age"
+            android:textColor="@color/Guider_list_text_color"
+            android:textSize="@dimen/Guider_list_text_size" />
+
+        <TextView
+            android:id="@+id/age_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/personal_list_left"
+            android:textColor="@color/orange_color"
+            android:textSize="@dimen/Guider_list_text_size" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/show_age_layout"
+        android:layout_width="match_parent"
+        android:layout_height="200dip"
+        android:visibility="gone" >
+
+        <com.zhuoyou.plugin.view.WheelView
+            android:id="@+id/age_select"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/show_age_unit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="50dp"
+            android:gravity="center_vertical|right"
+            android:text="@string/persional_info_weight_nian"
+            android:textSize="20dp"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dip"
+        android:layout_marginLeft="@dimen/personal_list_left"
+        android:layout_marginRight="@dimen/personal_list_left"
+        android:background="@color/persion_info_divider" />
+
+    <!-- top selections -->
+
+    <RelativeLayout
+        android:id="@+id/height_lay"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:onClick="onClick" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="60dip"
+            android:layout_marginLeft="@dimen/personal_list_left"
+            android:gravity="center_vertical"
+            android:text="@string/height"
+            android:textColor="@color/Guider_list_text_color"
+            android:textSize="@dimen/Guider_list_text_size" />
+
+        <TextView
+            android:id="@+id/height_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/personal_list_left"
+            android:textColor="@color/orange_color"
+            android:textSize="@dimen/Guider_list_text_size" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/show_height_layout"
+        android:layout_width="match_parent"
+        android:layout_height="200dip"
+        android:visibility="gone" >
+
+        <com.zhuoyou.plugin.view.WheelView
+            android:id="@+id/height_select"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/show_height_unit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="100dp"
+            android:gravity="center_vertical|right"
+            android:text="CM"
+            android:textSize="20dp"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dip"
+        android:layout_marginLeft="@dimen/personal_list_left"
+        android:layout_marginRight="@dimen/personal_list_left"
+        android:background="@color/persion_info_divider" />
+
+    <!-- weight selections -->
+
+    <RelativeLayout
+        android:id="@+id/weight_lay"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:onClick="onClick" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="60dip"
+            android:layout_marginLeft="@dimen/personal_list_left"
+            android:gravity="center_vertical"
+            android:text="@string/weight"
+            android:textColor="@color/Guider_list_text_color"
+            android:textSize="@dimen/Guider_list_text_size" />
+
+        <TextView
+            android:id="@+id/weight_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/personal_list_left"
+            android:textColor="@color/orange_color"
+            android:textSize="@dimen/Guider_list_text_size" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/weight_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="0dp"
+            android:orientation="horizontal" >
+
+            <com.zhuoyou.plugin.view.WheelView
+                android:id="@+id/weight_select"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:visibility="gone" >
+            </com.zhuoyou.plugin.view.WheelView>
+
+            <com.zhuoyou.plugin.view.WheelView
+                android:id="@+id/weight_select_small"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:visibility="gone" >
+            </com.zhuoyou.plugin.view.WheelView>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/show_weight_unit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="."
+            android:textSize="30dp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/show_weight_point_unit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="30dp"
+            android:gravity="center_vertical|right"
+            android:text="kg"
+            android:textSize="20dp"
+            android:visibility="gone" />
+    </FrameLayout>
+
+</LinearLayout>

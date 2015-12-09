@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#ffffffff</color>
+    <color name="black">#000000</color>
+    <color name="red">#ffff0000</color>
+	<color name="register_find_code_color">#01ADFD</color>
+	<color name="bg">#e7e7e7</color>
+	<color name="top_text_color">#959595</color>
+	<color name="edit_text_color">#9e9e9e</color>
+	<!-- user center -->
+	<color name="color_usercenter_bg">#f8f7f5</color>
+	<!-- end user center -->
+	
+	<color name="milky_white">#EEE</color>
+	<color name="gray">#ff666666</color>
+	
+	<color name="list_item_soft_name">#ff666666</color>
+	<color name="list_item_color">#FF6A6969</color>
+</resources>

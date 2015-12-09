@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="oc_dialog" parent="@android:style/Theme.Dialog">
+    	<item name="android:windowBackground">@android:color/transparent</item>
+        <!-- <item name="android:windowBackground">@drawable/bg_dialog</item> -->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item> 
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+    
+    <style name="oc_transparent" >
+	　　<item name="android:windowBackground">@android:color/transparent</item>
+		<item name="android:windowNoTitle">true</item>
+		<item name="android:windowFullscreen">true</item>
+	　　<item name="android:windowIsTranslucent">true</item>
+	　　<item name="android:windowAnimationStyle">@android:style/Animation.Translucent</item>
+    </style>
+    
+    <style name="oc_translucent" >
+	　　<item name="android:windowBackground">@color/oc_black_alph</item>
+		<item name="android:windowNoTitle">true</item>
+		<item name="android:windowFullscreen">true</item>
+	　　<item name="android:windowIsTranslucent">true</item>
+	　　<item name="android:windowAnimationStyle">@android:style/Animation.Translucent</item>
+    </style>
+	<style name="oc_style_tv_shadow">
+        <item name="android:textColor">@color/oc_white</item>
+        <item name="android:shadowColor">#ff000000</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">1</item>
+        <item name="android:background">@null</item>
+    </style>
+</resources>

@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, LoginActivity!</string>
+    <string name="app_name">卓悠帳戶</string>
+    <string name="login_name">帳號：</string>
+    <string name="login_code">密碼：</string>
+    <string name="login">登錄</string>
+    <string name="zhuoyou_login">登錄</string>
+    <string name="remeber_code">記住密碼</string>
+    <string name="input_code">請輸入密碼</string>
+    <string name="input_code_again">請再輸入新密碼</string>
+    <string name="register">註冊</string>
+    <string name="register_login">註冊並登錄</string>
+    <string name="register_tip">註冊時會向伺服器發送一條短信，本條消息由運營商收取費用。</string>
+    <string name="phoneNum">手機號碼</string>
+    <string name="new_code">請輸入新密碼</string>
+    <string name="new_code_again">請再次輸入新密碼：</string>
+    <string name="find_code">密碼</string>
+    <string name="title">登錄</string>
+    <string name="second">秒</string>
+    <string name="register_new_account">註冊新帳號</string>
+    <string name="forget_code"><u>忘記密碼?</u></string>
+    <string name="reset_code">重置密碼</string>
+    <string name="support_name">請輸入手機號</string>
+    <string name="text_none"><b></b></string>
+    <string name="tip_password_username_username2_none">用戶名或密碼不能為空。</string>
+    <string name="tip_password_none">密碼不能為空</string>
+    <string name="tip_username_none">用戶名不能為空</string>
+    <string name="tip_password_username_username2_valid">用戶名或密碼格式不正確，請按照格式輸入</string>
+    <string name="tip_password_valid">密碼格式不正確，請按照格式輸入</string>
+    <string name="tip_username_not_equal_username2">兩次輸入的密碼不一致</string>
+    <string name="tip_username_not_phonenum">帳號必須為本機手機號碼</string>
+    <string name="tip_username_must_phonenum">帳號必須為手機號碼</string>
+    <string name="tip_register_now">正在註冊中，請稍候。</string>
+    <string name="tip_network_wrong">網路鏈接錯誤，請查看網路設置。</string>
+    <string name="tip_register_wrong">驗證碼出錯</string>
+    <string name="tip_register_wrong_out_time">註冊超時，請重新註冊</string>
+    <string name="tip_register_completed">恭喜，註冊成功</string>
+    <string name="tip_register_success">註冊成功，您的初始密碼是 %1$s,請牢記</string>
+    <string name="tip_findcode_success">重置密碼成功，您的密碼是 %1$s,請牢記</string>
+    <string name="tip_findcode_success_1">重置密碼成功</string>
+    <string name="tip_login_now">正在登錄</string>
+    <string name="tip_data_wrong">數據格式有誤</string>
+    <string name="tip_login_success">登錄成功</string>
+    <string name="tip_login_fail">登錄失敗,請重新登錄</string>
+    <string name="tip_login_fail_no_network">登錄失敗,請檢查網路</string>
+    <string name="tip_password_not_right_length">密碼長度必須為6-20位</string>
+    <string name="choose_register_module_my_phonenum">重置密碼</string>
+    <string name="choose_register_module_not_my_phonenum">重置密碼</string>
+    <string name="tip_find_code_now">找回密碼中，請稍候。</string>
+    <string name="tip_reset_password_now">重置密碼中，請稍候。</string>
+    <string name="tip_reset_password_failed">重置失敗，請重試</string>
+    <string name="input_old_code">請輸入舊密碼</string>
+    <string name="tip_bind_failed">綁定失敗，請重試</string>
+    <string name="licence">
+<![CDATA[
+                  	<U><font color="#b8b8b8">已閱讀並同意使用條款和隱私政策</font></U>
+        ]]>
+    </string>
+    <string name="licence_other">
+<![CDATA[
+                  	<U><font color="blue">已閱讀並同意使用條款和隱私政策</font></U>
+        ]]>
+    </string>
+    <string name="licence_tip">請同意並閱讀使用條款和隱私政策</string>
+    <string name="reg_string1">請輸入6-20位字母或數字為密碼</string>
+    <string name="reg_string2">請再輸入一次密碼</string>
+    <string name="reg_security_code">驗證碼長度為6位</string>
+    <string name="reg_get_security_code">獲取驗證碼</string>
+    <string name="find_string">輸入已註冊過的手機號碼</string>
+    <string name="account_binding">帳號綁定</string>
+    <string name="account_binding_titile">綁定</string>
+    <string name="other_login_title">Hi,親愛的用戶,你還可以選擇其他的方式登錄哦.</string>
+    <string name="account_login">帳號登錄</string>
+    <string name="account_register">註冊帳號</string>
+    <string name="account_register_security_code_again">重新獲取驗證碼</string>
+	<string name="account_register_security_code">獲取驗證碼</string>
+    <string name="tip_share_pic">我在卓易市場的排名，能賺錢哦~</string>
+	
+    <!-- QQ login start -->
+    <string name="qq_account_login">QQ帳號登錄</string>
+    <!-- QQ login end -->
+
+
+    <!-- sina login start -->
+    <!-- 登錄/註銷按鈕 -->
+    <string name="title_activity_main_sina">新浪微博登錄</string>
+    <string name="weibosdk_demo_login_hint"><b>一鍵登錄按鈕：</b>\n（有以下三種樣式，第一種為默認效果）</string>
+    <string name="weibosdk_demo_login_with_text_hint"><b>登錄/註銷按鈕：</b>\n（有以下兩種樣式，第一種為默認效果，可修改）</string>
+    <string name="weibosdk_demo_logout_hint"><b>註銷按鈕：</b>\n（注意：該按鈕不再進行封裝，第三方可直接調用 LogoutAPI，<b>一個 token 不能重複註銷多次</b>）</string>
+    <string name="weibosdk_demo_logout">註銷</string>
+    <string name="weibosdk_demo_logout_success">已註銷</string>
+    <string name="weibosdk_demo_logout_failed">註銷失敗</string>
+    <string name="weibosdk_demo_logout_failed_1">註銷失敗，請檢查 Token 是否正確（一個 token 不能重複註銷多次）</string>
+    <string name="weibosdk_demo_token_info">Token 資訊：</string>
+    <string name="weibosdk_demo_token_to_string_format_1">Token：%1$s \n有效期：%2$s</string>
+    <string name="weibosdk_demo_toast_auth_canceled">取消授權</string>
+    <string name="weibosdk_demo_toast_auth_canceled_again">授權異常，請重新登錄</string>
+    <string name="weibosdk_demo_toast_auth_failed">登錄失敗，請重新登錄</string>
+    <string name="weibosdk_demo_toast_auth_canceled_again_bind">綁定異常，請重新綁定</string>
+    <string name="weibosdk_demo_cancel_download_weibo">\t取消下載</string>
+    <!-- 分享成功失敗的 Toast -->
+    <string name="weibosdk_demo_toast_share_success">分享成功</string>
+    <string name="weibosdk_demo_toast_share_failed">分享失敗</string>
+    <string name="weibosdk_demo_toast_share_canceled">取消分享</string>
+    <string name="weibosdk_demo_toast_share_response_args_success">收到微博發起的請求成功</string>
+    <string name="weibosdk_demo_toast_share_response_args_failed">收到客戶端請求消息失敗</string>
+    <string name="weibosdk_demo_toast_share_uninstall">你還未安裝微博</string>
+    <!-- 分享示例範本 -->
+    <string name="weibosdk_demo_share_text_template">我正在使用微博客戶端發博器分享文字</string>
+    <string name="weibosdk_demo_share_webpage_template">【%1$s】（分享自 WeiboSDKDemo %2$s）</string>
+    <string name="weibosdk_demo_share_music_template">我正在聽 %1$s（分享自 WeiboSDKDemo %2$s）</string>
+    <string name="weibosdk_demo_share_video_template">我正在看 %1$s（分享自 WeiboSDKDemo %2$s）</string>
+    <string name="weibosdk_demo_share_voice_template">我分享了 %1$s（分享自 WeiboSDKDemo %2$s）</string>
+    <string name="weibosdk_demo_share_webpage_demo">XXX 新聞</string>
+    <string name="weibosdk_demo_share_music_demo">XXX 音樂</string>
+    <string name="weibosdk_demo_share_video_demo">XXX 視頻</string>
+    <string name="weibosdk_demo_share_voice_demo">XXX 聲音</string>
+    <string name="weibosdk_demo_not_support_api_hint">微博客戶端不支持 SDK 分享或微博客戶端未安裝或微博客戶端是非官方版本。</string>
+    <!-- sina login end -->
+    <!-- user center start -->
+    <string name="user_center_shop">商城</string>
+    <string name="user_center_down">下載有禮</string>
+    <string name="user_center_task">任務</string>
+    <string name="user_center_score">積分</string>
+    <string name="user_center">個人中心</string>
+    <string name="user_center_no_login">未登錄</string>
+    <string name="user_center_summary">查看個人中心詳細資訊</string>
+    <string name="user_center_get_userinfo_fail">獲取用戶資訊失敗，請檢查網路</string>
+    <string name="user_center_name">用戶名</string>
+    <string name="user_center_login">簽到</string>
+    <string name="user_center_have_logined">已簽到</string>
+    <string name="user_center_score_detail">積分明細</string>
+    <string name="user_center_scores">積分 : </string>
+    <string name="user_center_loading">正在加載中</string>
+    <string name="user_center_logout">正在註銷...</string>
+    <string name="user_center_network_wrong">網路出錯誤了，再試一下吧</string>
+    <string name="user_center_network_wrong_try_again">再試一下</string>
+    <string name="user_center_achievement">我的成就</string>
+    <string name="user_center_wheel">幸運轉盤</string>
+    <string name="user_center_score_illustrate">積分說明</string>
+    
+    <!-- user center end -->
+    <!-- apk update self start -->
+    <string name="update_self_dialog_confirm_btn">升級</string>
+    <string name="update_self_dialog_cancel_btn">取消</string>
+    <string name="update_self_forceDialog_title">新版本</string>
+    <string name="update_self_forceDialog_content">必須升級新版本，否則無法繼續使用!</string>
+    <string name="update_self_dialog_title">新版本</string>
+    <string name="update_self_dialog_content">發現新版本，是否進行升級？</string>
+    <!-- apk update self end -->
+    <!-- authenticate start -->
+    <string name="authenticate_login">正在授權認證登錄</string>
+    <string name="authenticate_login_name">卓易帳戶</string>
+    <!-- authenticate end -->
+
+    <string name="com_sina_weibo_sdk_login_with_weibo_account">用微博登錄</string>
+
+    <string name="exit_account">退出帳戶</string>
+    <string name="exit_account_exiting">正在退出帳戶</string>
+    
+    <string name="share_to">分享到</string>
+    <string name="software_share">分享</string>
+    <string name="weixin">微信</string>
+	<string name="time_line">朋友圈</string>
+	<string name="sina_weibo">新浪微博</string>
+	<string name="qq">QQ好友</string>
+	<string name="share_success">分享成功</string>
+	<string name="share_cancel">取消分享</string>
+	<string name="say_something">說些什麼</string>
+	<string name="auth_failed">驗證失敗</string>
+	<string name="share_fail">分享未成功</string>
+	<string name="share_repeat_content">已分享過重複內容，請稍後再分享...</string>
+	<string name="share_now">正在分享中...</string>
+	<string name="weixin_uninstall">你還未安裝微信</string>
+	
+	<!-- web view start-->
+	<string name="no_connect">網路故障</string>
+    <string name="no_connect_hint">親！獲取數據失敗，建議稍後重試</string>
+    <string name="menu_refresh">刷新</string>
+	<!-- web view start-->
+	<!-- progressbar -->
+	<string name="authing">正在綁定...</string>
+	<string name="auth_cancel">取消綁定</string>
+	<string name="cancel">取消</string>
+	<string name="sure">確定</string>
+	<string name="share_from_market">來自：卓易市場</string>
+
+		<string name="has_login">已經登錄過了</string>
+		<string name="server_exception">連接伺服器超時，請稍後再試</string>
+		<string name="tip_code_wrong">驗證碼不正確</string>
+		<string name="login_server_exception">連接伺服器超時，請稍後再登錄</string>
+</resources>

@@ -1,0 +1,140 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fg_header"
+    android:layout_width="wrap_content"
+    android:layout_height="140dp" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:background="#41366F" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="10dp" >
+
+            <RelativeLayout
+                android:id="@+id/steps_lay"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_toLeftOf="@+id/summay_lay" >
+
+                <TextView
+                    android:id="@+id/steps_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="ss"
+                    android:textColor="@color/white"
+                    android:textSize="22dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:paddingBottom="5dp"
+                    android:text="@string/total_sleep"
+                    android:textColor="#9E9BB1" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/summay_lay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true" >
+
+                <ImageView
+                    android:id="@+id/percent_color_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/scircle_bg" />
+
+                <ImageView
+                    android:id="@+id/percent_arc_iv"
+                    android:layout_width="73.0dip"
+                    android:layout_height="73.0dip"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true" >
+
+                    <TextView
+                        android:id="@+id/summay_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:textSize="40dp" />
+
+                    <TextView
+                        android:id="@+id/summay_unit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/summay_tv"
+                        android:textColor="@color/white"
+                        android:textSize="20dp" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:paddingBottom="5dp"
+                    android:text="@string/completion_sleep"
+                    android:textColor="#9E9BB1" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerHorizontal="true"
+                android:layout_toRightOf="@+id/summay_lay" >
+
+                <TextView
+                    android:id="@+id/calories_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/white"
+                    android:textSize="22dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:paddingBottom="5dp"
+                    android:text="@string/deep_sleep"
+                    android:textColor="#9E9BB1" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/day_btn_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/day_btn_left" />
+
+            <ImageView
+                android:id="@+id/day_btn_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/day_btn_right" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</FrameLayout>

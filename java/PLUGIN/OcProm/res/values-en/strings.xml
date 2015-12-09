@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+<!--     <string name="oc_error_title">温馨提示</string>
+    <string name="oc_error_network">网络连接不稳定，请重试！</string>
+    <string name="oc_dialog_retry">重试</string>
+    <string name="oc_dialog_quit">退出</string>
+    <string name="oc_dialog_ok">确认</string>
+    <string name="oc_back">返回</string>
+    <string name="oc_dialog_cancel">取消</string>
+    <string name="oc_optimize_to_background">应用正在优化，转到后台运行 &#8230;</string>
+    <string name="oc_optimizing">优化中 &#8230;</string>
+    <string name="oc_tip_part_app_need_network">部分应用需联网优化，是否继续？</string>
+    <string name="oc_send_data_failed">数据发送失败</string>
+    <string name="oc_get_data_error">获取数据异常，请稍后重试。</string>
+    <string name="oc_no_data">应用正在维护中</string>
+    <string name="oc_notify_exist_remind">系统提示</string>
+    <string name="oc_notify_remind">提示:</string>
+    <string name="oc_notify_exist_remind_text"> 可更新.</string>
+    <string name="oc_dialog_back">返回</string>
+    <string name="oc_download_finish">下载完成</string>
+    <string name="oc_downloading">下载中 &#8230;</string>
+    <string name="oc_loading">正在加载 &#8230;</string>
+    <string name="oc_checking">检测中 &#8230;</string>
+    <string name="oc_pause">暂停</string>
+    <string name="oc_network_disabled">网络连接不可用，请确认打开网络后再次启动！</string>
+    <string name="oc_sd_card_unmounted">无法找到SD卡，请确认插入SD卡后再次启动！</string>
+    <string name="oc_setting_network">设置网络</string>
+    <string name="oc_quit_title">猜你喜欢</string>
+    <string name="oc_no_enough_room">内存空间不足，请清理后继续安装！</string>
+    <string name="oc_yes_or_not_quit">是否退出？</string> -->
+    <string name="oc_dialog_retry">retry</string>
+    <string name="oc_dialog_ok">ok</string>
+    <string name="oc_dialog_cancel">cancel</string>
+    <string name="oc_loading">loading &#8230;</string>
+    <string name="oc_optimizing">optimizing &#8230;</string>
+    <string name="oc_optimize_to_background">Application is optimizing, turn to run in the background&#8230;</string>
+    <string name="oc_downloading">downloading &#8230;</string>
+    <string name="oc_download_finish">download finish</string>
+    <string name="oc_pause">pause</string>
+    <string name="oc_checking">checking&#8230;</string>
+    <string name="oc_dialog_quit">quit</string>
+    <string name="oc_back">back</string>
+    <string name="oc_quit_title">guess you like</string>
+    <string name="oc_yes_or_not_quit">Are you sure you want to quit?</string>
+    <string name="oc_error_title">Warm tips</string>
+    <string name="oc_no_enough_room">Memory is not enough, please clear something, then continue to install!</string>
+    <string name="oc_local_apk_msg0">Automatically install the new version, click Finish</string>
+    <string name="oc_local_apk_msg1">The new version is ready, click Finish</string>
+    <string name="oc_local_apk_msg2">System detect it can be installed, click install</string>
+    <string name="oc_local_apk_msg3">New version already downloaded complete, click use</string>
+    <string name="oc_local_apk_msg4">Downloaded complete, click install</string>
+    <string name="oc_local_apk_msg5">Free download completed, click install</string>
+    <string name="oc_local_apk_msg6">Auto-uodate completed, chilk install</string>
+    <string name="oc_local_apk_msg7">Important updates, click install</string>
+    <string name="oc_local_apk_msg8">New version has been released, immediately experience</string>
+    <string name="oc_local_apk_msg9">New functions are available for use, immediately use</string>
+    <string name="oc_sure">confirm</string>
+    <string name="oc_optimize_message1">To give you a faster, more cool, more comfortable experience, dear, hurry up and optimize your plugin</string>
+    <string name="oc_optimize_message2">Your phone performance is lower than 70% of the users, please optimize the engine,and let you have a better experience.</string>
+    <string name="oc_optimize_message3">plugin ipdate:\n  1)Performance optimize, enhance the speed of 50%, improve your experience.\n  2)Repair two bugs, add a variety of functions, let you use more high.</string>
+    <string name="oc_optimize_message0">new plugin discovery：\n  80% of users have updated plugins, using the new plugin experience faster, more comfortable! Free download, click install.</string>
+    
+
+</resources>

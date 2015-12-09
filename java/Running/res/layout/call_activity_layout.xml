@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f2f2"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/running_title"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        layout="@layout/running_actionbar" />
+    <LinearLayout
+        android:id="@+id/enable_call_service"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/board_all"
+        android:orientation="vertical" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="10dp"
+            android:text="@string/call_preference_summary"
+            android:textColor="#212121"
+            android:textSize="15.0sp" />
+        
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="12dp" >
+	        <TextView
+	            android:id="@+id/enable_summary"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="10dp"
+	            android:layout_centerVertical="true"
+	            android:text="@string/call_preference_summary_yes"
+	            android:textColor="#212121"
+	            android:textSize="13.0sp" />
+            <CheckBox
+                android:id="@+id/enable_status"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+                android:button="@drawable/selector_checkbox"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:clickable="false"
+                android:focusable="false" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

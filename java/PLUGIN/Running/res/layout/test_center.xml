@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#e0eaef" >
+
+    <include
+        android:id="@+id/goal_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        layout="@layout/test_center_result"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/config_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <RelativeLayout
+            android:id="@+id/setting_title_rl"
+            android:layout_width="fill_parent"
+            android:layout_height="69.0dip"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/setting_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="@string/persion_config"
+                android:textColor="@color/dark_grey"
+                android:textSize="20.0sp"
+                android:textStyle="normal"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/setting_title_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/setting_title"
+                android:layout_centerHorizontal="true"
+                android:text="@string/calculate_exercise"
+                android:textColor="@color/middle_grey"
+                android:textSize="15.0sp" />
+        </RelativeLayout>
+
+        <AbsoluteLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <RelativeLayout
+                android:id="@+id/setting_woman"
+                android:layout_width="fill_parent"
+                android:layout_height="350.0dip"
+                android:layout_x="0.0dip"
+                android:layout_y="60.0dip" >
+
+                <ImageView
+                    android:id="@+id/userinfo_head_1"
+                    android:layout_width="127.0dip"
+                    android:layout_height="127.0dip"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/userinfo_head_1" />
+
+                <ImageView
+                    android:id="@+id/userinfo_body_1"
+                    android:layout_width="119.0dip"
+                    android:layout_height="150.0dip"
+                    android:layout_below="@id/userinfo_head_1"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="-26.0dip"
+                    android:src="@drawable/userinfo_body_1" />
+
+                <TextView
+                    android:id="@+id/userinfo_sex_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/userinfo_head_1"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/female"
+                    android:textColor="@color/dark_grey"
+                    android:textSize="27.0sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/userinfo_sex_desc_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/userinfo_sex_1"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="-9.0dip"
+                    android:text="Woman"
+                    android:textColor="@color/middle_grey"
+                    android:textSize="17.0sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/setting_man"
+                android:layout_width="fill_parent"
+                android:layout_height="350.0dip"
+                android:layout_x="0.0dip"
+                android:layout_y="245.0dip" >
+
+                <ImageView
+                    android:id="@+id/userinfo_head_2"
+                    android:layout_width="127.0dip"
+                    android:layout_height="132.0dip"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/userinfo_head_2" />
+
+                <ImageView
+                    android:id="@+id/userinfo_body_2"
+                    android:layout_width="119.0dip"
+                    android:layout_height="140.0dip"
+                    android:layout_below="@id/userinfo_head_2"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="-28.5dip"
+                    android:src="@drawable/userinfo_body_2" />
+
+                <TextView
+                    android:id="@+id/userinfo_sex_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/userinfo_head_2"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/male"
+                    android:textColor="@color/dark_grey"
+                    android:textSize="27.0sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/userinfo_sex_desc_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/userinfo_sex_2"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="-9.0dip"
+                    android:text="Man"
+                    android:textColor="@color/middle_grey"
+                    android:textSize="17.0sp" />
+            </RelativeLayout>
+        </AbsoluteLayout>
+
+        <RelativeLayout
+            android:id="@+id/weight_container"
+            android:layout_width="fill_parent"
+            android:layout_height="150.0dip"
+            android:layout_marginTop="237.0dip"
+            android:visibility="gone" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/weight_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="70"
+                    android:textColor="@color/blue"
+                    android:textSize="44.0sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/weight_value"
+                    android:layout_marginBottom="6.0dip"
+                    android:layout_toRightOf="@id/weight_value"
+                    android:text=" kg"
+                    android:textColor="@color/middle_grey"
+                    android:textSize="22.0sp" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="90.0dip"
+                android:layout_marginTop="60.0dip"
+                android:src="@drawable/userinfo_scroll_bg" />
+
+            <com.zhuoyou.plugin.view.HorScrollView
+                android:id="@+id/weight_scrollview"
+                android:layout_width="262.0dip"
+                android:layout_height="75.0dip"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="70.0dip"
+                android:fillViewport="true"
+                android:scrollbars="none" >
+
+                <LinearLayout
+                    android:id="@+id/weight_scrollview_ll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent" >
+
+                    <ImageView
+                        android:layout_width="1262.0dip"
+                        android:layout_height="60.0dip"
+                        android:layout_marginLeft="130.0dip"
+                        android:layout_marginRight="130.0dip"
+                        android:src="@drawable/userinfo_scroll_weight" />
+                </LinearLayout>
+            </com.zhuoyou.plugin.view.HorScrollView>
+
+            <ImageView
+                android:layout_width="2.0dip"
+                android:layout_height="40.0dip"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="70.0dip"
+                android:src="@drawable/userinfo_blue_line_2" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="90.0dip"
+                android:layout_marginTop="60.0dip"
+                android:src="@drawable/userinfo_scroll_top" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/height_container"
+            android:layout_width="265.0dip"
+            android:layout_height="384.0dip"
+            android:layout_alignParentRight="true"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/height_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="80.0dip"
+                android:text="1.75"
+                android:textColor="@color/blue"
+                android:textSize="44.0sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/height_value"
+                android:layout_marginBottom="6.0dip"
+                android:layout_toRightOf="@id/height_value"
+                android:text=" cm"
+                android:textColor="@color/middle_grey"
+                android:textSize="22.0sp" />
+
+            <ImageView
+                android:layout_width="120.0dip"
+                android:layout_height="384.0dip"
+                android:layout_marginLeft="145.0dip"
+                android:src="@drawable/userinfo_scroll_bg_vertical" />
+
+            <com.zhuoyou.plugin.view.VerScrollView
+                android:id="@+id/height_scrollview"
+                android:layout_width="77.0dip"
+                android:layout_height="347.0dip"
+                android:layout_marginLeft="160.0dip"
+                android:layout_marginTop="20.0dip"
+                android:scrollbars="none" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <ImageView
+                        android:layout_width="80.0dip"
+                        android:layout_height="1262.0dip"
+                        android:layout_marginBottom="219.0dip"
+                        android:layout_marginTop="56.0dip"
+                        android:src="@drawable/userinfo_scroll_height" />
+                </LinearLayout>
+            </com.zhuoyou.plugin.view.VerScrollView>
+
+            <ImageView
+                android:layout_width="40.0dip"
+                android:layout_height="2.0dip"
+                android:layout_marginLeft="197.0dip"
+                android:layout_marginTop="111.0dip"
+                android:src="@drawable/userinfo_blue_line" />
+
+            <ImageView
+                android:layout_width="120.0dip"
+                android:layout_height="384.0dip"
+                android:layout_marginLeft="145.0dip"
+                android:src="@drawable/userinfo_scroll_top_vertical" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/year_container"
+            android:layout_width="fill_parent"
+            android:layout_height="150.0dip"
+            android:layout_marginTop="237.0dip"
+            android:visibility="gone" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/year_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="1988"
+                    android:textColor="@color/blue"
+                    android:textSize="44.0sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/year_value"
+                    android:layout_marginBottom="6.0dip"
+                    android:layout_toRightOf="@id/year_value"
+                    android:text=" 出生年"
+                    android:textColor="@color/middle_grey"
+                    android:textSize="22.0sp" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="90.0dip"
+                android:layout_marginTop="60.0dip"
+                android:src="@drawable/userinfo_scroll_bg" />
+
+            <com.zhuoyou.plugin.view.HorScrollView
+                android:id="@+id/year_scrollview"
+                android:layout_width="262.0dip"
+                android:layout_height="75.0dip"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="70.0dip"
+                android:scrollbars="none" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent" >
+
+                    <ImageView
+                        android:layout_width="632.0dip"
+                        android:layout_height="60.0dip"
+                        android:layout_marginLeft="95.0dip"
+                        android:layout_marginRight="95.0dip"
+                        android:src="@drawable/userinfo_scroll_year" />
+                </LinearLayout>
+            </com.zhuoyou.plugin.view.HorScrollView>
+
+            <ImageView
+                android:layout_width="2.0dip"
+                android:layout_height="40.0dip"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="70.0dip"
+                android:src="@drawable/userinfo_blue_line_2" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="90.0dip"
+                android:layout_marginTop="60.0dip"
+                android:src="@drawable/userinfo_scroll_top" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/btn_container"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="387.0dip"
+            android:visibility="gone" >
+
+            <Button
+                android:id="@+id/btn_previous"
+                android:layout_width="80.0dip"
+                android:layout_height="36.0dip"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30.0dip"
+                android:background="@drawable/btn_dark_sel"
+                android:text="@string/pre"
+                android:textColor="@android:color/white"
+                android:textSize="20.0sp"
+                android:textStyle="normal" />
+
+            <Button
+                android:id="@+id/btn_next"
+                android:layout_width="80.0dip"
+                android:layout_height="36.0dip"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="30.0dip"
+                android:background="@drawable/botton_selector"
+                android:text="@string/next"
+                android:textColor="@android:color/white"
+                android:textSize="20.0sp"
+                android:textStyle="normal" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</FrameLayout>

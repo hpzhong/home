@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <color name="oc_transparent">#00000000</color>
+    <color name="oc_black">#ff000000</color>
+    <color name="oc_white">#ffffffff</color>
+    <color name="oc_gray">#ff313131</color>
+    <color name="oc_green">#ff739920</color>
+    <color name="oc_white_gray">#ffbfbdbd</color>
+    <color name="oc_small_white">#ffc8c8c8</color>
+    <color name="oc_black_alph">#c0000000</color>
+	<color name="oc_bg_update_dialog">#c8000000</color>
+    <color name="oc_update_dialog_divider">#ff2b2b2b</color>
+    <color name="oc_bg_dialog_btns">#ff323232</color>
+    <color name="oc_tv_prom_home_title">#ff682602</color>
+    <color name="oc_bg_prom_home">#ff2d2c23</color>
+    <color name="oc_app_desc_gray">#ff2d2d2d</color>
+    <color name="oc_pink">#ffe3dab1</color>
+    <color name="oc_red">#ffff0000</color>
+    <color name="oc_download_list_item_bg_deep">#ffe3dab1</color>
+    <color name="oc_download_list_item_bg_light">#fff1edd8</color>
+    <color name="oc_acct_text_color_black">#ff293541</color>
+    <color name="oc_black_alpha_1">#9b000000</color>
+    <color name="oc_vol_bar_blue">#ff6db2df</color>
+    <color name="oc_vol_bar_green">#ff9cd629</color>
+    <color name="oc_notify_text_gray1">#ff6e6e6e</color>
+    <color name="oc_notify_text_gray2">#ffb9b9b9</color>
+    <color name="oc_text_orange">#FF7F00</color>
+    <color name="oc_half_tra">#e0000000</color>
+</resources>

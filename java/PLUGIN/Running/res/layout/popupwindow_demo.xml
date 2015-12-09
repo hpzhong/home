@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/content_bg"
+    >
+
+    <TextView
+        android:id="@+id/tv_take_photo"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_marginTop="20dip"
+        android:layout_marginLeft="30dip"
+        android:layout_marginRight="30dip"
+        android:textColor="#666666"
+        android:gravity="center"
+        android:text="@string/take_photo"
+        android:background="@drawable/take_photo_button_selector"
+        android:textSize="20sp" />
+    <TextView
+        android:id="@+id/tv_chose_pic"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_below="@+id/tv_take_photo"
+        android:layout_marginTop="10dip"
+        android:layout_marginLeft="30dip"
+        android:layout_marginRight="30dip"
+        android:gravity="center"
+        android:textColor="#666666"
+        android:text="@string/chose_from_camera"
+        android:background="@drawable/take_photo_button_selector"
+        android:textSize="20sp" />
+    <TextView
+        android:id="@+id/tv_cancle"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_below="@+id/tv_chose_pic"
+        android:layout_marginTop="10dip"
+        android:layout_marginLeft="30dip"
+        android:layout_marginRight="30dip"
+        android:textColor="#666666"
+        android:gravity="center"
+        android:background="@drawable/cancle_button_selector"
+        android:text="@string/cancle"
+        android:textSize="20sp" />
+</RelativeLayout>

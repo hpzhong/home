@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <TextView
+        android:id="@+id/item_name"
+        android:layout_width="fill_parent"
+        android:layout_height="30dip"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/radio"
+        android:layout_marginLeft="10dip"
+        android:textColor="#FF687D87"
+        android:textSize="14sp"
+        android:gravity="center_vertical"
+        android:singleLine="true"
+        android:ellipsize="end" />
+
+    <ImageView
+        android:id="@+id/radio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/setlist_radio_off"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dip" />    
+</RelativeLayout>

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context="com.zhuoyou.plugin.bluetooth.attach.BTPluginActivity" >
+
+    <RelativeLayout
+        android:id="@+id/gv_item_root1"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" >
+
+        <RelativeLayout
+            android:id="@+id/gv_item1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true" >
+
+            <ImageView
+                android:id="@+id/gv_item_icon1"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="36dp"
+                android:contentDescription="@string/app_name" />
+	        <ImageView
+	            android:id="@+id/gv_item_staus1"
+	            android:layout_width="70dp"
+	            android:layout_height="70dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="36dp"
+	            android:contentDescription="@string/app_name"
+	            android:src="@drawable/uninstall"
+	            android:visibility="gone" />
+	        <ImageView
+	            android:id="@+id/gv_item_delete1"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignTop="@+id/gv_item_icon1"
+	            android:layout_alignRight="@+id/gv_item_icon1"
+	            android:contentDescription="@string/app_name"
+	            android:src="@drawable/plugin_delete"
+	            android:visibility="gone" />
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/gv_item_name1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/gv_item1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="#b2b2b2"
+            android:textSize="16sp" />        
+    </RelativeLayout>
+
+    <!-- /2 -->
+
+    <RelativeLayout
+        android:id="@+id/gv_item_root2"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" >
+
+        <RelativeLayout
+            android:id="@+id/gv_item2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true" >
+
+            <ImageView
+                android:id="@+id/gv_item_icon2"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="36dp"
+                android:contentDescription="@string/app_name" />
+	        <ImageView
+	            android:id="@+id/gv_item_staus2"
+	            android:layout_width="70dp"
+	            android:layout_height="70dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="36dp"
+	            android:contentDescription="@string/app_name"
+	            android:src="@drawable/uninstall"
+	            android:visibility="gone" />
+	        <ImageView
+	            android:id="@+id/gv_item_delete2"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignTop="@+id/gv_item_icon2"
+	            android:layout_alignRight="@+id/gv_item_icon2"
+	            android:contentDescription="@string/app_name"
+	            android:src="@drawable/plugin_delete"
+	            android:visibility="gone" />
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/gv_item_name2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/gv_item2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="#b2b2b2"
+            android:textSize="16sp" />        
+    </RelativeLayout>
+
+    <!-- 3 -->
+
+    <RelativeLayout
+        android:id="@+id/gv_item_root3"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" >
+
+        <RelativeLayout
+            android:id="@+id/gv_item3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true" >
+
+            <ImageView
+                android:id="@+id/gv_item_icon3"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="36dp"
+                android:contentDescription="@string/app_name" />
+	        <ImageView
+	            android:id="@+id/gv_item_staus3"
+	            android:layout_width="70dp"
+	            android:layout_height="70dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="36dp"
+	            android:contentDescription="@string/app_name"
+	            android:src="@drawable/uninstall"
+	            android:visibility="gone" />
+	        <ImageView
+	            android:id="@+id/gv_item_delete3"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignTop="@+id/gv_item_icon3"
+	            android:layout_alignRight="@+id/gv_item_icon3"
+	            android:contentDescription="@string/app_name"
+	            android:src="@drawable/plugin_delete"
+	            android:visibility="gone" />
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/gv_item_name3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/gv_item3"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="#b2b2b2"
+            android:textSize="16sp" />        
+    </RelativeLayout>
+
+</LinearLayout>

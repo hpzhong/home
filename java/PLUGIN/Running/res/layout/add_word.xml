@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <include
+        android:id="@+id/running_title"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        layout="@layout/running_actionbar" />
+
+        <EditText
+            android:id="@+id/ed_some_words"
+            android:layout_width="match_parent"
+            android:layout_height="150dip"
+            android:layout_below="@+id/running_title"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:layout_marginTop="20dip"
+            android:background="@drawable/edit_bg"
+            android:hint="@string/pls_say_what">
+        </EditText>
+
+    <ImageView
+        android:id="@+id/im_cancle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/ed_some_words"
+        android:layout_marginLeft="40dip"
+        android:layout_marginTop="30dip"
+        android:src="@drawable/add_cancle_button_selector" />
+
+    <ImageView
+        android:id="@+id/im_complete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/ed_some_words"
+        android:layout_marginRight="40dip"
+        android:layout_marginTop="30dip"
+        android:src="@drawable/complete_ok_selector" />
+
+    <ImageView
+        android:id="@+id/im_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ed_some_words"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="40dip"
+        android:layout_marginTop="30dip"
+        android:visibility="gone"
+        android:src="@drawable/delete_button_selector" />
+    <ImageView
+        android:id="@+id/im_edit_ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ed_some_words"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="30dip"
+        android:layout_marginRight="40dip"
+        android:visibility="gone"
+        android:src="@drawable/complete_ok_selector" />
+
+</RelativeLayout>
